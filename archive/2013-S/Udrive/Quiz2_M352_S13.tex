@@ -1,0 +1,60 @@
+\documentclass[11pt]{exam}
+% \usepackage{pslatex}
+\usepackage{xparse}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg, .png}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Spring 2013}}
+ {}
+ {\textbf{Math 352}}
+ %{\emph{Page \thepage~of \numpages}}
+\runningheadrule
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0pt}
+\pagestyle{head}
+%\newcommand{\N}{\mathbb{N}}
+%\newcommand{\Z}{\mathbb{Z}}
+%\newcommand{\R}{\mathbb{R}}
+%\newcommand{\dwrspace}[1]{\vspace*{\stretch{#1}}}
+\NewDocumentCommand\N{}{\mathbf{N}}
+\NewDocumentCommand\R{}{\mathbf{R}}
+\NewDocumentCommand\Z{}{\mathbf{Z}}
+\NewDocumentCommand\Q{}{\mathbf{Q}}
+\NewDocumentCommand\dwrspace{m}{\vspace*{\stretch{#1}}}
+\begin{document}
+\noindent
+\textbf{{\large Mathematics 352 \\ Quiz 1}}
+% \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
+
+\noindent
+February 15, 2013; 5 minutes  \hfill Name: \underline{\hspace{3in}} 
+
+\begin{questions}  
+
+\question Consider a population $p$ of filthy, disgusting field mice that grows at a rate proprortional to the current population, so that $dp/dt = rp$ for constant $r$.
+\begin{parts}
+    \part Find the growth constant $r$ if the population doubles in 30 days.
+
+    \dwrspace{1}
+
+    \part Find the growth constant $r$ if the population doubles in $N$ days.
+
+    \dwrspace{1}
+
+\end{parts}
+
+\question Verify that each of the functions 
+\[
+    y_1(t) = t^{1/2}, \qquad y_2(t) = t^{-1},
+\]
+defined for $t > 0$, is a solution of the differential equation $2t^2 y'' + 3ty' - y = 0$.
+
+\dwrspace{4}
+
+
+\end{questions}
+
+\end{document}

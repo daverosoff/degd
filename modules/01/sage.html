@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv = "Content-type" content = "application/xhtml+xml;charset=UTF-8" />
+<meta http-equiv = "encoding" content = "utf-8">
+<title>Getting started with Sage</title>
+<link rel = "stylesheet" type = "text/css" href = "mystyle.css" />
+<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<h1>Getting started with Sage</h1>
+    <p class = "tip"><em class = "red">always refresh for up-to-date info</em></p>
+<!--<p>
+ Looking for the <a href = "HW.html">homework</a> page?
+</p> -->
+<p>
+This document will attempt to get you up and running with Sage. It is a work in progress and some research may be required on your part. Since Sage runs in the browser, its functioning isn't as standardized as a standalone package such as Matlab or Mathematica. Like Mathematica and Maple, Sage is a fully featured programming language. It assumes you know what you are doing and that you can pay attention to syntax.
+</p>
+<p>
+<em class = "red">To get any benefit from reading this, you must follow along with the evaluations</em>. Type each command into your Sage window and evaluate as you read. Pay attention to the output as you go. It would be best if you typed the commands yourself rather than copy/paste.
+</p>
+<h3>Table of contents</h3>
+    <ol>
+        <li><a href = "#AccountCreation">Account creation</a></li>
+        <li><a href = "#DownToBusiness">Down to business</a></li>
+        <li><a href = "#SolvingAnEquation">Solving an equation</a></li>
+        <li><a href = "#DEandSlopeFields">Differential equations and slope fields</a></li>
+        <li><a href = "#PrettyPrintingTips">Pretty-printing: Sage output in a human-readable format</a></li>
+        <li><a href = "#Lists">Introduction to Sage lists</a></li>
+        <li><a href = "#EulersMethod">Euler's Method</a></li>
+        <!-- <li><a href = "#MoreOnListsAndPlotting">More on lists and plotting</a>(from Wednesday 2/20 group work)</li> -->
+    </ol>
+<h3><a name = "AccountCreation">Account creation</a></h3>
+<p>
+Visit the <a href = "http://cloud.sagemath.com/">Sage cloud website</a>and create an account for yourself. The cloud interface is great for working on
+different devices at different times: you can save all your work remotely. 
+</p>
+<p>
+After your account is created, look around the interface a bit. Sage
+*worksheets* are mostly what we will use. If you click the button labeled <em>New</em>, Sage will prompt you for what kind of file to create. Select Worksheet. You will be prompted to name it. You can manage your worksheets like ordinary files from within the Sage interface.
+</p>
+<p>Explore the interface a bit. Look inside the drop down menus and
+    buttons. Your projects are assigned permanent links so that you
+    can easily collaborate with others.</p>
+<p>
+Now you are ready to start playing with some variables and equations.
+</p>
+<h3><a name = "DownToBusiness">Down to business</a></h3>
+<p>
+First, we set up some variables. Type the following command into the blank cell in your Sage worksheet, and evaluate it. <p class = "tip">(Tip: Hit Shift-Enter to evaluate the active cell without using the mouse.)
+</p></p>
+    <p class = "sage">t, y = var('t y')</p>
+<p>
+This command lets Sage know you intend to use the symbols \(t\) and \(y\) as mathematical variables. Sage sets up one built-in variable for you (\(x\)). The rest, you have to initialize yourself. Sage is more symbolically sophisticated than Mathematica. It understands the difference between constants, variables, and functions. Next, let's define a function. Pay close attention to the syntax.
+</p>
+    <p class = "sage">f = x^3 + 3*x^2*y + 3*x*y^2 + y^3</p>
+<p>
+Notice that we don't write \(f(x,y)\) on the left, just a plain old \(f\). It's important to understand that this statement <em class = "red">isn't an equation</em>. It is what programmers call an <em>assignment statement</em>. It binds the value on the right of the equals sign into the symbol on the left. Observe the truth of this assertion by evaluating the simple command
+</p>
+    <p class = "sage">f</p>
+<p>
+Sage should give you back the expression you entered above, involving \(x\) and \(y\). Now \(f\) should behave like a function. What happens when you evaluate the next command?
+</p>
+    <p class = "sage">f(1,1)</p>
+<p>
+Sage complains, giving you a somewhat cryptic and perhaps frightening warning message. Evidently, this is not how things are done. However, the command still works: after the message, Sage displays the value you asked for, the numeric value \(f(1,1)\). To evaluate a function without producing this warning message, execute
+</p>
+    <p class = "sage">f(x = 1, y = 1)</p>
+<p>
+This isn't standard mathematical usage, but it is not unusual in computer programming and is less ambiguous than the usual positional notation. Now look back at the warning message and see how it is telling you to adapt your invocation in just this way. You'll get the hang of decoding these messages as you practice with Sage. Follow the link in the message if you like. You might find it interesting or enlightening; I didn't.
+</p>
+<p>
+Of course, Sage doesn't like it if you give the wrong names to a function's variables.
+</p>
+    <p class = "sage">f(u = 1, v = 1)</p>
+<p>
+What happened? You just got back the definition of \(f\). Sage assumes you know what you are doing and behaves exactly as you tell it to.
+</p>
+<h3><a name = "SolvingAnEquation">Solving an equation</a></h3>
+<p>
+Watch what happens when you run the next command.
+</p>
+    <p class = "sage">solve(f, x, y)</p>
+<p>
+You have asked Sage to solve the equation \[f(x,y) = 0\] in terms of \(x\) and \(y\). Sage returns an object called a <em>tuple</em>. Tuples are a bit like vectors, but enclosed in parentheses. They can have as many items as you like. This tuple contains two items: a list (enclosed in square brackets) of conditions relating \(x\) to \(y\) and a list of numbers. The conditions are those that imply \(f(x,y) = 0\). The numbers match with the conditions: the \(j\)th number in the list is the multiplicity of the zero of \(f\) for the \(j\)th condition. Here, the number is 3. This is because \[f(x,y) = (x+y)^3,\] so that \(f\) has zeroes of multiplicity 3 all along the line \(x = -y\).
+</p>
+<p>
+To solve an equation whose right-hand side isn't 0, just move everything over to the left.
+</p>
+    <p class = "sage">solve(f - 2, x, y)</p>
+<p>
+Observe that Sage even gives you the complex solutions of the equation, if it can find them. It isn't always able to do so. For example:
+</p>
+    <p class = "sage">solve(x^5 - x - 1, x)</p>
+<p>
+If you prefer, you can feed Sage an equation whose right-hand side isn't zero. For example (<em class = "red">caution: observe the double-equals sign</em>):
+</p>
+    <p class = "sage">solve(f == 2, x, y)</p>
+<p>
+This will not work if you forget to use the double-equals. But Sage will probably not complain about it. It will just give you results that look valid, but are actually garbage. It might be better, if you aren't used to programming, to stick with the first method.
+</p>
+<h3><a name = "DEandSlopeFields">Differential equations and slope fields</a></h3>
+<p>
+Now we'll use some more Sage built-in functions to plot slope fields (direction field) of some first-order ordinary differential equations and solve them explicitly. First, let's choose the function that will give us the slopes of our tangent segments. Note that Sage variables don't have to have single-character names. You're free to use more descriptive names.
+</p>
+    <p class = "sage">slope = 3*y + 2</p>
+<p>This \(\mathit{slope}\) comes from the differential equation
+        \[
+            y' = 3y + 2
+        \]
+    A differential equation like this (where \(y'\) is isolated) gives us
+    a slope field. At each point \((t_0,y_0)\), we plot a little tangent segment with slope \(3y_0 + 2\).
+    </p>
+    <p class = "sage">plot_slope_field(slope, (x,0,3), (y,0,3))</p>
+<p>
+The command above plots the slope field where the segment at \((x,y)\) has slope \(\mathit{slope}\). The second two arguments specify the intervals of the viewing window. Here we have chosen, for no particular reason, the intervals \(0 \leq x, \, y \leq 3\). Choose different bounds for \(x\) and \(y\) and try for the most interesting picture.
+</p>
+<p>
+To solve an equation, we need to retool our variables a bit. We have things set up so that \(x\) and \(y\) are on equal footing. Sage needs to think of them as independent and dependent, respectively. Execute this command to let Sage know that we want \(y\) to be regarded as a function of \(x\):
+</p>
+    <p class = "sage">y = function('y', x)</p>
+<p>
+We now use the Sage commands <em class = "code">desolve</em> and <em class = "code">diff</em> to write a command that will solve our differential equation. The first argument of <em class = "code">desolve</em> is the equation itself. Notice the double-equals sign. As in many programming languages, the single equals sign is used for assignment of values to variables. The second and third arguments tell Sage which variable in the equation is the dependent one.
+</p>
+    <p class = "sage">desolve(diff(y,x) - slope, y, ivar = x)</p>
+<p>
+When you evaluate this command, Sage returns an expression involving the letters \(x\) and \(c\). This is the general solution to the differential equation \[ y' = 3y+2. \] Any choice of \(c\) produces a function of \(x\) alone that satisfies the differential equation&mdash;so we get <em>a family of curves parameterized by \(c\)</em>. If we specify an initial condition on \(x\) and \(y\) (that is, a \(y\)-value corresponding to a particular \(x\)-value, often \(x = 0\)), this picks a unique solution out from our family.
+</p>
+    <p class = "sage">desolve(diff(y,x) - slope, y, ivar = x, ics = [1,2])</p>
+<p>
+Of course, we could also use a partial evaluation to choose \(c\) explicitly. But usually it is initial conditions that we are interested in.
+</p>
+<p>
+It is wasteful of us to throw the returned value of the <em class = "code">desolve</em> function away. Let's save it for later use with an assignment statement. These display no value in Sage, so we'll tack on a second command (using a semicolon) in the same evaluation box so that we can see the expression for our newly defined function.
+</p>
+    <p class = "sage">f = desolve(diff(y,x) - slope, y, ivar = x, ics = [1,2]); f</p>
+<p>
+Now \(f\) holds the particular solution of the differential equation satisfying the initial condition \(f(1) = 2\), as you can see. If we like, we can ask Sage to simplify the expression or expand it.
+</p>
+    <p class = "sage">expand(f); simplify(f)</p>
+<p>
+These expressions don't change the value of \(f\). They only display the values of the functions <em class = "code">expand</em> and <em class = "code">simplify</em> when these functions are applied to \(f\). To save them, assign their values to new variables.
+</p>
+<p>
+Let's have a look at our particular solution.
+</p>
+    <p class = "sage">plot(f)</p>
+<p>
+Sage is very good at plotting, and there are many, many options and variants to the <em class = "code">plot</em> command. Visit the Sage documentation to learn more.
+</p>
+<p>
+It is better stylistically to give a name to the differential equation we are solving rather than typing it in each time. Let's start from scratch. Each line is a separate command to evaluate.
+</p>
+    <p class = "sage">
+        x = var('x')<br />
+        y = function('y', x)<br />
+        slope = 3*y + 2<br />
+        de = diff(y,x) - slope<br />
+        f = desolve(de, y, ivar = x, ics = [1,2])<br />
+    </p>
+<h3><a name = "PrettyPrintingTips">Pretty-printing and more Sage tips for linear equations</a></h3>
+<p>
+Let's keep practicing solving differential equations with Sage. In this box, every line is a separate command (hit Shift+Enter or click Evaluate).
+</p>
+    <p class = "sage">
+        t = var('t')<br />
+        y = function('y', t)<br />
+        de = t^2*diff(y,t) - 2*t*y == t<br />
+        f = desolve(de, y, ivar = t)<br />
+        f
+    </p>
+<p>
+It can be hard to read Sage's default output style after a while. The Sage command <em class = "code">pretty_print</em> will display mathematical output in a more familiar format. It's convenient to know that the underscore character _ is a built-in Sage variable that always holds the result of the last evaluation (much like the ANS key on a TI graphing calculator).
+</p>
+    <p class = "sage">pretty_print(f)</p>
+<p>
+That's nicer. But it sucks typing such a long command. Good thing Sage variables can hold programming commands as well as mathematical objects.
+</p>
+    <p class = "sage">pp = pretty_print; pp(f)</p>
+<p>
+This is much nicer. If you want to turn on pretty-printing by default, there is a checkbox at the top of the notebook screen (Typeset) that will accomplish this. Note that the math doesn't always render perfectly. If you aren't sure what a pretty-printed expression says, turn it off and evaluate again to be sure.
+</p>
+<h3><a name = "Lists">Introduction to Sage lists</a></h3>
+<p>
+One other tip you might find useful is to bundle your calculations up into lists. Lists are like mathematical vectors, or like arrays in some other programming languages. A Sage list is a bunch of comma-separated values enclosed in square brackets.
+</p>
+    <p class = "sage">myList = [1, 2, 3, t, 'Hello sailor']</p>
+<p>
+If you ask Sage to evaluate a list, it just prints the elements of the list in the way described above, in the correct order. Try it.
+</p>
+    <p class = "sage">myList</p>
+<p>
+Sage is built on top of a language called Python. To a large extent, Sage syntax is Python syntax. So as you are learning Sage, you are learning a bit about Python too. Python is a very powerful and effective language when it comes to dealing with lists. If you learn a bit about lists and Python now, you will be able to employ that knowledge to save yourself some keystrokes and work in Sage.
+</p>
+<p>
+    The structure of a list is its <em>order</em>. The objects you put in a list
+    stay there in the order you put them in. You can take them out in order, too,
+    or in any order you want. Each list object is implicitly labeled with a
+    nonnegative integer, called its <em>index</em>. The \(j\)th object in the
+    Python list <em class = "code">myList</em> can be referred to with the
+    locution <em class = "code">myList[j]</em>. The \(j\) is like a subscript.
+    According to long-standing programming conventions, indices of a list begin at
+    0, not 1 (see below for a very good reason to do it this way). You can use
+    indices to extract copies of list items and manipulate them. For example:
+</p>
+    <p class = "sage">myList[2] + myList[1]</p>
+<p>
+Of course, Sage won't like it if you ask it to do things that don't make sense.
+</p>
+    <p class = "sage">myList[2] + myList[4]</p>
+<p>
+The presence of the identifier <em class = "code">TypeError</em> indicates a problem with data types.
+</p>
+<p>
+You can get the number of elements of the list using the <em class = "code">len</em> function. Because of the convention that lists begin with index 0, <em class = "code">len(myList)</em> is one more than the index of the last list element. This takes a bit of getting used to, but Python makes a very convenient convention that wouldn't be possible without it. Namely, you can <em>iterate backwards over a list using negative integers</em>. If you put a negative index in the square brackets, Sage will go through your list in reverse order. The following, invoked on any list, always gets the last list element. 
+</p>
+    <p class = "sage">myList[-1]</p>
+<p>
+Of course, we could do the same thing by executing
+</p>
+    <p class = "sage">myList[len(myList)-1]</p>
+<p>
+but that is much less elegant. The comparison of the two expressions leads to the identity
+</p>
+    <p class = "sage">myList[-n] == myList[len(myList)-n]</p>
+<p>
+If you try to use an index that is too big (including too large of a negative number), Sage will complain, throwing an <em class = "code">IndexError</em>.
+</p>
+    <p class = "sage">myList[6]; myList[-6]</p>
+<p>
+The real kung-fu of lists can only be unlocked if you use them in what programmers call <em class = "code">for</em> loops. To explain what these are, let's think about why you group items in lists. It is usually because they are all members of the same family. They have characteristics in common, but differ in some details. In that sense the list above is atypical. Some of its items are numbers and one is a string of text characters. In mathematical programming, lists arise when you want to perform the same operation a bunch of times, but on a different object each time.
+</p>
+<p>
+Like, for example, solving a batch of initial value problems.
+</p>
+<p>
+The basic structure of a <em class = "code">for</em> loop is: it executes a block of functions once for every item in a list. (If you are used to C++ or another imperative language, this may be a little different.) Here is a simple one. Notice that the indented block, called the <em>body</em> of the loop, refers to something called <em class = "code">item</em>. This is discussed below.
+</p>
+    <p class = "sage">
+        for item in myList:<br />
+        <span class = "tab">print(item)</span>
+    </p>
+<p>
+The word <em>index</em> comes from the Latin word <em>index</em>, which means &quot;forefinger&quot;, &quot;point&quot;, and &quot;list&quot;. In the <em class = "code">for</em> loop above, the variable <em class = "code">item</em> is called an index variable. It &quot;points&quot; to each element of the list in turn. It starts at the zeroth element of the list. Then, the loop body executes (indentation is required!). After execution is complete, the index &quot;points&quot; to the next list element, and the process repeats until there are no more elements in the list. Then the loop is over.
+</p>
+<p>
+If you are used to a compiled language like C++, it may seem strange to use a <em class = "code">for</em> loop in Sage. But Sage is a programming language too. It is interpreted rather than compiled, but the principles are the same. People who have a lot of C++ experience: watch out! you have to pay attention to the white space. That is why you don't need to terminate commands with a special character, like a semicolon.
+</p>
+<p>
+Here is a list of quadratic polynomials. There are only three commands in the next box; if the long one is wrapped, don't Shift+Enter midway through it.
+</p>
+    <p class = "sage">
+        x = var('x') <br />
+        pp = pretty_print <br />
+        ourPolys = [x^2 + x + 1, x^2 - x - 1, x^2 + 1, 2*x^2 - x - 3]
+    </p>
+<p>
+Let's use a <em class = "code">for</em> loop to solve them all in a batch. When you enter the loop, keep it all in one evaluation cell. Don't Shift+Enter after the colon. Sage will automatically indent the line after the colon when you hit Enter. This is part of the loop syntax. Sage will complain if the loop body is not indented.
+</p>
+    <p class = "sage">
+        for poly in ourPolys:<br />
+        <span class = "tab">pretty_print(solve(poly, x))</span>
+    </p>
+<p>
+If you need to do more with the solutions than look at them, you have a few choices. The easiest is to populate a list containing them. We start with the empty list and add a line to the loop that adds the current solution.
+</p>
+    <p class = "sage">
+        sols = [] <br />
+        for poly in ourPolys: <br />
+        <span class = "tab">sols.append(solve(poly,x))</span>
+    </p>
+<p>
+Congratulations, you have written an object-oriented program. You used the <em class = "code">append()</em> method of the list data type. This method appends its argument (here, <em class = "code">solve(poly,x)</em>) to the end of the list from which it is called (here, <em class = "code">sols</em>).
+</p>
+<p>
+Python provides a shortcut method of doing the same thing, called <em>list comprehensions</em>. Here is an example that is syntactially synonymous with the above. Many <em class = "code">for</em> loops that return list values can be abbreviated this way.
+</p>
+    <p class = "sage">sols = [solve(poly,x) for poly in ourPolys]</p>
+<p>
+This is almost exactly like a piece of what mathematicians call &quot;set-builder notation&quot;. I'd write the above list in mathematical terms as:
+</p>
+    \[ \mathrm{sols} = \{ \mathrm{solve}(\mathrm{poly}, x) \; \colon \; \mathrm{poly} \in \mathrm{ourPolys} \} \]
+<p>
+Notice that <em class = "code">sols</em> is a list of lists. That is, each of its elements is a list. That is because the <em class = "code">solve</em> function returns a list of solutions. The next block of Sage code verifies that the solutions really do consist of zeroes of the corresponding polynomials, in a sort-of readable way.
+</p>
+    <pre><code><p class = "sage">
+        polsWithSols = zip(ourPolys, sols) 
+        for group in polsWithSols: 
+            for sol in group[1]: 
+                pp(group[0]) 
+                print('evaluates to') 
+                pp(group[0].subs(sol)) 
+                print('when') 
+                pp(sol) 
+    </p></code></pre>
+<p>
+You don't have to be a programmer to use Sage. But programming is the difference between a glorified graphing calculator with a better screen and a fully featured computer algebra system.
+</p>
+<h3><a name = "EulersMethod">Euler's Method</a></h3>
+<p>
+Here's the <a href = "http://zeus.collegeofidaho.edu/academics/MathPhysics/courses/MAT-352/EulersMethod.sws">worksheet we used in class</a>. It may help you with Euler's method in Sage.
+</p>
+</body>
+</html>

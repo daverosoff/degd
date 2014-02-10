@@ -1,0 +1,247 @@
+\def\encoding{UTF-8}
+\input{mmd-beamer-header-rosoff}
+\def\mytitle{Matrix-vector equations}
+\def\affiliation{The College of Idaho}
+\def\myauthor{Math 352 Differential Equations}
+\def\mydate{3 May 2013}
+\def\latexmode{beamer}
+\input{mmd-beamer-begin-doc-rosoff}
+\def\htmlheaderlevel{2}
+ \renewcommand{\vec}[1]{\mathbf{#1}} 
+
+\section{Matrix-vector equations}
+\label{matrix-vectorequations}
+
+\begin{frame}
+
+\frametitle{Recap}
+\label{recap}
+
+Recall that the equation $ y' = ay $ has general solution of exponential type:
+\[
+    y = ce^{at}.
+\]
+
+A system of such equations also has a general solution of exponential type, as we shall see.
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Matrices and vectors}
+\label{matricesandvectors}
+
+We've seen how the $ m \times n $ system of equations
+ 
+    \begin{align*}
+    x_1 + 4x_2 + 6x_3 &= -3\\
+    2x_1 - 2x_2 \phantom{+ 0x_3} &= 7 
+    \end{align*}
+
+corresponds to the augmented matrix
+
+\[
+    A = \begin{pmatrix}
+        1 & 4 & 6 & -3 \\
+        2 & -2 & 0 & 7
+    \end{pmatrix}.
+\]
+
+This is very convenient if we want to solve for the $ x_j $, but there is another formulation we must also understand.
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Matrix-vector form}
+\label{matrix-vectorform}
+
+\begin{itemize}
+\item Instead of leaving the $ x_j $ out entirely, the \emph{matrix-vector form} of the system compresses them into a vector $ \vec{x} = (x_1, \ldots, x_n) $. Similarly, we view the constants $ b_i $ on the right-hand side as a vector $ \vec{b} = (b_1, \ldots, b_m) $. 
+
+\item According to our convention that vectors are always \emph{column matrices}, $ \vec{x} $ is $ n \times 1 $ while $ \vec{b} $ is $ m \times 1 $.
+
+\item This means that, writing $ A $ for the $ m \times n $ matrix of coefficients (\emph{not} the same as the augmented matrix we used previously) the product $ Ax $ is defined, and has the same shape as the constant vector $ \vec{b} $.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Matrix-vector form: reloaded}
+\label{matrix-vectorform:reloaded}
+
+You can check, using the definition of matrix multiplication, that a list of solutions $ x_1, \ldots, x_n $ to the $ m \times n $ system of equations
+
+    \[
+    \begin{pmatrix}
+        a_{11} & a_{12} & \cdots & a_{1n} & b_1 \\
+        a_{21} & a_{22} & \cdots & a_{2n} & b_2 \\
+        \vdots & \vdots & \ddots & \vdots & \vdots \\
+        a_{m1} & a_{m2} & \cdots & a_{mn} & b_m 
+    \end{pmatrix}
+    \]
+
+is the same thing as a solution to the matrix-vector equation
+
+    \[
+    \begin{pmatrix}
+        a_{11} & a_{12} & \cdots & a_{1n} \\
+        a_{21} & a_{22} & \cdots & a_{2n} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        a_{m1} & a_{m2} & \cdots & a_{mn} 
+    \end{pmatrix}
+    \begin{pmatrix}
+        x_1 \\ x_2 \\ \vdots \\ x_n
+    \end{pmatrix} = \begin{pmatrix}
+        b_1 \\ b_2 \\ \vdots \\ b_m
+    \end{pmatrix}.
+    \]
+
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Matrix-vector form: unlocked}
+\label{matrix-vectorform:unlocked}
+
+Typically, we would suppress the coefficients and just write the last huge mess as $ A\vec{x} = \vec{b} $ where $ A $, $ x $, and $ b $ are as above. Remember: \emph{solution} means what it always has (at least since week 4): something that, when you plug it in to the equation, makes it true.
+
+\begin{itemize}
+\item From the matrix-vector point of view, we aren't plugging in a whole list of $ x_j $, but a single vector $ \vec{x} $.
+
+\item General theory of matrix algebra (which we haven't time to develop) tells us that for a fixed $ A $ and $ \vec{b} $, there are three possibilities: no solution, one solution, or infinitely many solutions.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Other questions about matrix-vector equations}
+\label{otherquestionsaboutmatrix-vectorequations}
+
+Instead of thinking of $ A $ and $ \vec{b} $ as fixed and asking about the set of solution vectors $ \vec{x} $, we might ask
+
+\begin{itemize}
+\item For a fixed $ A $, which $ m \times 1 $ vectors $ \vec{b} $ occur as values of $ Ax $?
+
+\end{itemize}
+
+This is another question we could answer by row-reduction techniques. But that is beyond the scope of this course.
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Unpacking the matrix-vector form}
+\label{unpackingthematrix-vectorform}
+
+Let's write $ A_j $ for the $ j $th column of $ A $ regarded as a vector, so that
+\[
+    A_j = \begin{pmatrix} a_{1j} \\ a_{2j} \\ \vdots \\ a_{mj} \end{pmatrix}.
+\]
+Thus $ A_j $ is a $ m \times 1 $ matrix, just like the right-hand side $ \vec{b} $ in the equation $ A \vec{x} = \vec{b} $.
+
+\begin{itemize}
+\item You can check, using the definition of matrix multiplication, that
+$ A \vec{x} = x_1 A_1 + x_2 A_2 + \cdots + x_n A_n$.
+
+\item This representation is key in what follows.
+
+\end{itemize}
+
+\end{frame}
+
+\section{Eigenvalues and systems of linear differential equations}
+\label{eigenvaluesandsystemsoflineardifferentialequations}
+
+\begin{frame}
+
+\frametitle{Application to ODEs}
+\label{applicationtoodes}
+
+Let's pass to the application of matrix theory we are interested in: systems of first-order linear ODEs. The algebra is similar to what we have done so far, but the $ x_j $ now must be regarded as differentiable \emph{functions} of some usually unwritten variable $ t $. The right-hand side $ \vec{b} $ is replaced by the vector of derivatives of the $ x_j $.
+
+\[
+    \begin{pmatrix}
+        x'_1 \\ x'_2 \\ \vdots \\ x'_n
+    \end{pmatrix} = \begin{pmatrix}
+        a_{11} & a_{12} & \cdots & a_{1n} \\
+        a_{21} & a_{22} & \cdots & a_{2n} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        a_{m1} & a_{m2} & \cdots & a_{mn} 
+    \end{pmatrix}
+    \begin{pmatrix}
+        x_1 \\ x_2 \\ \vdots \\ x_n
+    \end{pmatrix}
+\]
+
+\begin{itemize}
+\item We usually write this as $ \vec{x'} = A \vec{x} $. Observe that $ \vec{x} $ is now a variable vector and $ \vec{x'} $ stands for the vector of the derivatives.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Assumptions, I}
+\label{assumptionsi}
+
+\begin{itemize}
+\item Like before, the coefficients must be constant for our methods to work. Assume that $ A $ has constant entries (they are not functions of $ t $).
+
+\item We also assume that $ A $ is square, that is, that $ m = n $. According to universal mathematical custom we write $ n $ for this common value.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Assumptions, II}
+\label{assumptionsii}
+
+\begin{itemize}
+\item Just like we guessed that solutions of the original linear first-order differential equation $ y' = ay $ would be of exponential type, we are going to guess the form of the entries of $ \vec{x} $.
+
+\item In fact, just like we assumed the solutions of $ y' = ay $ would be multiples of the exponential $ e^{at} $, we'll assume the solutions of $ x' = Ax $ are \emph{vector} multiples of the exponential $ e^{\lambda t} $ for suitable $ \lambda $.
+
+\item The $ \lambda $ that ``work'' are called the \emph{eigenvalues} of the matrix $ A $.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Eigenvalues}
+\label{eigenvalues}
+
+\begin{itemize}
+\item To find the eigenvalues of $ A $, we solve the linear system of ordinary algebraic equations
+\[
+\begin{pmatrix}
+    a_{11} - \lambda & a_{12} & \cdots & a_{1n} \\
+    a_{21} & a_{22} - \lambda & \cdots & a_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    a_{n1} & a_{n2} & \cdots & a_{nn} - \lambda
+\end{pmatrix} \begin{pmatrix}
+    \xi_1 \\ \xi_2 \\ \vdots \\ \xi_n
+\end{pmatrix} = \begin{pmatrix}
+    0 \\ 0 \\ \vdots \\ 0
+\end{pmatrix}.
+\]
+
+\end{itemize}
+
+\end{frame}
+
+\mode<all>
+\input{mmd-beamer-footer}
+
+\end{document}\mode*
+

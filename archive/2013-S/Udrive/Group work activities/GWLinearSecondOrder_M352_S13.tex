@@ -1,0 +1,82 @@
+\documentclass[11pt]{exam}
+% \usepackage{pslatex}
+\usepackage{xparse}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg, .png}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Spring 2013}}
+ {}
+ {\textbf{Math 352}}
+ %{\emph{Page \thepage~of \numpages}}
+\runningheadrule
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0pt}
+\pagestyle{head}
+%\newcommand{\N}{\mathbb{N}}
+%\newcommand{\Z}{\mathbb{Z}}
+%\newcommand{\R}{\mathbb{R}}
+%\newcommand{\dwrspace}[1]{\vspace*{\stretch{#1}}}
+\NewDocumentCommand\N{}{\mathbf{N}}
+\NewDocumentCommand\R{}{\mathbf{R}}
+\NewDocumentCommand\Z{}{\mathbf{Z}}
+\NewDocumentCommand\Q{}{\mathbf{Q}}
+\NewDocumentCommand\dwrspace{m}{\vspace*{\stretch{#1}}}
+\begin{document}
+\noindent
+\textbf{{\large Mathematics 352 \\ Second-order linear equations}}
+% \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
+
+\noindent
+March 11, 2013 \hfill Name: \underline{\hspace{3in}} 
+
+\noindent
+Due: March 13, 2013
+
+\noindent
+\begin{figure}[h]
+\centering
+\begin{minipage}[b]{0.85\linewidth}
+\textbf{Introduction.} In this worksheet, you will investigate the simplest kind of second-order differential equations and initial value problems: linear with constant coefficients. Since there are two integrations that must be performed, the solution of such a general equation should involve \emph{two} arbitrary constants. Therefore we expect to see a \emph{2-dimensional} family of solutions (a mathematical object is 2-dimensional if it takes 2 numbers to describe a point on it).
+\end{minipage}
+\end{figure}
+\begin{questions}  
+
+\question Consider the differential equation
+\[
+    y'' = y.
+\]
+Think about the familiar functions until you spot a solution. Compare with the people around you. You should be able to find two really ``different'' solutions. Call them $y_1$ and $y_2$. Remember, when we say that $y_1$ is a \emph{solution} to the differential equation, we mean that substitution of $y_1$ for $y$ makes the equation true.
+
+\dwrspace{1}
+
+\question Check by using the substitution criterion that $c_1 y_1$ and $c_2 y_2$ for arbitrary constants $c_1 $ and $c_2 $ are also solutions to $y'' = y$, for the functions $y_1$ and $y_2$ defined above.
+
+\dwrspace{1}
+
+\newpage
+
+\question Use the substitution criterion to check that $c_1 y_1 + c_2 y_2$ is a solution to $y'' = y$.
+
+\dwrspace{1}
+
+\question Initial value problems look a little different for second-order equations. Since there is a 2-dimensional family of solutions, we need 2 initial conditions to pick one out. These most frequently take the form
+\[
+    y(0) = y_0, \quad y'(0) = y'_0.
+\]
+Find a solution to the initial value problem $y'' = y$, $y(0) = 1$, $y'(0) = 0$ by plugging in $c_1 y_1 + c_2y_2$ for $y$ and using the initial conditions to find $c_1 $ and $c_2$. How many solutions of this form are there?
+
+\dwrspace{1}
+
+\question Let $r \ne 0$ and consider the function $y = e^{rt}$. Find $y'$ and $y''$, and write $ay'' + by' + cy$ in terms of $y$ (i.e., find an equivalent expression with no primes). You should be able to factor $y$ out of the expression you find. 
+
+\dwrspace{1}
+
+\question Now consider the differential equation $ay'' + by' + cy = 0$. Assume that this equation has a solution of the form $e^{rt}$, and use the result of the previous part to express $r$ in terms of $a$, $b$, $c$.
+
+\end{questions}
+
+\end{document}

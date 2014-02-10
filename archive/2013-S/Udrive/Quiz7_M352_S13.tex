@@ -1,0 +1,56 @@
+\documentclass[11pt]{exam}
+% \usepackage{pslatex}
+\usepackage{xparse}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg, .png}
+\usepackage{amsmath}
+%\usepackage{amsfonts}
+\usepackage{fourier}
+\usepackage{enumerate}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Spring 2013}}
+ {}
+ {\textbf{Math 352}}
+ %{\emph{Page \thepage~of \numpages}}
+\runningheadrule
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0pt}
+\pagestyle{head}
+%\newcommand{\N}{\mathbb{N}}
+%\newcommand{\Z}{\mathbb{Z}}
+%\newcommand{\R}{\mathbb{R}}
+%\newcommand{\dwrspace}[1]{\vspace*{\stretch{#1}}}
+\NewDocumentCommand\N{}{\mathbf{N}}
+\NewDocumentCommand\R{}{\mathbf{R}}
+\NewDocumentCommand\Z{}{\mathbf{Z}}
+\NewDocumentCommand\Q{}{\mathbf{Q}}
+\NewDocumentCommand\dwrspace{m}{\vspace*{\stretch{#1}}}
+\begin{document}
+\noindent
+\textbf{{\large Mathematics 352 \\ Quiz 7}}
+% \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
+
+\noindent
+March 20, 2013; 10 minutes  \hfill Name: \underline{\hspace{3in}} 
+
+\noindent
+This quiz is \emph{open-note}, but no books or calculators.
+
+\begin{questions}  
+
+\question Verify \emph{by plugging in} that $y_1(t) = \cos{(2t)}$ and $y_2(t) = \sin{(2t)}$ are solutions of the differential equation 
+$$y'' + 4y = 0.$$ 
+Do they constitute a fundamental set of solutions? Justify your answer.
+
+\dwrspace{1}
+
+\question Find the solution of the initial value problem. Describe the behavior of this solution as $t \to \infty$.
+\[
+    y'' + 4y' + 5y = 0, \quad y(0) = 1, \quad y'(0) = 0
+\]
+
+\dwrspace{1}
+
+\end{questions}
+
+\end{document}

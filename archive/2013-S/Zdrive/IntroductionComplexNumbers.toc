@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.26pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Recap}{2}{0}{1}
+\beamer@sectionintoc {2}{Polynomials over $\C $}{8}{0}{2}
+\beamer@sectionintoc {3}{The complex exponential function}{9}{0}{3}

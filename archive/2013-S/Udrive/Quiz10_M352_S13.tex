@@ -1,0 +1,52 @@
+\documentclass[12pt]{exam}
+% \usepackage{pslatex}
+\usepackage{xparse}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg, .png}
+\usepackage{amsmath}
+%\usepackage{amsfonts}
+\usepackage{fourier}
+\usepackage{siunitx}
+\usepackage{enumerate}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Spring 2013}}
+ {}
+ {\textbf{Math 352}}
+ %{\emph{Page \thepage\ensuremath{\sim}of \numpages}}
+\runningheadrule
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0pt}
+\pagestyle{head}
+%\newcommand{\N}{\mathbb{N}}
+%\newcommand{\Z}{\mathbb{Z}}
+%\newcommand{\R}{\mathbb{R}}
+%\newcommand{\dwrspace}[1]{\vspace\emph{{\stretch{\#1}}}
+\NewDocumentCommand\N{}{\mathbf{N}}
+\NewDocumentCommand\R{}{\mathbf{R}}
+\NewDocumentCommand\Z{}{\mathbf{Z}}
+\NewDocumentCommand\Q{}{\mathbf{Q}}
+\NewDocumentCommand\dwrspace{m}{\vspace{\stretch{1}}}
+\begin{document}
+\noindent
+\textbf{{\large Mathematics 352 \ Quiz 10}}
+% \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
+
+\noindent
+April 26, 2013; 10 minutes \hfill Name: \underline{\hspace{3in}} 
+
+\noindent
+This quiz is \emph{open-note}, but no books or calculators.
+
+% \begin{center}
+%     {\Large Remember: $\si{\newton} = \si{kg.m/s^2}$}
+% \end{center}
+
+\begin{questions} 
+
+\question A mass of $\SI{5}{\kilo\gram}$ stretches a spring $\SI{10}{\centi\meter}$. The mass is acted on by an external force of $\SI{10 \sin{(t/2)}}{\newton}$ and moves in a medium that imparts a viscous force of $\SI{2}{\newton}$ when the speed of the mass is $\SI{4}{cm/s}$. If the mass is set in motion from its equilibrium position with an initial downward velocity of $\SI{3}{cm/s}$, formulate the initial value problem describing the motion of the mass. In other words, give a differential equation and two initial conditions for the displacement function $u(t)$.
+
+\dwrspace{1}
+
+\end{questions}
+
+\end{document}

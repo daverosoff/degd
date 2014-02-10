@@ -1,0 +1,74 @@
+\documentclass[11pt]{exam}
+% \usepackage{pslatex}
+\usepackage{xparse}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg, .png}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Spring 2013}}
+ {}
+ {\textbf{Math 352}}
+ %{\emph{Page \thepage~of \numpages}}
+\runningheadrule
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0pt}
+\pagestyle{head}
+%\newcommand{\N}{\mathbb{N}}
+%\newcommand{\Z}{\mathbb{Z}}
+%\newcommand{\R}{\mathbb{R}}
+%\newcommand{\dwrspace}[1]{\vspace*{\stretch{#1}}}
+\NewDocumentCommand\N{}{\mathbf{N}}
+\NewDocumentCommand\R{}{\mathbf{R}}
+\NewDocumentCommand\Z{}{\mathbf{Z}}
+\NewDocumentCommand\Q{}{\mathbf{Q}}
+\NewDocumentCommand\dwrspace{m}{\vspace*{\stretch{#1}}}
+\begin{document}
+\noindent
+\textbf{{\large Mathematics 352 \\ Introduction to complex numbers}}
+% \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
+
+\noindent
+March 15, 2013 \hfill Name: \underline{\hspace{3in}} 
+
+\noindent
+Due: March 18, 2013
+
+\noindent
+\begin{figure}[h]
+\centering
+\begin{minipage}[b]{0.85\linewidth}
+\textbf{Introduction.} In this worksheet, you will investigate some problems in complex algebra arising from second-order ODEs.
+\end{minipage}
+\end{figure}
+\begin{questions}  
+
+\question Find the roots of the characteristic equation for the differential equation $y'' + y' + y = 0$. Note that the discriminant is negative, so they are complex. Call them $r_1$ and $r_2$.
+
+\dwrspace{1}
+
+\question Evaluate $(r_1 + r_2)/2$ and $(r_1 - r_2)/2i$. What do you notice?
+
+\dwrspace{1}
+
+\question What complex exponential functions solve the differential equation? Use the roots you found and ape the exponential trick from before.
+
+\dwrspace{1}
+
+\question Write these functions using Euler's formula. Call them $y_1$ and $y_2$ in their new, Eulerified form.
+
+\dwrspace{1}
+
+\question Write down $(y_1 + y_2)/2$ and $(y_1 - y_2)/2i$ and simplify. What do you notice?
+
+\dwrspace{1}
+
+\begin{center}
+    {\large \textsc{Have a great weekend!}}
+\end{center}
+
+\end{questions}
+
+\end{document}

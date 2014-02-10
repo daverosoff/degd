@@ -1,0 +1,83 @@
+\documentclass[11pt]{exam}
+% \usepackage{pslatex}
+\usepackage{xparse}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg, .png}
+\usepackage{amsmath}
+\usepackage{fourier}
+%\usepackage{amsfonts}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Spring 2013}}
+ {}
+ {\textbf{Math 352}}
+ %{\emph{Page \thepage~of \numpages}}
+\runningheadrule
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0pt}
+\pagestyle{head}
+%\newcommand{\N}{\mathbb{N}}
+%\newcommand{\Z}{\mathbb{Z}}
+%\newcommand{\R}{\mathbb{R}}
+%\newcommand{\dwrspace}[1]{\vspace*{\stretch{#1}}}
+\NewDocumentCommand\N{}{\mathbf{N}}
+\NewDocumentCommand\R{}{\mathbf{R}}
+\NewDocumentCommand\Z{}{\mathbf{Z}}
+\NewDocumentCommand\Q{}{\mathbf{Q}}
+\NewDocumentCommand\dwrspace{m}{\vspace*{\stretch{#1}}}
+\begin{document}
+\noindent
+\textbf{{\large Mathematics 352 \\ Variation of Parameters}}
+% \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
+
+\noindent
+April 12, 2013 \hfill Name: \underline{\hspace{3in}} 
+
+\noindent
+Due: April 15, 2013
+
+\noindent
+\begin{figure}[h]
+\centering
+\begin{minipage}[b]{0.85\linewidth}
+\textbf{Introduction.} In this activity you will get some practice using the method of variation of parameters to solve inhomogeneous differential equations $ay'' + by' + cy = g(t)$ in which the inhomogeneous term $g(t)$ is not suitable for the method of undetermined coefficients.
+\end{minipage}
+\end{figure}
+
+\begin{questions}
+
+\question Use variation of parameters to find the general solution of the equation
+\[
+    y'' - y' - 2y = e^{3t}.
+\]
+
+\dwrspace{1}
+
+\question Use variation of parameters to find the general solution of the equation
+\[
+    y'' - 4y' + 5y = e^{-4x}.
+\]
+
+\dwrspace{1}
+
+\newpage
+
+\question Verify that $y_1 = t^2$ and $y_2 = t^{-1}$ are solutions of the equation
+\[
+    t^2 y'' - 2y = 0.
+\]
+
+\dwrspace{1}
+
+\question Use variation of parameters to find the general solution of the equation
+\[
+    t^2 y'' - 2y = 3t^2 - 1.
+\]
+You can assume $t > 0$ wherever necessary.
+
+\dwrspace{2}
+
+\end{questions}
+
+\end{document}

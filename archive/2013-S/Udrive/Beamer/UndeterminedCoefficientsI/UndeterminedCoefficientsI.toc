@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.26pt}
+\beamer@sectionintoc {1}{Recap}{2}{0}{1}
+\beamer@sectionintoc {2}{Inhomogeneous equations}{3}{0}{2}
+\beamer@sectionintoc {3}{Conclusion}{10}{0}{3}

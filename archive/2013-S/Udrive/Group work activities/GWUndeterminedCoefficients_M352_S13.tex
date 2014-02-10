@@ -1,0 +1,103 @@
+\documentclass[11pt]{exam}
+% \usepackage{pslatex}
+\usepackage{xparse}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg, .png}
+\usepackage{amsmath}
+\usepackage{fourier}
+%\usepackage{amsfonts}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Spring 2013}}
+ {}
+ {\textbf{Math 352}}
+ %{\emph{Page \thepage~of \numpages}}
+\runningheadrule
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0pt}
+\pagestyle{head}
+%\newcommand{\N}{\mathbb{N}}
+%\newcommand{\Z}{\mathbb{Z}}
+%\newcommand{\R}{\mathbb{R}}
+%\newcommand{\dwrspace}[1]{\vspace*{\stretch{#1}}}
+\NewDocumentCommand\N{}{\mathbf{N}}
+\NewDocumentCommand\R{}{\mathbf{R}}
+\NewDocumentCommand\Z{}{\mathbf{Z}}
+\NewDocumentCommand\Q{}{\mathbf{Q}}
+\NewDocumentCommand\dwrspace{m}{\vspace*{\stretch{#1}}}
+\begin{document}
+\noindent
+\textbf{{\large Mathematics 352 \\ Undetermined Coefficients}}
+% \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
+
+\noindent
+April 5, 2013 \hfill Name: \underline{\hspace{3in}} 
+
+\noindent
+Due: April 10, 2013
+
+\noindent
+\begin{figure}[h]
+\centering
+\begin{minipage}[b]{0.85\linewidth}
+\textbf{Introduction.} In this activity you will get some practice using the method of undetermined coefficients to solve inhomogeneous differential equations $ay'' + by' + cy = g(t)$ in which the inhomogeneous term $g(t)$ is a combination of polynomial, exponential, or trigonometric functions.
+\end{minipage}
+\end{figure}
+
+Recall that the general solution to the inhomogeneous differential equation $ay'' + by' + cy = g(t)$ is $y_c + Y$, where the \emph{complementary solution} $y_c = c_1 y_1 + c_2 y_2$ is the general solution of the \emph{associated homogeneous equation} and $Y$ is \emph{any} particular solution of the inhomogeneous equation.
+
+\begin{questions}
+
+\question Find the \emph{complementary solution} of $y'' - 4y' - 12y = 3e^{5t}$. This is always the first step. You should always do this \emph{before} attempting to find a particular solution $Y$.
+
+\dwrspace{1}
+
+\question Use the method of undetermined coefficients to find a particular solution $Y$ of $y'' - 4y' - 12y = 3e^{5t}$.
+
+\dwrspace{2}
+
+\question Check, by direct substitution, that your function $Y$ really is a particular solution.
+
+\dwrspace{2}
+
+\question No further calculation is necessary to write down the general solution of the inhomogeneous equation: do so below.
+
+\newpage
+
+\question Use the method of undetermined coefficients to find a particular solution $Y$ of $y'' - 4y' - 12y = \sin{(2t)}$. 
+
+\dwrspace{2}
+
+\question Verify, by direct substitution, that $Y$ really is a particular solution.
+
+\dwrspace{1}
+
+\question Use the method of undetermined coefficients to find a particular solution $Y$ of $y'' - 4y' - 12y = 2t^3 - t + 3$.
+
+\dwrspace{2}
+
+\question Verify, by direct substitution, that $Y$ really is a particular solution.
+
+\newpage
+
+\question Write down the form (including the undetermined coefficients) of initial guesses for the particular solutions if $g(t)$ is the indicated function.
+
+\begin{parts}
+    \part $g(t) = 16 e^{7t} \sin{(10t)}$
+    \part $g(t) = (9t^2 - 103t) \cos{(t)}$
+    \part $g(t) = -e^{-2t} (3 - 5t) \cos{(9t)}$
+\end{parts}
+
+\dwrspace{1}
+
+\question Solve the initial value problem 
+\[
+    y'' - 4y' - 12y = 3e^{5t}, \quad y(0) = 18/7,\, y'(0) = -1/7
+\]
+
+\dwrspace{1}
+
+\end{questions}
+
+\end{document}

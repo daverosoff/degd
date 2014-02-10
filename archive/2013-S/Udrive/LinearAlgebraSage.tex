@@ -1,0 +1,143 @@
+\documentclass[twocolumn,12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[fontsize=12pt,baseline=14pt]{grid}
+\usepackage[top=5.5cm,
+  bottom=2.5cm,
+  left=2.5cm,
+  right=2.5cm,
+]{geometry}
+\usepackage{xparse}
+\usepackage{fourier}
+\usepackage{amsmath,amsthm}
+\usepackage{paralist, enumerate, listings}
+\usepackage{MnSymbol}
+\usepackage{gridleno}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=yotepurple,
+  citecolor=grlnblue,
+  urlcolor=grlngray}
+
+\usetikzlibrary{calc,decorations.markings}
+
+\NewDocumentCommand{\Z}{}{\mathbf{Z}}
+\NewDocumentCommand{\C}{}{\mathbf{C}}
+\NewDocumentCommand{\R}{}{\mathbf{R}}
+\RenewDocumentCommand{\Re}{m}{\mathrm{Re}\;#1}
+\RenewDocumentCommand{\Im}{m}{\mathrm{Im}\;#1}
+%\NewDocumentCommand\arg{O{}}{\mathrm{arg}\;#1}
+%\DeclareMathOperator{\arg}{arg}
+\NewDocumentCommand\cis{O{}}{\mathrm{cis}\mkern2mu #1}
+\NewDocumentCommand\Arg{O{}}{\mathrm{Arg}\mkern1mu #1}
+\RenewDocumentCommand{\arg}{O{}O{}}{\mathrm{arg}_{#2}\mkern1mu #1}
+\NewDocumentCommand\conj{m}{\overline{#1}}
+%\DeclareMathOperator{\cis}{cis}
+%\DeclareMathOperator{\Arg}{Arg}
+\course{Differential Equations}
+\courseid{352}
+\professor{Dave Rosoff}
+\term{Spring 2013}
+\topic{Linear equations in Sage}
+\date{May 1, 2013 (Wed)}
+
+\begin{document}
+
+\makeheader
+
+\begin{summary}
+    We review the elementary row operations and their use in Sage and provide some exercises in solution of linear systems.
+\end{summary}
+
+\section{Solving equations: echelon form}
+
+Recall that the system of $m$ linear equations in $n$ variables
+\begin{align*}
+    a_{11} &x_{1} + a_{12} x_{2} + \cdots + a_{1n} x_{n} = b_{1},  \\
+    a_{21} &x_{1} + a_{22} x_{2} + \cdots + a_{2n} x_{n} = b_{2},\ldots  \\
+    a_{m1} &x_{1} + a_{m2} x_{2} + \cdots + a_{mn} x_{n} = b_{m}
+\end{align*}
+corresponds to an $m \times n$ matrix (often called the \emph{augmented matrix} of the system) as displayed below: 
+\[
+    \begin{pmatrix}
+        a_{11} & a_{12} & \cdots & a_{1n} & b_1 \\
+        a_{21} & a_{22} & \cdots & a_{2n} & b_2 \\
+        \vdots & \vdots & \ddots & \vdots & \vdots \\
+        a_{m1} & a_{m2} & \cdots & a_{mn} & b_m 
+    \end{pmatrix}.
+\]
+The correspondence is achieved by ignoring the $x_{j}$ and regarding all $+$ and $=$ signs as column dividers. Just as with differential equations, we mean something very specific by a ``solution'' of this system. A solution of the system displayed above is a list of scalars $(x_1, x_2, \cdots, x_n)$ such that plugging in makes all the equations in the system true.
+
+Solving a system of equations is simpler with this new notation. Remember the procedure outlined in class. It involves the three \emph{elementary row operations}, which I have chosen to call $T_{i;j}$, $S_{i,a}$, and $R_{i;j,a}$. Here $1 \leq i, j \leq m$ (they are row-indices) and $a$ is a nonzero scalar.
+\begin{enumerate}[(i)]
+    \item The operation $T_{i;j}$ swaps the $i$th and $j$th rows of a matrix.
+    \item The operation $S_{i,a}$ multiplies the $i$th row of a matrix by $a$.
+    \item The operation $R_{i;j,a}$ adds $a$ copies of the $j$th row of a matrix to its $i$th row.
+\end{enumerate}
+The elementary row operations are invoked on an existing matrix object \lstinline!A! by the following Sage commands. The shifts by $-1$ that you see are due to Sage's row and column indexing convention (that an $m \times n$ matrix has rows numbered $0$, $1$, up to $m-1$, and similarly for the columns).
+\begin{lstlisting}
+    A.swap_rows(i-1,j-1) 
+    A.add_multiple_of_row(i-1, j-1, a)
+    A.rescale_row(i-1, a)
+\end{lstlisting}
+
+To solve the system corresponding to the matrix $A$, use the row operations to transform $A$ into a matrix with the following properties.
+\begin{enumerate}[(1)]
+    \item The first nonzero entry in each row is a $1$.
+    \item Rows are arranged so that successive leading $1$ entries occur later in later rows.
+    \item Rows lacking a leading $1$ (such a row consists of all zeroes) are at the bottom of the matrix.
+\end{enumerate}
+Such a matrix is said to be in \emph{echelon\footnote{From the French \emph{\'echelon}, ``rung'' (as of a ladder).} form}. When you have found an echelon form of $A$, convert the matrix back into a system of equations. It is very easily solved from that point.
+
+\begin{example}
+    Solve the system.
+    \begin{align*}
+        x_2 + x_3 - 2x_4 = -3 \\
+        x_1 + 2x_2 - x_3 = 2 \\
+        2x_1 + 4x_2 + x_3 - 3x_4 = -2 \\
+        x_1 - 4x_2 - 7x_3 - x_4 = -19.
+    \end{align*}
+    The augmented matrix is 
+    \[
+        \begin{pmatrix}
+            0 & 1  & 1  & -2 & -3   \\
+            1 & 2  & -1 & 0  & 2    \\
+            2 & 4  & 1  & -3 & -2   \\
+            1 & -4 & -7 & -1 & -19.
+        \end{pmatrix}
+    \]
+    Check, using Sage, that the sequence of row operations $(T_{1;2}, R_{3;1,-2}, R_{4;1,-1})$ gives the first column the desired form. The idea is that we look for the row containing the rightmost nonzero entry and switch it with the first row. Then make that entry into a leading $1$ (that step was unnecessary here). Then kill off all nonzero entries below it. Move to the next row and repeat.
+
+    Execute the remaining row operations, viewing the matrix $A$ after each step. They are $(R_{4;2,6}, S_{3,1/3}, S_{4,-1/13})$.
+
+    You should end up with the matrix
+    \[
+        \begin{pmatrix}
+            1 & 2 & -1 & 0 & 2 \\
+            0 & 1 & 1 & -2 & -3 \\
+            0 & 0 & 1 & -1 & -2 \\
+            0 & 0 & 0 & 1 & 3
+        \end{pmatrix}.
+    \]
+    What vectors $(x_1, x_2, x_3, x_4)$ are solutions of the system? the process of generating them is called ``back-substitution''. Start at the bottom of the matrix! 
+
+    Verify that all such vectors are indeed solutions of the original system. It can be shown that all solutions of the original system survive the row-reduction process.
+\end{example}
+Not every system of linear equations admits a solution. Here is a trivial $1 \times 1$ example.
+\[
+    0x_1 = 1
+\]
+It is obviously impossible to find a solution, because no matter what $x_1$ might be, $0$ times it fails to equal $1$.
+\begin{example}
+    Use row operations to show that the system
+    \begin{align*}
+        x_1 - x_2 + 2x_3 &= 4 \\             
+        x_1 + x_3 &= 6 \\
+        2x_1 - 3x_2 + 5x_3 &= 4 \\
+        3x_1 + 2x_2 - x_3 &= 1
+    \end{align*}
+    has no solution.
+\end{example}
+\end{document}

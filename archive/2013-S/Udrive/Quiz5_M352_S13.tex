@@ -1,0 +1,58 @@
+\documentclass[11pt]{exam}
+% \usepackage{pslatex}
+\usepackage{xparse}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg, .png}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Spring 2013}}
+ {}
+ {\textbf{Math 352}}
+ %{\emph{Page \thepage~of \numpages}}
+\runningheadrule
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0pt}
+\pagestyle{head}
+%\newcommand{\N}{\mathbb{N}}
+%\newcommand{\Z}{\mathbb{Z}}
+%\newcommand{\R}{\mathbb{R}}
+%\newcommand{\dwrspace}[1]{\vspace*{\stretch{#1}}}
+\NewDocumentCommand\N{}{\mathbf{N}}
+\NewDocumentCommand\R{}{\mathbf{R}}
+\NewDocumentCommand\Z{}{\mathbf{Z}}
+\NewDocumentCommand\Q{}{\mathbf{Q}}
+\NewDocumentCommand\dwrspace{m}{\vspace*{\stretch{#1}}}
+\begin{document}
+\noindent
+\textbf{{\large Mathematics 352 \\ Quiz 5}}
+% \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
+
+\noindent
+March 13, 2013; 10 minutes  \hfill Name: \underline{\hspace{3in}} 
+
+\noindent
+This quiz is \emph{open-note}, but no books or calculators.
+
+\begin{questions}  
+
+\question Consider the function $f(y) = y(1-y^2)$. Sketch the graph of $f(y)$ versus $y$ and classify the equilibrium points of the differential equation
+\[
+    y' = y(1-y^2), \quad -\infty < y_0 < \infty
+\]
+as stable, unstable, or semistable. Sketch the graphs of several solutions in the $(t,y)$-plane.
+
+\dwrspace{1}
+
+\question Solve the exact differential equation
+\[
+    (3x^2 - 2xy + 2) + (6y^2 - x^2 + 3) \frac{dy}{dx} = 0.
+\]
+Your solution should involve an arbitrary constant.
+
+\dwrspace{1}
+
+\end{questions}
+
+\end{document}

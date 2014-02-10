@@ -1,0 +1,3 @@
+\beamer@endinputifotherversion {3.26pt}
+\beamer@sectionintoc {1}{Daily homework and reading}{2}{1}{1}
+\beamer@sectionintoc {2}{Weekly homework}{8}{1}{2}

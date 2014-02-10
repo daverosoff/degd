@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="encoding" content="UTF-8"/>
+	<meta name="latexinput" content="mmd-beamer-header-rosoff"/>
+	<title>Free harmonic oscillators</title>
+	<meta name="subtitle" content="(while supplies last)"/>
+	<meta name="affiliation" content="The College of Idaho"/>
+	<meta name="author" content="Math 352 Differential Equations"/>
+	<meta name="date" content="15 April 2013"/>
+	<meta name="latexmode" content="beamer"/>
+	<meta name="latexinput" content="mmd-beamer-begin-doc-rosoff"/>
+	<meta name="latexfooter" content="mmd-beamer-footer"/>
+	<link type="text/css" rel="stylesheet" href="https://docralphv.collegeofidaho.edu/~drosoff/mystyle.css"/>
+<script type="text/javascript" src="https://docralphv.collegeofidaho.edu/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>p {text-align:justify;font-size:110%;}
+li {text-align:justify;font-size:110%;}
+</style>
+</head>
+<body>
+
+<h2 id="introduction">Introduction</h2>
+
+<h3 id="introduction:theequationofmotion">Introduction: The equation of motion</h3>
+
+<p>The simplest physical model of a free harmonic oscillator is the vibrating spring we discussed last time, subject to Hooke&#8217;s law (for the spring&#8217;s restoring force) and viscous damping. The equation of motion (from Newton&#8217;s Second Law) is:
+<!-- \pause -->
+<span class="math">\[
+    mu'' = mg + F_s + F_d + F
+\]</span>
+where <span class="math">\( F_s \)</span> is the spring restoring force, <span class="math">\( F_d \)</span> is the <em>damping</em> due to air resistance, and <span class="math">\( F \)</span> is any other external force applied to the system.</p>
+
+<h3 id="theforces">The forces</h3>
+
+<ul>
+<li>Hooke&#8217;s Law: <span class="math">\( F_s = -k(L + u) \)</span></li>
+<li>Viscous damping: <span class="math">\( F_d = -\gamma u' \)</span></li>
+<li>Unforced vibration: <span class="math">\( F = 0 \)</span></li>
+</ul>
+
+<p>Hooke&#8217;s Law is certainly valid for small displacements <span class="math">\( u \)</span>. Similarly, damping due to air resistance is approximately viscous when <span class="math">\( u' \)</span> is not too big. We shall take up the case <span class="math">\( F \ne 0 \)</span> in the next section.</p>
+
+<h3 id="theequation">The equation</h3>
+
+<p>As we saw last time, Hooke&#8217;s Law implies that <span class="math">\( mg = kL \)</span>, so we can rewrite the equation of motion as
+<span class="math">\[
+    mu'' + \gamma u' + ku = 0.
+\]</span></p>
+
+<p>Let us first examine the case <span class="math">\( \gamma = 0 \)</span>, the <em>undamped free oscillation</em>.</p>
+
+<h3 id="ufo">UFO</h3>
+
+<p>The characteristic equation is <span class="math">\( mr^2 + k = 0 \)</span>. This has two pure imaginary roots, <span class="math">\( r = \pm i \sqrt{k/m} \)</span>.</p>
+
+<p>Hence, the general solution to the equation for the UFO is the general sinusoidal function with frequency <span class="math">\( \omega_0 = \sqrt{k/m} \)</span>.</p>
+
+<p>The amplitude of the system is related to the total energy. Since <span class="math">\( \gamma = 0 \)</span>, all energy put into the system by the initial conditions will stay there forever.</p>
+
+<h3 id="withdamping">With damping</h3>
+
+<p>When <span class="math">\( \gamma > 0 \)</span>, the air resistance eventually consumes all the energy imparted by the system to the initial conditions.
+<span class="math">\[
+    \lim_{t \to \infty} u = 0.
+\]</span>
+There are three kinds of damping.</p>
+
+<ul>
+<li>Underdamped: <span class="math">\( D = \sqrt{b^2 - 4ac} < 0 \)</span>.</li>
+<li>Overdamped: <span class="math">\( D > 0 \)</span>.</li>
+<li>Critically damped: <span class="math">\( D = 0 \)</span>.</li>
+</ul>
+
+</body>
+</html>

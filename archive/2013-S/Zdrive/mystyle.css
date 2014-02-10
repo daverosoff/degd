@@ -1,0 +1,21 @@
+body {background-color:#f8f8f8; margin: 5% 10% 5% 10%;}
+p {font-size:120%;font-family:Helvetica,Verdana,Arial,sans;}
+p.sage {font-family:Lucidatypewriter,Courier,monospace; 
+    text-align:left; 
+    border: 2px dashed #D1C7AC;
+    width: 70%;
+    padding: 8px;}
+p.tip {font-style:italic; text-align: right;}
+em.red {color:red;font-style:normal;}
+em.ita {font-style:italic;}
+li {font-size:20px;font-family:Helvetica,Verdana,Arial,sans;}
+li.problems {font-family:Helvetica,Verdana,Arial,sans;}
+li.portfolio {font-family:Helvetica,Verdana,Arial,sans;color:red;}
+h1 {font-family:Helvetica,Verdana,Arial,sans;}
+h2 {font-family:Helvetica,Verdana,Arial,sans;
+    text-indent:5%;}
+h3 {font-family:Helvetica,Verdana,Arial,sans;
+    text-indent:5%;}
+h4 {font-family:Helvetica,Verdana,Arial,sans;}
+h5 {font-family:Helvetica,Verdana,Arial,sans;}
+h6 {font-family:Helvetica,Verdana,Arial,sans;}

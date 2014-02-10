@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="encoding" content="UTF-8"/>
+	<meta name="latexinput" content="mmd-beamer-header-rosoff"/>
+	<title>Undetermined Coefficients,I</title>
+	<meta name="subtitle" content="Guess-and-check: expert level"/>
+	<meta name="affiliation" content="The College of Idaho"/>
+	<meta name="author" content="Math 352 Differential Equations"/>
+	<meta name="date" content="1 April 2013"/>
+	<meta name="latexmode" content="beamer"/>
+	<meta name="fonttheme" content="structurebold"/>
+	<meta name="colortheme" content="crane"/>
+	<meta name="theme" content="Szeged"/>
+	<meta name="latexinput" content="mmd-beamer-begin-doc-rosoff"/>
+	<meta name="latexfooter" content="mmd-beamer-footer"/>
+	<link type="text/css" rel="stylesheet" href="https://docralphv.collegeofidaho.edu/~drosoff/mystyle.css"/>
+<script type="text/javascript" src="https://docralphv.collegeofidaho.edu/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>p {text-align:justify;font-size:110%;}
+li {text-align:justify;font-size:110%;}
+</style>
+<base href = "https://zeus.collegeofidaho.edu/academics/MathPhysics/courses/MAT-352/">
+</head>
+<body>
+
+<h2 id="recap">Recap</h2>
+
+<h3 id="thehomogeneouscase">The homogeneous case</h3>
+
+<p>In the last couple weeks, we saw how to use the exponential trick and some inspired guessing to get general solutions of the general second-order linear homogeneous equation with constant coefficients,
+<span class="math">\[ ay'' + by' + cy = 0. \]</span></p>
+
+<p>There were three distinct cases, corresponding to the three different possibilities <span class="math">\( D = b^2 - 4ac > 0 \)</span>, <span class="math">\( D < 0 \)</span>, and <span class="math">\( D = 0 \)</span>.</p>
+
+<h2 id="inhomogeneousequations">Inhomogeneous equations</h2>
+
+<h3 id="inhomogeneity">Inhomogeneity</h3>
+
+<p>One of the key algebraic coincidences that allowed us to use the exponential trick was the <em>superposition principle</em>. This is the principle that if <span class="math">\( y_1 \)</span> and <span class="math">\( y_2 \)</span> are solutions, then all their linear combinations are too. It fails spectacularly if we try it on an inhomogeneous equation, as illustrated in several weekly homework problems.</p>
+
+<h3 id="inhomogeneity:thetranslationprinciple">Inhomogeneity: the translation principle</h3>
+
+<p>But this doesn&#8217;t mean that our work on the homogeneous equation won&#8217;t help us solve equations of the form
+<!--
+\begin{equation} \label{eq:inhom}
+ay'' + by' + cy = g(t).
+\end{equation}
+-->
+This is because any two solutions of such an equation differ by a solution of the <em>associated homogeneous equation</em> <span class="math">\( ay'' + by' + cy = 0 \)</span>. That is to say, if <span class="math">\( Y_1 \)</span> and <span class="math">\( Y_2 \)</span> are both solutions of Equation<!--~\ref{eq:inhom}-->, then <span class="math">\( Y_1 - Y_2 \)</span> is a solution of the associated homogeneous equation.</p>
+
+<h3 id="thegeometryoflineardifferentialoperators:homogeneousequations">The geometry of linear differential operators: homogeneous equations</h3>
+
+<p>It is best to think of the whole collection of solutions of the associated homogeneous equation as a set<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> <span class="math">\( S \)</span>. A pair of fundamental solutions <span class="math">\( y_1 \)</span>, <span class="math">\( y_2 \)</span> matches <span class="math">\( S \)</span> with the Euclidean plane; namely, the point <span class="math">\( (c_1, c_2) \)</span> corresponds to the solution <span class="math">\( c_1 y_1 + c_2 y_2 \)</span>. Practice visualizing the plane as embedded in a bigger-dimensional space (the space of all differentiable functions, maybe).</p>
+
+<p>Observe that the point <span class="math">\( (0,0) \)</span> is an element of our plane <span class="math">\( S \)</span>, because the zero function is a solution of every homogeneous differential equation. Thus the plane you are imagining passes through the origin of whatever space it lives in.</p>
+
+<h3 id="thegeometryoflineardifferentialoperators:inhomogeneousequations">The geometry of linear differential operators: inhomogeneous equations</h3>
+
+<p>Since the inhomogeneous equation <span class="math">\( ay'' + by' + cy = g(t) \)</span> is a second-order equation, intuition and the theory of Wronskians tell us that there should be a pair of fundamental solutions. This sort of happens, but the details are a little different.
+<!--
+\begin{block}{The solutions are still a plane}
+Solutions of the inhomogeneous equation correspond to points in a plane just like the solutions of the homogeneous equation do. The difference is, it's not the same plane.
+\end{block}
+-->
+The plane for inhomogeneous equations doesn&#8217;t pass through the origin, because the zero function isn&#8217;t a solution of any inhomogeneous equation.</p>
+
+<h3 id="thegeometryoflineardifferentialoperators:particularsolutions">The geometry of linear differential operators: particular solutions</h3>
+
+<p>Recall the translation principle for the inhomogeneous equation:
+<!--
+\begin{block}{Translation principle}
+If $Y_1$ and $Y_2$ are solutions of the inhomogeneous equation, then their difference $Y_1 - Y_2$ is a solution of the associated homogeneous equation.
+\end{block}
+-->
+Inverted, it tells us how to construct new solutions of the inhomogeneous equation from a previously known one: add solutions of the associated homogeneous equation.</p>
+
+<h3 id="thegeneralsolutionoftheinhomogeneousequation">The general solution of the inhomogeneous equation</h3>
+
+<p>Let us suppose that by some devious method we have constructed a single solution of the inhomogeneous equation, say <span class="math">\( Y \)</span>, so that <span class="math">\( aY'' + bY' + cY = g(t) \)</span>. Let also <span class="math">\( y_1 \)</span> and <span class="math">\( y_2 \)</span> be a fundamental set of solutions of the associated homogeneous equation.
+<!--
+\begin{block}{General solution of the inhomogeneous equation}
+Every function satisfying $ay'' + by' + cy = g(t)$ is of the form
+\[ Y + c_1y_1 + c_2 y_2 \]
+for some numbers $c_1$ and $c_2$.
+\end{block}
+-->
+Thus these solutions also form a plane: a plane passing through the nonzero point <span class="math">\( Y \)</span>.</p>
+
+<h3 id="constructionofparticularsolutions">Construction of particular solutions</h3>
+
+<p>As usual, this existence theorem doesn&#8217;t tell us anything about how to construct <span class="math">\( Y \)</span>, called a <em>particular solution</em> of the equation. We know from the general existence theorem for second-order initial value problems that each has a solution. Methods for finding <span class="math">\( Y \)</span> vary and depend very much on the form of the inhomogeneous term <span class="math">\( g(t) \)</span>. We will investigate two such methods: the first of these is <em>undetermined coefficients</em>.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<h3 id="conclusion:examplesgoodtablebad">Conclusion: examples good, table bad</h3>
+
+<p>By clever guessing with sufficient algebraic stamina, it&#8217;s possible to build <span class="math">\( Y \)</span> in a reasonably systematic and efficient way when <span class="math">\( g(t) \)</span> is, roughly speaking, built from polynomials, exponential functions, and sine and cosine. But I have one warning to give you.<!--
+\pause
+-->
+It is, very probably, a big mistake to try to memorize the table given in the text. I&#8217;ve watched people try and fail for years. It is a much better idea to learn the mental yoga of how the method works, by working through and thinking about lots of examples.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>Many students have learned to find the word &#8220;set&#8221; unnerving, but it only serves to bind related objects into a conceptual whole. It is a &#8220;one&#8221; that embodies or instantiates a &#8220;many&#8221;. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+
+</body>
+</html>

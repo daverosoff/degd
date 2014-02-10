@@ -1,0 +1,2 @@
+\beamer@endinputifotherversion {3.26pt}
+\beamer@sectionintoc {1}{Our last topic: Higher-order equations}{8}{0}{1}

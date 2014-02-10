@@ -1,0 +1,57 @@
+\documentclass[12pt]{exam}
+% \usepackage{pslatex}
+\usepackage{xparse}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg, .png}
+\usepackage{amsmath}
+%\usepackage{amsfonts}
+\usepackage{fourier}
+\usepackage{siunitx}
+\usepackage{enumerate}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Spring 2013}}
+ {}
+ {\textbf{Math 352}}
+ %{\emph{Page \thepage\ensuremath{\sim}of \numpages}}
+\runningheadrule
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0pt}
+\pagestyle{head}
+%\newcommand{\N}{\mathbb{N}}
+%\newcommand{\Z}{\mathbb{Z}}
+%\newcommand{\R}{\mathbb{R}}
+%\newcommand{\dwrspace}[1]{\vspace\emph{{\stretch{\#1}}}
+\NewDocumentCommand\N{}{\mathbf{N}}
+\NewDocumentCommand\R{}{\mathbf{R}}
+\NewDocumentCommand\Z{}{\mathbf{Z}}
+\NewDocumentCommand\Q{}{\mathbf{Q}}
+\NewDocumentCommand\dwrspace{m}{\vspace{\stretch{1}}}
+\begin{document}
+\noindent
+\textbf{{\large Mathematics 352 \ Quiz 9}}
+% \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
+
+\noindent
+April 19, 2013; 20 minutes \hfill Name: \underline{\hspace{3in}} 
+
+\noindent
+This quiz is \emph{open-note}, but no books or calculators. 
+
+\begin{questions} 
+
+\question Use the method of \emph{variation of parameters} to find the general solution of the equation
+\[
+    y'' + 4y' + 4y = t^{-2} e^{-2t}, \quad t > 0.
+\]
+
+\dwrspace{1}
+
+\newpage
+
+\question A mass of $\SI{100}{\gram}$ stretches a spring $\SI{5}{\centi\meter}$. If the mass is set in motion from its equilibrium position with a downward velocity of $\SI{10}{cm/s}$ and if there is no damping, determine the position function $u(t)$ of the mass.
+
+\dwrspace{1}
+
+\end{questions}
+
+\end{document}

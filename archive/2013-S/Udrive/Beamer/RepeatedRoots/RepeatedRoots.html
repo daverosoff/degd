@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="encoding" content="UTF-8"/>
+	<meta name="latexinput" content="mmd-beamer-header"/>
+	<title>Repeated Roots</title>
+	<meta name="subtitle" content="Second-order Linear Homogeneous Equations"/>
+	<meta name="affiliation" content="The College of Idaho"/>
+	<meta name="date" content="20 March 2013"/>
+	<meta name="latexmode" content="beamer"/>
+	<meta name="fonttheme" content="structurebold"/>
+	<meta name="colortheme" content="crane"/>
+	<meta name="theme" content="Szeged"/>
+	<meta name="latexinput" content="mmd-beamer-begin-doc-rosoff"/>
+	<meta name="latexfooter" content="mmd-beamer-footer"/>
+</head>
+<body>
+
+<h2 id="recap">Recap</h2>
+
+<h3 id="thecharacteristicpolynomial">The characteristic polynomial</h3>
+
+<p>The second-order linear homogeneous equation with constant coefficients is
+<span class="math">\( ay'' + by' + cy = 0 \)</span>. We used a very sophisticated trick, called &#8220;guess-and-check&#8221;, to discover solutions of exponential form: <span class="math">\( y = e^{rt} \)</span>.</p>
+
+<!-- \pause -->
+
+<p>If such a <span class="math">\( y \)</span> satisfies the differential equation, then <span class="math">\( r \)</span> is a zero of the <em>characteristic polynomial</em> <span class="math">\( ar^2 + br + c \)</span>.</p>
+
+<h3 id="positivediscriminant">Positive discriminant</h3>
+
+<p>When <span class="math">\( D = b^2 - 4ac > 0 \)</span>, there are two distinct real roots <span class="math">\( r_1 \)</span> and <span class="math">\( r_2 \)</span>. These correspond to exponential solutions <span class="math">\( y_1 = e^{r_1 t} \)</span> and <span class="math">\( y_2 = e^{r_2 t} \)</span>.</p>
+
+<p>You can check that the generic linear combination <span class="math">\( c_1 y_1 + c_2 y_2 \)</span> is the only game in town by computing the Wronskian <span class="math">\( W(y_1, y_2) \)</span>.</p>
+
+<h3 id="negativediscriminant">Negative discriminant</h3>
+
+<p>When <span class="math">\( D = b^2 - 4ac < 0 \)</span>, there are still two distinct roots, but they are complex. Because complex roots of real polynomials occur in <em>conjugate pairs</em>, those roots are of the form <span class="math">\( \lambda + i \mu \)</span> where <span class="math">\( \lambda \)</span> and <span class="math">\( \mu \)</span> are real.</p>
+
+<p>By Euler&#8217;s formula, you found complex-valued solutions <span class="math">\( y_1 \)</span> and <span class="math">\( y_2 \)</span> just like in the case <span class="math">\( D > 0 \)</span>.
+<!-- 
+\begin{align*} 
+    y_1 &= e^{\lambda t} (\cos{\mu t} + i \sin{\mu t}) \\
+    y_2 &= e^{\lambda t} (\cos{\mu t} - i \sin{\mu t}). 
+\end{align*}
+--></p>
+
+<h3 id="realsolutionsfromcomplexones">Real solutions from complex ones</h3>
+
+<p>The solutions <span class="math">\( y_1 \)</span> and <span class="math">\( y_2 \)</span> are mathematically legit, but our primary interest is in getting real-valued ones. You observed that the linear combinations
+<!-- 
+\begin{block}{The real solutions}
+\begin{align*}
+    u &= \frac{y_1 + y_2}{2}  = e^{\lambda t} \cos{\mu t} \\
+    v &= \frac{y_1 - y_2}{2i} = e^{\lambda t} \sin{\mu t}
+\end{align*}
+\end{block}
+-->
+are indeed real-valued. Curious readers can check, using the Wronskian, that <span class="math">\( c_1 u + c_2 v \)</span> is the general solution.</p>
+
+<h2 id="thelastcase">The last case</h2>
+
+<h3 id="repeatedroots">Repeated roots</h3>
+
+<p>But there is one more case to investigate: the case of a repeated root. This happens when <span class="math">\( D = 0 \)</span>, so that the characteristic equation <span class="math">\( ar^2 + br + c = 0 \)</span> has a unique root <span class="math">\( -b/2a \)</span>. In this case our method doesn&#8217;t produce two solutions, so we cannot claim to have the general solution.</p>
+
+<!-- 
+\begin{block}{An exponential solution still exists}
+    \( y = e^{(-b/2a)t} \) is a solution. But where are the rest?
+\end{block}
+ -->
+
+<h3 id="moreguess-and-check">More guess-and-check</h3>
+
+<p>Since the characteristic equation isn&#8217;t going to give us another root, we have to find it ourselves. One thing you might think of is that we have not just one solution, but a whole 1-dimensional family of them: <span class="math">\( c e^{(-b/2a)t} \)</span>, where <span class="math">\( c \in \R \)</span> can be any real number. </p>
+
+<!--
+\begin{block}{Idea}
+    Look for solutions of the form \( y = v(t) e^{(-b/2a)t} \).
+\end{block}
+-->
+
+<p>We carry this idea out just as we did when we developed the characteristic equation trick: plug the expression into the differential equation and see what has to happen.</p>
+
+<h2 id="howtosolve">How to solve</h2>
+
+<h3 id="reductionoforder">Reduction of order</h3>
+
+<p>We&#8217;ll end up with some conditions on the functions <span class="math">\( v(t) \)</span> that &#8220;work&#8221;. Just like plugging <span class="math">\( e^{rt} \)</span> into the differential equation led to the characteristic equation, we will get some equations involving the unknown coefficient function <span class="math">\( v(t) \)</span> that will (we hope) lead to another type of solution&#8212;something &#8220;different&#8221; from <span class="math">\( e^{(-b/2a)t} \)</span>.</p>
+
+<!--
+\pause
+-->
+
+<p>Let <span class="math">\( y = v e^{(-b/2a)t} = v y_1 \)</span> for short. Find <span class="math">\( y' \)</span> and <span class="math">\( y'' \)</span> and plug them back into the differential equation. When the dust settles, you&#8217;ll have an equation you can solve for <span class="math">\( v \)</span>.</p>
+
+</body>
+</html>

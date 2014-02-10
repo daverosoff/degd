@@ -1,0 +1,432 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"m",
+				"meta	Tag"
+			]
+		]
+	},
+	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Emphasize text"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"tag",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"com",
+				"Toggle Comment"
+			],
+			[
+				"buil",
+				"Build: Build"
+			],
+			[
+				"",
+				"Build: Cancel"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 160.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Z/courses/MAT-112-01/MAT112_S13_Rosoff/LectureNoteOutlines/lecture_note_outlines_home.htm",
+		"/Z/courses/MAT-352/352files.sublime-project",
+		"/Z/courses/MAT-431/LectureNotes.html",
+		"/Z/courses/MAT-431/LectureNotes/MultiplicationAndPolarRepresentation.tex",
+		"/Z/courses/MAT-431/LectureNotes/ComplexNumbersAlgebraGeometry.tex",
+		"/U/courses/M352/Quiz1_M352_S13.tex",
+		"/Z/courses/MAT-112-01/MAT112_S13_Rosoff/PPt/ppt_home.htm",
+		"/Z/courses/MAT-112-01/MAT112_S13_Rosoff/MtbHW_and_RQ/RQ_MTB_home.htm",
+		"/C/Users/drosoff/TeX Library/tex/latex/rosoff/gridleno/gridleno.sty",
+		"/U/courses/M431/Lecture notes/ComplexNumbersAlgebraGeometry.tex",
+		"/C/Users/drosoff/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/drosoff/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Z/courses/MAT-431/HW.html",
+		"/Z/courses/MAT-352/sage.html",
+		"/Z/courses/MAT-431/mystyle.css",
+		"/Z/courses/MAT-372/HW.html",
+		"/U/courses/M112/syllabus_S13.tex",
+		"/Z/courses/MAT-352/HW.html",
+		"/Z/courses/MAT-352/mystyle.css",
+		"/E/darshan_jain_recommendation.tex",
+		"/E/darshan_jain_recommendation.pdf",
+		"/U/courses/M431/M431_syllabus_S13.tex",
+		"/U/courses/M352/M352_S2013_syllabus.tex",
+		"/U/courses/M431/M431_syllabus_S13.pdf",
+		"/C/Users/drosoff/AppData/Roaming/Sublime Text 2/Packages/User/LaTeXTools Preferences.sublime-settings",
+		"/C/Users/drosoff/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/LaTeXTools Preferences.sublime-settings",
+		"/C/Users/drosoff/Documents/temp-deleteme/sample-handout.tex",
+		"/U/courses/M251/ch11se01-tufte.tex",
+		"/C/Program Files/MiKTeX 2.9/tex/latex/tufte-latex/sample-handout.tex",
+		"/C/Program Files/MiKTeX 2.9/tex/latex/tufte-latex/sample-book.tex",
+		"/C/Users/drosoff/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/Default (Windows).sublime-keymap",
+		"/C/Users/drosoff/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/Wrap in command.sublime-snippet",
+		"/C/Users/drosoff/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/drosoff/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/LaTeX.sublime-build.xetex.json",
+		"/U/courses/M372/M372_W13_Quiz3.tex",
+		"/Z/courses/MAT-372/mystyle.css",
+		"/U/courses/M372/M372_W13_Quiz1.tex",
+		"/U/courses/M372/M372_W13_Quiz2.tex",
+		"/U/courses/M372/M372_W13_WS2.tex",
+		"/U/courses/M251/exams/F2011_exam_1.tex",
+		"/U/courses/M372/M372_W13_WS1.tex",
+		"/U/courses/M112/syllabus_F12.tex",
+		"/U/courses/M370/Winter 2012/syllabus.tex",
+		"/U/courses/M372/M372_syllabus_W13.tex",
+		"/M/Department Reviews/2012_MAPS_Review/COMPARATIVE ANALYSIS OF OTHER DEPARTMENTS.txt",
+		"/U/Faculty makeup-- dept report.txt",
+		"/U/courses/M251/exams/F2011_exam_2.tex",
+		"/U/courses/M251/exams/F2012_exam_2.tex",
+		"/M/AppliedCalculusDescription-2012_10_29.txt",
+		"/Z/courses/MAT-112-01/MAT112_F12_Rosoff/LectureNoteOutlines/lecture_note_outlines_home.htm",
+		"/Z/courses/MAT-251/rosoff/presentation_problems.tex",
+		"/U/courses/Numba theory/hw.tex",
+		"/Z/courses/MAT-112-01/MAT112_F12_Rosoff/PowerPoint/ppt_home.htm",
+		"/Z/courses/MAT-112-01/MAT112_F12_Rosoff/MtbHW_and_RQ/RQ_MTB_home.htm",
+		"/E/2-year review/Two-year-portfolio.tex",
+		"/C/Users/drosoff/Documents/tenure/2012-13 Self-evaluation.txt",
+		"/U/courses/Numba theory/hw.pdf",
+		"/E/2-year review/teaching-resume-2012_08.tex",
+		"/E/2-year review/accomplishments_and_plans.tex",
+		"/E/2-year review/goals_and_assessment.tex",
+		"/E/2-year review/Responses.tex",
+		"/Z/courses/MAT-251/rosoff/Mathematica/index.htm",
+		"/U/courses/Mathematica notebooks/251 Mathematica assignments/251_03_Polar coordinates_11_03.nb",
+		"/C/Users/drosoff/Desktop/AchievementEvaluator.pm",
+		"/U/courses/M251/exams/F2012_exam_1_message.txt",
+		"/U/courses/M251/exams/F2012_exam_1.tex",
+		"/U/courses/M251/exams/F2011_final.tex",
+		"/C/Users/drosoff/TeX Library/tex/latex/rosoff/rosoff.sty",
+		"/C/Users/drosoff/TeX Library/tex/latex/rosoff/rosoff.tex",
+		"/U/courses/M251/presentation_problems.tex",
+		"/Z/faculty/rosoff.asp",
+		"/U/courses/M251/ch11se01.tex",
+		"/U/courses/M251/syllabus.tex",
+		"/C/Users/drosoff/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/LaTeX.sublime-build",
+		"/E/2-year review/review.sublime-project",
+		"/C/Users/drosoff/Documents/courses/M251/textbook_email.txt",
+		"/C/Users/drosoff/AppData/Roaming/Sublime Text 2/Packages/WordCount/WordCount.sublime-settings",
+		"/E/Barker--Dodson-Smith homily.txt",
+		"/C/Users/drosoff/Documents/tenure/e"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"right",
+			"So ",
+			"So",
+			"\n        ",
+			">\n",
+			">    ",
+			"<br />",
+			"<!",
+			"\\\\arg\\{([^}]*)\\}",
+			"\\\\arg\\{",
+			"\\\\arg\\{([^}]*)\\}\\{([^}]*)\\}",
+			"\\\\arg",
+			"and",
+			"<em>",
+			"<em",
+			"assignment statement",
+			"f",
+			" \n",
+			"headbg",
+			"headtitle",
+			"\n%\\",
+			"\\\\hline",
+			"sidenote",
+			"begin{minipage}[t]{0",
+			"discussionquestion",
+			"/PowerPoint",
+			"F12_Guild",
+			"MAT112_F12_Rosoff",
+			"MAT112_W13_Guild",
+			"\n%\\",
+			"\\n",
+			"\\)",
+			"(\\w) \\$",
+			"(\\w) (\\d)",
+			"--",
+			"(\\w) (\\d)",
+			"reason",
+			"[A-Z][a-z]* [A-Z][a-z]",
+			"^\\\\textbf\\{",
+			"\\n",
+			"drosoff",
+			"WeBWorK",
+			"\\n",
+			"\\\\textbf\\{([^\\}]*[^:])\\}",
+			"\\\\textbf\\{[^\\}]*[^:]\\}",
+			"\\\\textbf\\{[^\\}]*\\}",
+			"\\\\textbf\\{.*\\}",
+			"Khayyam",
+			"Khwarizmi",
+			": ",
+			"zz",
+			"y",
+			"x",
+			"&\\",
+			"y_2)",
+			"        ",
+			"\\\\;",
+			" class *= *\"problems\"",
+			"January 10",
+			"whatever",
+			"  \\\\textbf",
+			"\\n",
+			"(\\d) \\b",
+			"\n%\\",
+			"Beyond",
+			"\\n",
+			"(\\d) credits.*$",
+			"    PHYS \\d\\d\\d ",
+			"2)",
+			"\\s{2,4}",
+			"PHYS\\s\\d\\d\\d\\s",
+			"PHYS\\s\\d\\d\\d\\s(.*) - ",
+			"PHYS\\s\\d\\d\\d\\s(.*) - .*$",
+			"rely",
+			"80)",
+			"arbitrary)",
+			"\\\\vspace\\{\\\\stretch\\{(\\d)\\}\\}",
+			"\\\\vspace\\*\\{\\\\stretch\\{(\\d)\\}\\}",
+			"[\\\\](\\w*)\\s\\$",
+			"[^\\\\](\\w*)\\s\\$",
+			"\\b(\\w*)\\s\\$",
+			"vec{r}(t)",
+			"$der",
+			"$dder",
+			"begin{longtable}[ht]",
+			"tabular",
+			"tabl",
+			"table",
+			"\\\\ref",
+			"---",
+			"\\\\%",
+			"''",
+			"``",
+			"\\\\subsubsection\\{(.*)\\}",
+			"\\\\paragraph\\{(.*)\\}",
+			"\\\\label\\{.*\\}$",
+			"~",
+			"\\\\\\w*\\{.*$",
+			"\\\\\\w*\\{\\w*\\}",
+			"\\\\emph\\{([\\w* ]*)\\}",
+			"\\\\emph\\{(\\w*)\\}",
+			"\\\\emph\\{\\(\\w*\\)\\}",
+			"\\\\\\w*\\{\\w*\\}",
+			"\\\\\\w*[\\{]\\w*[\\}]",
+			"\\\\\\w*[\\[].*[\\]][\\{]\\w*[\\}]",
+			"\\\\\\w*[\\[][\\w ]*[\\]][\\{]\\w*[\\}]",
+			"\\\\\\w*[\\[\\{]\\w*[\\]\\}][\\{]\\w*[\\}]",
+			" \\(Section~.*\\) ",
+			" \\(Section:.*\\) ",
+			"\\\\subsection\\{(.*)\\}",
+			"\\\\section\\{(.*)\\}",
+			"(\\w) \\(",
+			"\\w (",
+			"\n\\%\\",
+			"htm",
+			"%[a-zA-Z, ]*",
+			"([a-z]) \\$",
+			"item~\\$",
+			"item~$",
+			"([a-z]) \\$",
+			"Exercise. ",
+			"newtheorem{exercise}[theorem]{Exercise}",
+			"Definition. ",
+			"1.0",
+			"no",
+			"verb]drosoff",
+			"particular hand",
+			"indicate improvement"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"\\\\arg\\[\\1\\]",
+			"\\\\arg\\[\\1\\]\\[\\2\\]",
+			"<em class = \"code\">",
+			"\\mathit{slope}",
+			"yotepurple",
+			"",
+			"marginnote",
+			"sidenote",
+			"/PPt",
+			"S13_Rosoff",
+			"MAT112_S13_Rosoff",
+			" ",
+			"\\1~\\$",
+			"\\1~\\2",
+			",",
+			"\\1~\\2",
+			" ",
+			"\\\\href{https://docralphv.collegeofidaho.edu/webwork2/}{WeBWorK}",
+			" ",
+			"\\1",
+			"Khayy\\\\'am",
+			"Khw\\\\=arizm\\\\=i",
+			"y",
+			"x",
+			"zz",
+			"\\\\:",
+			"",
+			" \\n\\n\\\\textbf",
+			" \\n\\\\textbf",
+			" ",
+			"",
+			"\\1~",
+			", ",
+			"\\(\\1\\)",
+			"",
+			", ",
+			"",
+			"\\1",
+			"\\\\dwrspace\\{\\1\\}",
+			"\\1~\\$",
+			"longtable",
+			"—",
+			"%",
+			"\"",
+			"\\1",
+			"",
+			" ",
+			"",
+			"\\1",
+			"",
+			" ",
+			"\\1",
+			"\\1~\\(",
+			"%",
+			"$1~$",
+			"item $",
+			"$1~$",
+			"\\begin{exercise}",
+			"\\begin{definition}",
+			"1.0in",
+			"Calculus~I",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/E/2-year review/review.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

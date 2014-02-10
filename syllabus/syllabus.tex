@@ -1,0 +1,306 @@
+\documentclass[symmetric]{tufte-handout}
+\usepackage{
+    %graphicx,
+    %wrapfig,
+    fontspec,
+    amsmath,
+    amsthm,
+    amssymb,
+    latexsym,
+    paralist,
+    enumerate,
+    epigraph,
+    nicefrac,
+    booktabs,
+    xcolor,
+}
+\usepackage{rosoff}
+\usepackage{tabularx,dcolumn}
+\frenchspacing
+\renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+\renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
+\linespread{1.05}
+\setmainfont{Palatino Linotype}
+\title{Mathematics 352 Differential Equations}
+\date{Spring 2014}
+\author{The College of Idaho}
+\begin{document}
+\maketitle
+
+\newcommand{\officehours}{TBA}
+%\newcommand{\officehours}{T~10–12; W~2–3; F~1–2}
+
+\setlength{\epigraphwidth}{0.7\linewidth}
+\renewcommand{\epigraphsize}{\normalsize}
+\setlength{\epigraphrule}{0pt}
+\setlength{\beforeepigraphskip}{0\baselineskip}
+\setlength{\afterepigraphskip}{0\baselineskip}
+
+\epigraph{%
+    I didn't discover curves; I only uncovered them.%
+}{M\smallcaps{ae} W\smallcaps{est}}
+
+\subsection{Quick Reference} \label{ssec:quickreference}
+    \begin{minipage}[t]{0.44\linewidth}
+        \vspace{0pt}
+        Homework is assigned from the textbook and on WeBWorK. 
+        You are free to work together on problems, but all work
+        you submit must be your own.
+    \end{minipage}\marginnote{% Office hours and contact info
+        \begin{description}
+            \item[Instructor]
+                Dr.\ Dave Rosoff
+            \item[Office]
+                Boone Hall 102C
+            \item[Office hours]
+                MF~11:30–12:30, T~9–10, W~2:10–3:10 or by appointment
+            \item[Email]
+                \href{mailto:drosoff@collegeofidaho.edu}{drosoff@collegeofidaho.edu}
+            \item[Website]
+                \url{https://zeus.collegeofidaho.edu/academics/MathPhysics/courses/MAT-352/}
+            \item[WeBWorK]
+                \url{https://webwork.collegeofidaho.edu/webwork2/MAT352_S14}
+            \item[Twitter]
+                \texttt{@daverosoff}
+        \end{description}
+        } \hspace{1em}
+    \begin{minipage}[t]{0.44\linewidth}
+        \vspace{0pt}
+        \centering\allcaps{Grading}\vspace*{1.0ex}
+        \begin{tabular}{lcl}
+            \toprule
+            Tier & Weight & Date \\
+            \midrule
+            WeBWorK       & 0.10 & continual \\
+            Workshops     & 0.05 & continual \\
+            Weeklies      & 0.05 & continual \\  
+            Quizzes       & 0.35 & 1.5x/week \\
+            Project       & 0.05 & \textcolor{red}{TBA} \\
+            Two midterms  & 0.20 & \textcolor{red}{TBA} \\
+            Final         & 0.20 & \textcolor{red}{TBA} \\
+            \bottomrule
+        \end{tabular}
+    \end{minipage} \hspace*{1em}
+
+\subsection{Prerequisite}
+
+The prerequisite for this course is MAT-251\sidenote{or equivalent}.
+
+\subsection{Preface: Learning outcomes} \label{ssec:prefacelearningoutcomes}
+
+    This course is designed to provide certain experiences, called “learning
+    outcomes”, to students who successfully complete it. These outcomes are
+    enumerated in the margin.%
+    \sidenote{\smallcaps{Learning outcomes:}
+        \begin{compactenum}
+            \item \label{lo:recog} Recognize and describe fundamental ideas from course content
+            described below.
+            \item \label{lo:illust} Illustrate ideas from the course with examples.
+            \item \label{lo:write} Improve their mathematical writing skills.
+            \item \label{lo:preesh} Appreciate the historical context of differential equations 
+            and their role in the physical sciences.
+            \item \label{lo:develop} Plan, organize, and combine arguments to solve new problems, as
+            appropriate.
+            \item \label{lo:proc} Solve certain types of differential equations or initial value
+            problems, or verify that a particular function is a solution.
+            \item \label{lo:phenom} Recognize phenomena related to differential equations 
+            (e.g., resonance or stability) and explain how they arise.
+        \end{compactenum}    
+    }
+    I explicitly include these outcomes in the syllabus so that it is clear
+    why I have chosen the various course components (each of which is
+    described below.) Each learning outcome is addressed by one or more
+    components of the course: quizzes, WeBWorK exercises, longer weekly problem sets,
+    presentations to the class, and exams.
+    See the \emph{Grading} section below for more information.
+
+\subsection{Introduction}
+
+If you are considering a life as any kind of engineer, physical scientist, or
+applied mathematician, life is differential equations. The laws of the
+universe are all differential equations: problems involving fluid flow,
+current in electric circuits, population dynamics, pricing of financial
+derivatives,\footnote{Financial derivatives are unrelated to the derivatives of
+calculus.} quantum mechanics, heat transfer, relativity, etc., are all
+formulated in this language. They are ubiquitous and of paramount importance.
+I assume this is reason enough for you to be interested.
+
+Here is a bit of mathematical philosophy. Numbers and points are the same.
+Ordinary numbers are points on a line; points in other spaces are different
+kinds of numbers. If the space the points live in is a Euclidean space like
+$\R^2$ or $\R^3$, these numbers are often called \emph{vectors}. You have
+spent many years solving equations involving both constants and variables
+whose values are ordinary numbers, and maybe a few weeks solving equations
+involving vectors. Usually, we refer to this kind of work as \emph{algebra}.
+
+Points, and therefore numbers, are zero-dimensional.\footnote{Think of the head
+of the vector, not the whole arrow.} They are pure locations. They do not
+have extent of any kind. A one-dimensional number is called a \emph{curve}.
+You can also think of a curve as a family of points, as we often do in
+calculus. These points are related—as are the members of any family. Often,
+they are related by an equation defining the curve. Many algebraic problems
+involve finding a special point on a curve: a special member of a family.
+
+Differential equations also involve both constants and variables and need to
+be solved. But here, the constants, variables, and solutions are all 
+one-dimensional: they are curves! Solutions are called the integral curves 
+of the differential
+equation or equations. The solution of differential equations is the
+understanding of the algebra of curves. Usually, the plane will be partitioned
+into a bunch of related curves that fit together in a family—related, just as
+in algebra, by an equation (now, a differential equation) defining the family.
+Many problems in differential equations involve finding a special curve in a
+family. These are called \emph{initial value problems}. As in algebra, most
+equations cannot be solved. Equations that admit exact solutions are very
+special. We will investigate some of the elementary equations and classify
+them according to their form. We will also discuss systems of linear
+differential equations, which are solved via linear-algebraic techniques
+involving matrices.
+
+\subsection{Catalog description}
+
+“A study of the solution and applications of ordinary differential equations
+including systems of equations using matrix algebra.”
+
+\subsection{Text}
+
+The text is \emph{Elementary Differential Equations} by Boyce
+and DiPrima, ninth edition. This book and its cousins have been the standard
+for two generations, so the world is awash in earlier editions (as well as
+one much more expensive later edition). I don't recommend you use an edition
+earlier than the eighth. If you have an earlier edition of the text than the
+ninth, that is fine: but ascertaining the differences in the texts,
+especially differently numbered or new homework problems, \emph{will be your
+sole responsibility}. The same caveat applies to any international version.
+Websites exist that catalog differences between versions.
+
+\subsection{Grading}
+
+Scores%
+    \sidenote{\centering\smallcaps{Table of weights}
+        \begin{tabular}{lc}
+            \toprule
+            Tier & Weight \\
+            \midrule
+            WeBWorK       & 0.10 \\
+            Workshops     & 0.05 \\
+            Weeklies      & 0.05 \\
+            Quizzes       & 0.35 \\
+            Project       & 0.05 \\
+            Two midterms  & 0.20 \\
+            Final         & 0.20 \\
+            \bottomrule
+        \end{tabular}
+    }%
+are computed as a weighted average, with the weights indicated in the
+margin. Descriptions of the various tiers follow. 
+Observe that the weights sum to 1 = 100\%. The exact determination of letter
+grades from these scores depends on the final distribution of scores in the
+class, but you can expect a C for earning 73\% of the points, a C+ for
+77\%, a B– for 80\%, and so on. I may adjust these cutoffs downward, but
+I will not adjust them upward.
+
+\subsection{Homework}
+
+Both WeBWorK and traditional pencil-and-paper homework will be assigned.
+WeBWorK exercises are shorter and more procedural, helping you assess your
+own understanding of the ideas of the course. The weekly homework sets, 
+which are longer, are more involved problems. Some problems 
+may take you several hours, or require some work with a computer algebra
+system such as Sage, Mathematica, or Matlab.%
+    \sidenote{
+        I believe that in fact it is possible to do all of the problems by
+        hand, but some would be very laborious without computer assistance.
+    }
+My goal is as follows: every
+student who successfully completes all of the homework problems and
+\emph{understands all the solutions} should be able to earn an A in this
+course. All quizzes and exams are designed with this in mind. Therefore, I
+hope you will agree that it is in your very best interest to complete all of
+the assigned work, regardless of whether it is turned in for credit. The
+course is designed so that you will do best if you work at a modest but
+constant pace throughout the term. Cramming might work too, but not as
+well—and not as permanently, which is really the point.
+
+\subsection{A note on written homework}
+
+Even it you are not turning it in, it is important to pay attention to the
+style of your writing and your presentation. Good mathematical writing is
+essential for anyone who wishes to think clearly about mathematics—sloppy
+writing \emph{invariably} reflects underlying sloppy thinking. The process of
+making your ideas and reasoning \emph{clear, complete, and unambiguously
+correct} is the greatest amplifier of mathematical power there is. Hence
+your solutions should be composed in brilliant English prose.%
+    \sidenote{
+        This means conforming to accepted
+        scientific usage, more or less correct grammar and spelling, and above all
+        \emph{complete sentences}, sprinkled with equations here and there. Solutions
+        in the popular “pile-of-equations” style are to be avoided and will not get
+        much credit.
+    }% 
+You must explain what is happening as the action unfolds. You should also
+avoid falling into a “two-column” format that you may have learned in a 
+high-school geometry class. It is stilted, artificial, and not easier to read than
+a pile of equations. Weave text and equations together for a gentle
+presentation that doesn't leave the reader guessing.
+
+\subsection{Quizzes}
+
+Quizzes will be given frequently to help you make sure you are staying on top
+of the material. Quiz problems will come directly, or nearly so, from the
+assigned daily WeBWorK problems. Quizzes begin promptly at 8:00 and can not be
+made up.
+
+\subsection{Workshops}
+
+Most of you are familiar with the workshop format from Calculus~III. Workshops
+are primarily in-class activities (although some will need to be finished at home)
+in which you will work through some aspects of a problem with other students in
+the class. Along with the homework, the workshops are the heart of the course.
+
+\subsection{Exam dates}
+
+As specified below, you will take two in-class exams as well as the
+traditional comprehensive final exam. Let me know \emph{immediately} if you
+foresee a conflict. See below also for information regarding make-up exams.
+
+\begin{itemize}
+   \item Exam~1 (tentative): Monday, March~3
+   \item Exam~2 (tentative): Wednesday, April~9
+   \item Final Exam: Wednesday, May~15, 1:30–4:30
+\end{itemize}
+%
+\subsection{Make-ups}
+
+I will only consider make-up exams with a \emph{documented, compelling reason}
+and sufficient (two weeks is always enough) notice; otherwise, remaining exams
+will be reweighted.  Quizzes can not be made up.
+
+\subsection{Academic integrity}
+
+Students are expected to complete all graded work in accordance with the
+College Honor Code. Plagiarism, cheating, or borrowing without proper credit
+will not be tolerated.  Violations of academic honesty can result in loss of
+credit on an assignment, failure on an exam, or failure in the course. A
+referral may be made to the Vice President for Academic Affairs for all
+parties involved in academic dishonesty.
+
+\subsection{A note on studying math}
+
+This class is all about practice. Learning to recognize the different types of
+equations and quickly and accurately recall the procedures needed to solve
+them is a matter of rote technique. If you have practiced enough, you will
+remember how to do it.\footnote{This is the definition of “enough”.} If not,
+something else may happen. Of course, there are deep ideas lurking beneath the
+computational techniques. Awareness and understanding of these ideas also
+comes with practice.
+
+\subsection{Disability statement}
+
+Students with documented disabilities as addressed by the Americans With
+Disabilities Act and who need any test or course materials to be furnished in
+an alternative format should notify me immediately (during the first week of
+class).  Reasonable efforts will be made to accommodate the needs of such
+students. 
+
+\end{document}

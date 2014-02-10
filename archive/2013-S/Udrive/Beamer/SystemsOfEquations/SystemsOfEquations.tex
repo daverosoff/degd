@@ -1,0 +1,214 @@
+\def\encoding{UTF-8}
+\input{mmd-beamer-header-rosoff}
+\def\mytitle{Systems of equations}
+\def\affiliation{The College of Idaho}
+\def\myauthor{Math 352 Differential Equations}
+\def\mydate{6 May 2013}
+\def\latexmode{beamer}
+\input{mmd-beamer-begin-doc-rosoff}
+\def\htmlheaderlevel{2}
+\section{Converting an $ n $th order equation}
+\label{convertingannthorderequation}
+
+\begin{frame}
+
+\frametitle{Converting to a system}
+\label{convertingtoasystem}
+
+We can convert the second-order homogeneous linear equation
+\[
+    mu'' + \gamma u' + ku = 0
+\]
+into a $ 2 \times 2 $ system by letting $ x_1 = u $, $ x_2 = u' $. The equation above then becomes
+\[
+    mx'_2 + \gamma x_2 + kx_1 = 0,
+\]
+so a $ 2 \times 2$ system whose solutions are the same as the second-order equations' solutions is
+ 
+    \begin{align*}
+        x'_1 &= x_2 \\
+        x'_2 &= -\frac{k}{m} x_1 - \frac{\gamma}{m} x_2
+    \end{align*}
+
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Warm-up}
+\label{warm-up}
+
+Solve 1, 3, 5 from section 7.1. When you have a choice to make, always write the choice with \emph{fewer primes}. When you are transforming an initial value problem, don't forget to transform the initial conditions!
+
+\end{frame}
+
+\section{Procedure: $ 2 \times 2 $ homogeneous}
+\label{procedure:2times2homogeneous}
+
+\begin{frame}
+
+\frametitle{Algorithm for solving $ 2 \times 2$ homogeneous}
+\label{algorithmforsolving2times2homogeneous}
+
+\begin{itemize}
+\item Obtain coefficient matrix $ A $
+
+\item Find eigenvalues: the roots of $ \det(A - \lambda I) $
+
+\item Solve for the coefficient vectors: the eigenvectors of $ A $
+
+\item Write down the solution functions.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Example}
+\label{example}
+
+Consider the system of differential equations
+ 
+\begin{align*}
+    x'_1 &= x_1 + x_2 \\
+    x'_2 &= 4x_1 + x_2
+\end{align*}
+
+In matrix form, this becomes
+\[
+    \vec{x}' = \begin{pmatrix}
+        1 & 1 \\
+        4 & 1
+    \end{pmatrix} \vec{x}.
+\]
+Write $ A $ for the coefficient matrix.
+
+\begin{itemize}
+\item Check that $ \det{A - \lambda I} = \lambda^2 - 2 \lambda -3 $, so that the eigenvalues of $ A $ are $ \lambda_1 = 3 $, $ \lambda_2 = -1 $.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Getting the eigenvectors}
+\label{gettingtheeigenvectors}
+
+\begin{itemize}
+\item Solve the modified system for each eigenvalue to obtain eigenvectors $ \vec{\xi}^{(1)} $ and $ \vec{\xi}^{(2)} $.
+
+\end{itemize}
+
+The modified system is
+\[
+    \begin{pmatrix}
+        1 - \lambda & 1 \\
+        4 & 1 - \lambda
+    \end{pmatrix} \begin{pmatrix} \xi_1 \\ \xi_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}.
+\]
+
+\begin{itemize}
+\item When $ \lambda = 3 $, we see that the system reduces to the equation $ -2 \xi_1 + \xi_2 = 0 $, so an eigenvector for $ \lambda = 3 $ is
+\[
+\vec{\xi}^{(1)} = \begin{pmatrix} 1 \\ 2 \end{pmatrix}.
+\]
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{The other eigenvector}
+\label{theothereigenvector}
+
+When $ \lambda = -1 $, we see that the system becomes
+\[
+    \begin{pmatrix}
+        2 & 1 \\
+        4 & 2
+    \end{pmatrix} \begin{pmatrix} \xi_1 \\ \xi_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}.
+\]
+
+\begin{itemize}
+\item Therefore an eigenvector for $ \lambda = -1 $ is $ \vec{\xi}^{(2)} = (1, -2)$.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Putting it all together}
+\label{puttingitalltogether}
+
+\begin{itemize}
+\item The general solution to the system is, in the ``nice'' case, the general linear combination of the eigenvectors multiplied by the exponentials with growth constants given by their eigenvalues:
+
+\end{itemize}
+
+\[
+    \vec{x} = c_1 \vec{x}^{(1)} + c_2 \vec{x}^{(2)} = c_1 \begin{pmatrix} 1 \\ 2 \end{pmatrix} e^{3t} + c_2 \begin{pmatrix} 1 \\ -2 \end{pmatrix} e^{-t}.
+\]
+
+\begin{itemize}
+\item Finally, we can write the solutions in scalar form. The functions $ x_1  $ and $ x_2 $ are the entries of the vector $ \vec{x} $.
+
+\end{itemize}
+
+\[
+    x_1 = c_1 e^{3t} + c_2 e^{-t}, \quad x_2 = 2c_1 e^{3t} - 2c_2 e^{-t}.
+\]
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Nice matrices}
+\label{nicematrices}
+
+What makes a matrix ``nice'' is too involved for us to describe completely. If the matrix has as many eigenvalues as it does columns, then it is automatically ``nice''.
+
+\begin{itemize}
+\item If $ \det{A - \lambda I} $ factors into \emph{distinct} linear factors, then $ A $ is ``nice''.
+
+\item In more technical terms $ A $ is \emph{diagonalizable} if and only if $ A $ is ``nice''.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Algorithm, again}
+\label{algorithmagain}
+
+\begin{itemize}
+\item Obtain coefficient matrix $ A $.
+
+\item Find eigenvalues: the roots of $ \det(A - \lambda I) $.
+
+\item Solve for the coefficient vectors: the eigenvectors of $ A $.
+
+\item Write down the solution functions $ x_1 $ and $ x_2 $.
+
+\end{itemize}
+
+\[
+    \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = c_1 \vec{\xi}^{(1)} e^{\lambda_1 t} + c_2 \vec{\xi}^{(2)} e^{\lambda_2 t}.
+\]
+
+\begin{itemize}
+\item Solve 1--7 odd, part (a) only, in section 7.5.
+
+\end{itemize}
+
+\end{frame}
+
+\mode<all>
+\input{mmd-beamer-footer}
+
+\end{document}\mode*
+

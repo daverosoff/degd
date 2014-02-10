@@ -1,0 +1,329 @@
+@font-face 
+{
+    font-family: 'CallunaRegular';
+    src: url('webfonts/Calluna-Regular-webfont.eot');
+    src: url('webfonts/Calluna-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/Calluna-Regular-webfont.woff') format('woff'),
+         url('webfonts/Calluna-Regular-webfont.ttf') format('truetype'),
+         url('webfonts/Calluna-Regular-webfont.svg') format('svg');
+}
+@font-face 
+{
+    font-family: 'CallunaSansRegular';
+    src: url('webfonts/CallunaSansRegular-webfont.eot');
+    src: url('webfonts/CallunaSansRegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/CallunaSansRegular-webfont.woff') format('woff'),
+         url('webfonts/CallunaSansRegular-webfont.ttf') format('truetype'),
+         url('webfonts/CallunaSansRegular-webfont.svg') format('svg');
+}
+@font-face
+{
+    font-family: 'MuseoSans500';
+    src: url('webfonts/MuseoSans_500-webfont.eot');
+    src: url('webfonts/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/MuseoSans_500-webfont.woff') format('woff'),
+         url('webfonts/MuseoSans_500-webfont.ttf') format('truetype'),
+         url('webfonts/MuseoSans_500-webfont.svg') format('svg');
+}
+body 
+{
+  background-color:#f8f8fa; 
+  margin: 5% 20% 5% 20%;
+}
+a:link 
+{
+    text-decoration:none;
+    color:inherit;
+}
+a:visited 
+{
+    text-decoration:none;
+    color:inherit;
+}
+a:active 
+{
+    text-decoration:none;
+    color:inherit;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+a:before 
+{
+    content: "◊ "; /* Note: this is a non-breaking space U+00A0 */
+    color: #8b4513;
+    font-weight: normal;
+    white-space: nowrap;
+}
+div.footnotes.a, a.footnoteRef:before
+{
+    content: "";
+
+}
+{
+    -moz-font-feature-settings:"lnum=1";
+    -ms-font-feature-settings:"lnum" 1;
+    -o-font-feature-settings:"lnum" 1;
+    -webkit-font-feature-settings:"lnum" 1;
+    font-feature-settings:"lnum" 1;
+}
+
+li.a 
+{
+    color:#8b4513;
+}
+p 
+{
+  font-size:138%;
+  font-family:'CallunaRegular',Georgia,Garamond,"Palatino Linotype",serif;
+  color:#202020;
+  line-height: 140%;
+  -moz-font-feature-settings:"liga=1, dlig=0";
+  -ms-font-feature-settings:"liga" 1, "dlig" 0;
+  -o-font-feature-settings:"liga" 1, "dlig" 0;
+  -webkit-font-feature-settings:"liga" 1, "dlig" 0;
+  font-feature-settings:"liga" 1, "dlig" 0;
+}
+.left {
+  float: left;
+}
+.center {
+  float: none;
+}
+.right {
+  float: right;
+}
+.light {
+  color:#888888;
+}
+.sage {
+    font-family:Consolas,Lucidatypewriter,Courier,monospace; 
+    text-align: left;
+    border: 2px dashed #D1C7AC;
+    width: 70%;
+    padding: 4%;
+    margin: 5% auto 5% auto;
+}
+.tip 
+{
+    font-family:'CallunaRegular',Georgia,Garamond,"Palatino Linotype",serif;
+    font-style:italic; 
+    text-align: right;
+    font-size:90%;
+}
+blockquote
+{
+    font-family: 'CallunaSansRegular';
+    border: 2px solid #e8e8e8;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+li 
+{
+    font-size: inherit;
+    font-family: "MuseoSans500", Optima, Helvetica, sans;
+    color:#202020;
+    line-height:120%;
+}
+li.mult 
+{ 
+    border-bottom: 1px solid #404040;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+li.problems 
+{
+    font-size:100%;
+    font-family:Georgia,Garamond,"Palatino Linotype",serif;
+    line-height:100%;
+}
+li.portfolio 
+{
+    font-family:Georgia,Garamond,"Palatino Linotype",serif;
+    color:red;
+}
+.tiled li
+{
+    display: inline;
+    float: center;
+}
+a.tile
+{
+    display: block;
+    padding: auto;
+    margins: 0% auto 0% auto;
+}
+h1 
+{
+    font-family:'MuseoSans500', Optima, Helvetica, sans;
+    text-align:center;
+}
+h2 {
+    font-family:'MuseoSans500', Optima, Helvetica, sans;
+    color: #8b4513;
+    text-align:center;
+    margin: 5% auto 5% auto;
+    width: 75%;
+    border: 2px solid #D1C7AC;
+    padding: 5%;}
+h3 {
+    font-size:100%;
+    font-family:'MuseoSans500', Optima, Helvetica, sans;
+    text-align:center;
+    color: #8b4513;
+    margin: 2% auto 2% auto;
+    border-width: 0 0 1px 0;
+    border-bottom-style: solid;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-color: #D1C7AC;
+    padding: 1%;
+    width: 70%;
+}
+h3.old {
+    font-family:'MuseoSans500', Optima, Helvetica, sans;
+    color: #8b4513;
+    text-align:center;
+    margin: 5% auto 5% auto;
+    border: 2px solid #D1C7AC;
+    padding: 3%;
+    width: 70%;
+}
+h4 
+{
+    font-family:'MuseoSans500', Optima, Helvetica, sans;
+    text-align:center;
+    color: #8b4513;
+    margin: 2% auto 2% auto;
+    border-width: 1px;
+    border-top-s
+    tyle: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: #D1C7AC;
+    padding: 1%;
+    width: 50%;}
+h5
+{
+    font-family:'MuseoSans500', Optima, Helvetica, sans;
+    color: #8b4513;
+}
+h6 
+{
+    font-family:'MuseoSans500', Optima, Helvetica, sans;
+    color: #8b4513;
+}
+.left-space {margin-left: 15%;}
+.tab {padding-left: 5%;}
+pre 
+{
+    font-size: 130%;
+    line-height: normal;
+}
+code {line-height: normal;}
+
+table {
+    width: 100%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: text-top;
+    font-family: 'CallunaSansRegular', Georgia, Garamond, "Palatino Linotype", serif;
+}
+thead {
+    font-family: 'CallunaSansRegular', Georgia, Garamond, "Palatino Linotype", serif;
+    border-bottom: solid #D1C7AC 1px;
+}
+tbody {
+    font-family: 'CallunaSansRegular', Georgia, Garamond, "Palatino Linotype", serif;
+    border-bottom: solid #D1C7AC 1px;
+}
+th {
+    text-align: center;
+    font-family: 'MuseoSans500', Georgia, Garamond, "Palatino Linotype", serif;
+    color: #8b4513;
+    padding-bottom: 6px
+}
+td {
+    font-family: 'CallunaSansRegular', Georgia, Garamond, "Palatino Linotype", serif;
+    padding: 6px;
+}
+tr.odd {
+    background-color: #e8e8e8
+}
+tr.even {
+    background-color: #f8f8f8
+}
+.lining-nums {
+    -moz-font-feature-settings:"lnum=1";
+    -ms-font-feature-settings:"lnum" 1;
+    -o-font-feature-settings:"lnum" 1;
+    -webkit-font-feature-settings:"lnum" 1;
+    font-feature-settings:"lnum" 1;
+}
+.oldstyle-nums 
+{
+    -moz-font-feature-settings:"lnum=0";
+    -ms-font-feature-settings:"lnum" 0;
+    -o-font-feature-settings:"lnum" 0;
+    -webkit-font-feature-settings:"lnum" 0;
+    font-feature-settings:"lnum" 0;
+
+}
+.opentype-off {
+    -moz-font-feature-settings:"liga=0, dlig=0";
+    -ms-font-feature-settings:"liga" 0, "dlig" 0;
+    -o-font-feature-settings:"liga" 0, "dlig" 0;
+    -webkit-font-feature-settings:"liga" 0, "dlig" 0;
+    font-feature-settings:"liga" 0, "dlig" 0;
+}
+.opentype-on {
+    -moz-font-feature-settings:"liga=1, dlig=1";
+    -ms-font-feature-settings:"liga" 1, "dlig" 1;
+    -o-font-feature-settings:"liga" 1, "dlig" 1;
+    -webkit-font-feature-settings:"liga" 1, "dlig" 1;
+    font-feature-settings:"liga" 1, "dlig" 1;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+ul.circ
+{
+    list-style-type: circle;
+}
+
+ul.nav 
+{
+    text-align: center;
+    list-style-type:none;
+    margin: auto 0 auto 0;
+    padding: 0 5% 0 5%;
+    overflow:hidden;
+}
+li.nav
+{
+    float:right;
+    width:33%;
+}
+a:link.nav,a:visited.nav 
+{
+    font-family:'MuseoSans500', Helvetica, Optima, sans;
+    display:block;
+    font-weight:normal;
+    color:#FFFFFF;
+    background-color:#8b4513;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    text-transform:lowercase;
+}
+a:hover.nav,a:active.nav
+{
+    background-color:#9b5127;
+}

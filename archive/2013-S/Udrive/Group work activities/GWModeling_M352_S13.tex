@@ -1,0 +1,74 @@
+\documentclass[11pt]{exam}
+% \usepackage{pslatex}
+\usepackage{xparse}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg, .png}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Spring 2013}}
+ {}
+ {\textbf{Math 352}}
+ %{\emph{Page \thepage~of \numpages}}
+\runningheadrule
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0pt}
+\pagestyle{head}
+%\newcommand{\N}{\mathbb{N}}
+%\newcommand{\Z}{\mathbb{Z}}
+%\newcommand{\R}{\mathbb{R}}
+%\newcommand{\dwrspace}[1]{\vspace*{\stretch{#1}}}
+\NewDocumentCommand\N{}{\mathbf{N}}
+\NewDocumentCommand\R{}{\mathbf{R}}
+\NewDocumentCommand\Z{}{\mathbf{Z}}
+\NewDocumentCommand\Q{}{\mathbf{Q}}
+\NewDocumentCommand\dwrspace{m}{\vspace*{\stretch{#1}}}
+\begin{document}
+\noindent
+\textbf{{\large Mathematics 352 \\ Modeling with Linear Equations}}
+% \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
+
+\noindent
+February 27, 2013 \hfill Name: \underline{\hspace{3in}} 
+
+\noindent
+Due: March 1, 2013
+
+\noindent
+\begin{figure}[h]
+\centering
+\begin{minipage}[b]{0.6\linewidth}
+In this worksheet, please pay special attention to the setup: formulation of the initial value problems involved. Feel free to use whatever electronic help you like: calculator, phone, tablet, laptop, Robocop, Skynet, etc. Show all of your work, please, including the calculations done electronically.
+\end{minipage}
+\end{figure}
+\begin{questions}  
+
+\question A certain college graduate borrows $\$\num{8000}$ to buy a car. The lender charges interest at an annual rate of $10\%$. Assuming that interest is compounded continuously and that the borrower makes payments continuously at a constant annual rate $k$, determine the payment rate $k$ that is required to pay off the loan in $3$ years. 
+
+\newpage
+
+\question A small nuclear reactor sits at the bottom of a pool with volume $\num{75000}$ \si{\kilo\liter}. The water in the pool is not processed or filtered, so algae naturally grow in it (far enough from the reactor unit, anyway). Operators must keep this growth within reasonable and safe limits, or facility operations will be adversely affected.
+
+\begin{parts}
+    \part Suppose that, in the absence of other factors, algae reproduce in the pool at such a rate that their mass doubles every $(100/9)\ln(2)$ days.
+    Formulate and solve an initial value problem that will give you the growth constant $r$. This growth constant depends only on the algae's reproductive characteristics and the conditions in the ambient environment (which, given the proximity of the reactor, are not uniformly friendly). Make the usual assumption: that the change in population is directly proportional to the current population.
+
+    \dwrspace{1}
+
+    \part Reactor operators use a combination of filtering and poison techniques to remove algae at a constant rate (so that the same mass of algae is removed each day). Suppose that a new regulation is going into effect right now (at~$t = 0$) that requires zero algae measured 20~days from this moment. If the mass of algae that can be removed from the pool is $400$~\si[per-mode=symbol]{\gram\per\hour}, find the greatest mass of algae that can be present at~$t = 0$ such that the facility will still be in compliance when the regulation takes effect. You will need to formulate and solve an appropriate initial value problem using the growth constant you found above. Pay attention to the setup and resist the urge to jump right to the equation for the algae mass.
+
+    \dwrspace{4}
+
+\end{parts}
+
+\newpage
+
+\question A home buyer can afford to spend no more than $\$800$/month on mortgage payments. Suppose that the interest rate is $9\%$ and that the term of the mortgage is 20 years. Assume that interest is compounded continuously and that payments are also made continuously.
+
+Determine the maximum amount that this buyer can afford to borrow.
+
+\end{questions}
+
+\end{document}
