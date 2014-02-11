@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9) (preloaded format=xelatex 2014.2.4)  9 FEB 2014 20:05
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9) (preloaded format=xelatex 2014.2.4)  11 FEB 2014 15:49
 entering extended mode
 **C:/Users/drosoff/Documents/courses/M352/syllabus/syllabus.tex
 (C:/Users/drosoff/Documents/courses/M352/syllabus/syllabus.tex
@@ -1032,30 +1032,30 @@ Package: dcolumn 2001/05/28 v1.06 decimal alignment package (DPC)
 )
 \g__file_internal_ior=\read1
 Requested font "Palatino Linotype" at 10.0pt
- -> O^^\/Windows/Fonts/pala.ttf
-Requested font "Palatino Linotype/ICU" at 10.0pt
- -> h^^\/Windows/Fonts/pala.ttf
-\g_fontspec_family_Palatino Linotype_int=\count172
-Requested font "Palatino Linotype/ICU" at 10.0pt
  -> ^^^\/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> Y^^\/Windows/Fonts/pala.ttf
+ -> w^^\/Windows/Fonts/pala.ttf
+\g_fontspec_family_Palatino Linotype_int=\count172
+Requested font "Palatino Linotype/ICU" at 10.0pt
+ -> m^^\/Windows/Fonts/pala.ttf
+Requested font "Palatino Linotype/ICU" at 10.0pt
+ -> h^^\/Windows/Fonts/pala.ttf
+Requested font "Palatino Linotype/B/ICU" at 10.0pt
+ -> c^^\/Windows/Fonts/palab.ttf
 Requested font "Palatino Linotype/B/ICU" at 10.0pt
  -> T^^\/Windows/Fonts/palab.ttf
-Requested font "Palatino Linotype/B/ICU" at 10.0pt
- -> E^^\/Windows/Fonts/palab.ttf
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> @^^\/Windows/Fonts/pala.ttf
+ -> O^^\/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/I/ICU" at 10.0pt
- -> ;^^\/Windows/Fonts/palai.ttf
+ -> J^^\/Windows/Fonts/palai.ttf
 Requested font "Palatino Linotype/I/ICU" at 10.0pt
- -> 1^^\/Windows/Fonts/palai.ttf
+ -> @^^\/Windows/Fonts/palai.ttf
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> ,^^\/Windows/Fonts/pala.ttf
+ -> ;^^\/Windows/Fonts/pala.ttf
+Requested font "Palatino Linotype/BI/ICU" at 10.0pt
+ -> 6^^\/Windows/Fonts/palabi.ttf
 Requested font "Palatino Linotype/BI/ICU" at 10.0pt
  -> '^^\/Windows/Fonts/palabi.ttf
-Requested font "Palatino Linotype/BI/ICU" at 10.0pt
- -> ^^X^^\/Windows/Fonts/palabi.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1089,7 +1089,7 @@ Requested font "Palatino Linotype/BI/ICU" at 10.0pt
 . <->"Palatino Linotype/BI/ICU:script=latn;language=DFLT;+smcp;"
 .................................................
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;" at 10.0pt
- -> ^^N^^\/Windows/Fonts/pala.ttf
+ -> ^^]^^\/Windows/Fonts/pala.ttf
 
 (C:\Users\drosoff\Documents\courses\M352\syllabus\syllabus.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -1243,17 +1243,17 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 27.
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;" at 14.4pt
- -> ^^D^^\/Windows/Fonts/pala.ttf
+ -> ^^S^^\/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/I/ICU:script=latn;language=DFLT;" at 14.4pt
- -> ë^^[/Windows/Fonts/palai.ttf
+ -> ú^^[/Windows/Fonts/palai.ttf
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;" at 12.0pt
- -> %^^^/Windows/Fonts/pala.ttf
+ -> 4^^^/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/I/ICU:script=latn;language=DFLT;" at 12.0pt
- -> ^^[^^^/Windows/Fonts/palai.ttf
+ -> *^^^/Windows/Fonts/palai.ttf
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;" at 7.0pt
- -> î^^]/Windows/Fonts/pala.ttf
+ -> ý^^]/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;" at 5.0pt
- -> ß^^]/Windows/Fonts/pala.ttf
+ -> î^^]/Windows/Fonts/pala.ttf
 Requested font "cmex7" at 7.0pt
 Requested font "cmex7" at 5.0pt
 LaTeX Font Info:    Try loading font information for U+msa on input line 41.
@@ -1280,27 +1280,27 @@ Requested font "lasy10" at 10.0pt
 Requested font "lasy7" at 7.0pt
 Requested font "lasy5" at 5.0pt
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> N^^]/Windows/Fonts/pala.ttf
+ -> ]^^]/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> ^^90^^\/Windows/Fonts/pala.ttf
+ -> ^^9f^^\/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> ^^\^^]/Windows/Fonts/pala.ttf
+ -> +^^]/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/B/ICU" at 10.0pt
- -> ^^8f^^]/Windows/Fonts/palab.ttf
+ -> ^^9e^^]/Windows/Fonts/palab.ttf
 Requested font "Palatino Linotype/B/ICU" at 10.0pt
- -> {^^]/Windows/Fonts/palab.ttf
+ -> ^^8a^^]/Windows/Fonts/palab.ttf
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> M^^^/Windows/Fonts/pala.ttf
+ -> \^^^/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/I/ICU" at 10.0pt
- -> ±^^^/Windows/Fonts/palai.ttf
+ -> À^^^/Windows/Fonts/palai.ttf
 Requested font "Palatino Linotype/I/ICU" at 10.0pt
- -> ¶^^^/Windows/Fonts/palai.ttf
+ -> Å^^^/Windows/Fonts/palai.ttf
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> »^^^/Windows/Fonts/pala.ttf
+ -> Ê^^^/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/BI/ICU" at 10.0pt
- -> À^^^/Windows/Fonts/palabi.ttf
+ -> Ï^^^/Windows/Fonts/palabi.ttf
 Requested font "Palatino Linotype/BI/ICU" at 10.0pt
- -> Å^^^/Windows/Fonts/palabi.ttf
+ -> Ô^^^/Windows/Fonts/palabi.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1336,12 +1336,12 @@ Requested font "Palatino Linotype/BI/ICU" at 10.0pt
 .................................................
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;letterspace=10;
 " at 10.0pt
- -> Ê^^^/Windows/Fonts/pala.ttf
+ -> Ù^^^/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;letterspace=10;
 +smcp;" at 10.0pt
- -> Ô^^^/Windows/Fonts/pala.ttf
+ -> ã^^^/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> Þ^^^/Windows/Fonts/pala.ttf
+ -> í^^^/Windows/Fonts/pala.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1351,9 +1351,9 @@ Requested font "Palatino Linotype/ICU" at 10.0pt
 . This font family consists of the following shapes:
 .................................................
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;" at 10.95pt
- -> í^^^/Windows/Fonts/pala.ttf
+ -> ü^^^/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/I/ICU:script=latn;language=DFLT;" at 10.95pt
- -> ÷^^^/Windows/Fonts/palai.ttf
+ -> ^^F^^_/Windows/Fonts/palai.ttf
 
 Underfull \hbox (badness 10000) in paragraph at lines 46--49
 []\EU1/PalatinoLinotype(0)/m/n/10 Homework is assigned from
@@ -1380,9 +1380,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--49
  []
 
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;" at 8.0pt
- -> V^^_/Windows/Fonts/pala.ttf
+ -> e^^_/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/I/ICU:script=latn;language=DFLT;" at 8.0pt
- -> ^^92^^_/Windows/Fonts/palai.ttf
+ -> ¡^^_/Windows/Fonts/palai.ttf
 LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 66.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1lmtt.fd"
@@ -1391,7 +1391,7 @@ File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Requested font "[lmmono8-regular]" at 8.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmmono8-regular.otf
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;" at 6.0pt
- -> «^^_/Windows/Fonts/pala.ttf
+ -> º^^_/Windows/Fonts/pala.ttf
 Requested font "cmmi8" at 8.0pt
 Requested font "cmmi6" at 6.0pt
 Requested font "cmsy8" at 8.0pt
@@ -1407,27 +1407,27 @@ Requested font "lasy6" at 6.0pt
 Requested font "cmr8" at 8.0pt
 Requested font "cmr6" at 6.0pt
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> ¿^^_/Windows/Fonts/pala.ttf
+ -> Î^^_/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> Ä^^_/Windows/Fonts/pala.ttf
-Requested font "Palatino Linotype/ICU" at 10.0pt
- -> É^^_/Windows/Fonts/pala.ttf
-Requested font "Palatino Linotype/B/ICU" at 10.0pt
- -> Î^^_/Windows/Fonts/palab.ttf
-Requested font "Palatino Linotype/B/ICU" at 10.0pt
- -> Ó^^_/Windows/Fonts/palab.ttf
+ -> Ó^^_/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/ICU" at 10.0pt
  -> Ø^^_/Windows/Fonts/pala.ttf
-Requested font "Palatino Linotype/I/ICU" at 10.0pt
- -> Ý^^_/Windows/Fonts/palai.ttf
-Requested font "Palatino Linotype/I/ICU" at 10.0pt
- -> â^^_/Windows/Fonts/palai.ttf
+Requested font "Palatino Linotype/B/ICU" at 10.0pt
+ -> Ý^^_/Windows/Fonts/palab.ttf
+Requested font "Palatino Linotype/B/ICU" at 10.0pt
+ -> â^^_/Windows/Fonts/palab.ttf
 Requested font "Palatino Linotype/ICU" at 10.0pt
  -> ç^^_/Windows/Fonts/pala.ttf
+Requested font "Palatino Linotype/I/ICU" at 10.0pt
+ -> ì^^_/Windows/Fonts/palai.ttf
+Requested font "Palatino Linotype/I/ICU" at 10.0pt
+ -> ñ^^_/Windows/Fonts/palai.ttf
+Requested font "Palatino Linotype/ICU" at 10.0pt
+ -> ö^^_/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/BI/ICU" at 10.0pt
- -> ì^^_/Windows/Fonts/palabi.ttf
+ -> ÿÿ/Windows/Fonts/palabi.ttf
 Requested font "Palatino Linotype/BI/ICU" at 10.0pt
- -> ñ^^_/Windows/Fonts/palabi.ttf
+ -> C:/Windows/Fonts/palabi.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1463,9 +1463,9 @@ Requested font "Palatino Linotype/BI/ICU" at 10.0pt
 .................................................
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;letterspace=15;
 " at 10.0pt
- -> ö^^_/Windows/Fonts/pala.ttf
+ -> ^^L
 
-Overfull \hbox (39.27591pt too wide) in paragraph at lines 69--82
+Overfull \hbox (25.31595pt too wide) in paragraph at lines 69--84
  [] 
  []
 
@@ -1476,9 +1476,9 @@ LaTeX Warning: Marginpar on page 1 moved.
 LaTeX Warning: Marginpar on page 1 moved.
 
 Requested font "Palatino Linotype" at 8.0pt
- -> è
+ -> ü
 Requested font "Palatino Linotype/ICU" at 8.0pt
- -> ò
+ -> ^^F^^A/Windows/Fonts/pala.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1489,36 +1489,33 @@ Requested font "Palatino Linotype/ICU" at 8.0pt
 .................................................
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;letterspace=10;
 " at 8.0pt
- -> ü
+ -> ^^P^^A/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;letterspace=10;
 +smcp;" at 8.0pt
- -> ^^F^^A/Windows/Fonts/pala.ttf
+ -> ^^Z^^A/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/I/ICU:script=latn;language=DFLT;" at 10.0pt
- -> J^^C/Windows/Fonts/palai.ttf
-
-LaTeX Warning: Marginpar on page 1 moved.
-
-
-LaTeX Warning: Marginpar on page 1 moved.
-
+ -> ^^^C/Windows/Fonts/palai.ttf
 
 LaTeX Warning: Marginpar on page 1 moved.
 
 [1
 
 ]
-Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 10.0pt
- -> ^^96^^B/Windows/Fonts/palab.ttf
-Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 7.0pt
- -> ^^8c^^B/Windows/Fonts/palab.ttf
-Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 5.0pt
- -> ^^82^^B/Windows/Fonts/palab.ttf
-Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 8.0pt
- -> ã^^E/Windows/Fonts/palab.ttf
-Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 6.0pt
- -> í^^E/Windows/Fonts/palab.ttf
 
-Overfull \hbox (4.9043pt too wide) in paragraph at lines 135--142
+LaTeX Warning: Marginpar on page 2 moved.
+
+Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 10.0pt
+ -> ª^^B/Windows/Fonts/palab.ttf
+Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 7.0pt
+ ->  ^^B/Windows/Fonts/palab.ttf
+Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 5.0pt
+ -> ^^96^^B/Windows/Fonts/palab.ttf
+Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 8.0pt
+ -> ^^A^^F/Windows/Fonts/palab.ttf
+Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 6.0pt
+ -> ^^K^^F/Windows/Fonts/palab.ttf
+
+Overfull \hbox (4.9043pt too wide) in paragraph at lines 137--144
 \EU1/PalatinoLinotype(0)/m/n/10 pure locations. They do not have extent of any 
 kind. A one-dimensional 
  []
@@ -1530,7 +1527,7 @@ LaTeX Warning: Marginpar on page 2 moved.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> ^^81^^C/Windows/Fonts/pala.ttf
+ -> ¤^^C/Windows/Fonts/pala.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1541,7 +1538,7 @@ Requested font "Palatino Linotype/ICU" at 10.0pt
 .................................................
  [2]
 Requested font "Palatino Linotype/ICU" at 8.0pt
- -> Z^^G/Windows/Fonts/pala.ttf
+ -> x^^G/Windows/Fonts/pala.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1561,7 +1558,7 @@ LaTeX Warning: Marginpar on page 3 moved.
 Underfull \vbox (badness 3977) has occurred while \output is active []
 
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> §
+ -> Ù
 /Windows/Fonts/pala.ttf
 .................................................
 . fontspec info: "defining-font"
@@ -1576,7 +1573,7 @@ Requested font "Palatino Linotype/ICU" at 10.0pt
 LaTeX Warning: Marginpar on page 4 moved.
 
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> <^^L/Windows/Fonts/pala.ttf
+ -> n^^L/Windows/Fonts/pala.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1594,9 +1591,9 @@ Package bibentry Warning: You have used \nobibliography*
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 308.
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> 6^^M/Windows/Fonts/pala.ttf
+ -> h^^M/Windows/Fonts/pala.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1606,11 +1603,11 @@ Requested font "Palatino Linotype/ICU" at 10.0pt
 . This font family consists of the following shapes:
 .................................................
 [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 308.
  (C:\Users\drosoff\Documents\courses\M352\syllabus\syllabus.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 304.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 304.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 308.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 308.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 308.
  ) 
 Here is how much of TeX's memory you used:
  24614 strings out of 429025
