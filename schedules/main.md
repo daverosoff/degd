@@ -14,6 +14,7 @@ Date                Reading                 Topics
 February 10         None                    [Syllabus][s] and other generalities
 
 February 12         None                    Linear first-order equations. <br />
+                                            [Workshop 01][w01] on integrating factors is due Friday. <br />
                                             WeBWorK 01 is due Thursday at 10pm.
 
 February 14&hearts; Sections 2.1, 2.2       Separable equations. <br />
