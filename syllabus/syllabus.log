@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9) (preloaded format=xelatex 2014.2.4)  11 FEB 2014 15:49
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9) (preloaded format=xelatex 2014.2.4)  11 FEB 2014 22:20
 entering extended mode
 **C:/Users/drosoff/Documents/courses/M352/syllabus/syllabus.tex
 (C:/Users/drosoff/Documents/courses/M352/syllabus/syllabus.tex
@@ -1256,14 +1256,14 @@ Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;" at 5.0pt
  -> î^^]/Windows/Fonts/pala.ttf
 Requested font "cmex7" at 7.0pt
 Requested font "cmex7" at 5.0pt
-LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 Requested font "msam10" at 10.0pt
 Requested font "msam7" at 7.0pt
 Requested font "msam5" at 5.0pt
-LaTeX Font Info:    Try loading font information for U+msb on input line 41.
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1271,7 +1271,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Requested font "msbm10" at 10.0pt
 Requested font "msbm7" at 7.0pt
 Requested font "msbm5" at 5.0pt
-LaTeX Font Info:    Try loading font information for U+lasy on input line 41.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 42.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -1355,35 +1355,60 @@ Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;" at 10.95pt
 Requested font "Palatino Linotype/I/ICU:script=latn;language=DFLT;" at 10.95pt
  -> ^^F^^_/Windows/Fonts/palai.ttf
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--49
+Underfull \hbox (badness 10000) in paragraph at lines 48--54
 []\EU1/PalatinoLinotype(0)/m/n/10 Homework is assigned from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--49
+Underfull \hbox (badness 10000) in paragraph at lines 48--54
 \EU1/PalatinoLinotype(0)/m/n/10 the textbook and on WeB-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--49
+Underfull \hbox (badness 10000) in paragraph at lines 48--54
 \EU1/PalatinoLinotype(0)/m/n/10 WorK. You are free to work
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--49
+Underfull \hbox (badness 10000) in paragraph at lines 48--54
 \EU1/PalatinoLinotype(0)/m/n/10 together on problems, but
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--49
+Underfull \hbox (badness 10000) in paragraph at lines 48--54
 \EU1/PalatinoLinotype(0)/m/n/10 all work you submit must be
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--54
+\EU1/PalatinoLinotype(0)/m/n/10 your own. Weeklies may not
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--54
+\EU1/PalatinoLinotype(0)/m/n/10 be assigned every week, but
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--54
+\EU1/PalatinoLinotype(0)/m/n/10 you will have about a week to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--54
+\EU1/PalatinoLinotype(0)/m/n/10 work on the problems. Projects
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--54
+\EU1/PalatinoLinotype(0)/m/n/10 will be presented during the
+ []
+
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;" at 8.0pt
- -> e^^_/Windows/Fonts/pala.ttf
+ -> Ä^^_/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/I/ICU:script=latn;language=DFLT;" at 8.0pt
- -> ¡^^_/Windows/Fonts/palai.ttf
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 66.
+ -> ^^V
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 71.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1lmtt.fd"
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1391,7 +1416,7 @@ File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Requested font "[lmmono8-regular]" at 8.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmmono8-regular.otf
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;" at 6.0pt
- -> º^^_/Windows/Fonts/pala.ttf
+ -> /
 Requested font "cmmi8" at 8.0pt
 Requested font "cmmi6" at 6.0pt
 Requested font "cmsy8" at 8.0pt
@@ -1407,27 +1432,27 @@ Requested font "lasy6" at 6.0pt
 Requested font "cmr8" at 8.0pt
 Requested font "cmr6" at 6.0pt
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> Î^^_/Windows/Fonts/pala.ttf
+ -> C
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> Ó^^_/Windows/Fonts/pala.ttf
+ -> H
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> Ø^^_/Windows/Fonts/pala.ttf
+ -> M
 Requested font "Palatino Linotype/B/ICU" at 10.0pt
- -> Ý^^_/Windows/Fonts/palab.ttf
+ -> R
 Requested font "Palatino Linotype/B/ICU" at 10.0pt
- -> â^^_/Windows/Fonts/palab.ttf
+ -> W
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> ç^^_/Windows/Fonts/pala.ttf
+ -> \
 Requested font "Palatino Linotype/I/ICU" at 10.0pt
- -> ì^^_/Windows/Fonts/palai.ttf
+ -> a
 Requested font "Palatino Linotype/I/ICU" at 10.0pt
- -> ñ^^_/Windows/Fonts/palai.ttf
+ -> f
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> ö^^_/Windows/Fonts/pala.ttf
+ -> k
 Requested font "Palatino Linotype/BI/ICU" at 10.0pt
- -> ÿÿ/Windows/Fonts/palabi.ttf
+ -> p
 Requested font "Palatino Linotype/BI/ICU" at 10.0pt
- -> C:/Windows/Fonts/palabi.ttf
+ -> u
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1463,9 +1488,9 @@ Requested font "Palatino Linotype/BI/ICU" at 10.0pt
 .................................................
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;letterspace=15;
 " at 10.0pt
- -> ^^L
+ -> z
 
-Overfull \hbox (25.31595pt too wide) in paragraph at lines 69--84
+Overfull \hbox (25.31595pt too wide) in paragraph at lines 74--89
  [] 
  []
 
@@ -1476,9 +1501,9 @@ LaTeX Warning: Marginpar on page 1 moved.
 LaTeX Warning: Marginpar on page 1 moved.
 
 Requested font "Palatino Linotype" at 8.0pt
- -> ü
+ -> j^^A/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/ICU" at 8.0pt
- -> ^^F^^A/Windows/Fonts/pala.ttf
+ -> t^^A/Windows/Fonts/pala.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1489,12 +1514,12 @@ Requested font "Palatino Linotype/ICU" at 8.0pt
 .................................................
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;letterspace=10;
 " at 8.0pt
- -> ^^P^^A/Windows/Fonts/pala.ttf
+ -> ~^^A/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;letterspace=10;
 +smcp;" at 8.0pt
- -> ^^Z^^A/Windows/Fonts/pala.ttf
+ -> ^^88^^A/Windows/Fonts/pala.ttf
 Requested font "Palatino Linotype/I/ICU:script=latn;language=DFLT;" at 10.0pt
- -> ^^^C/Windows/Fonts/palai.ttf
+ -> Ö^^C/Windows/Fonts/palai.ttf
 
 LaTeX Warning: Marginpar on page 1 moved.
 
@@ -1504,30 +1529,21 @@ LaTeX Warning: Marginpar on page 1 moved.
 
 LaTeX Warning: Marginpar on page 2 moved.
 
-Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 10.0pt
- -> ª^^B/Windows/Fonts/palab.ttf
-Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 7.0pt
- ->  ^^B/Windows/Fonts/palab.ttf
-Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 5.0pt
- -> ^^96^^B/Windows/Fonts/palab.ttf
-Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 8.0pt
- -> ^^A^^F/Windows/Fonts/palab.ttf
-Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 6.0pt
- -> ^^K^^F/Windows/Fonts/palab.ttf
+Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;+smcp;" at 10.0
+pt
+ -> ^^[^^E/Windows/Fonts/pala.ttf
 
-Overfull \hbox (4.9043pt too wide) in paragraph at lines 137--144
-\EU1/PalatinoLinotype(0)/m/n/10 pure locations. They do not have extent of any 
-kind. A one-dimensional 
+Overfull \hbox (1.2608pt too wide) in paragraph at lines 135--141
+\EU1/PalatinoLinotype(0)/m/sc/10 T h e r e -c e n t h i s -t o r y o f s c i -e
+ n -t i f i c p r o g r e s s\EU1/PalatinoLinotype(0)/m/n/10 , say the last 300
+–400 
  []
 
 
 LaTeX Warning: Marginpar on page 2 moved.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> ¤^^C/Windows/Fonts/pala.ttf
+ -> æ^^B/Windows/Fonts/pala.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1536,17 +1552,25 @@ Requested font "Palatino Linotype/ICU" at 10.0pt
 . 
 . This font family consists of the following shapes:
 .................................................
- [2]
-Requested font "Palatino Linotype/ICU" at 8.0pt
- -> x^^G/Windows/Fonts/pala.ttf
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'PalatinoLinotype(1)' created for font 'Palatino Linotype' with
-. options [,LetterSpace=10].
-. 
-. This font family consists of the following shapes:
-.................................................
+[2]
+
+LaTeX Warning: Marginpar on page 3 moved.
+
+Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 10.0pt
+ -> þ^^H/Windows/Fonts/palab.ttf
+Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 7.0pt
+ -> ô^^H/Windows/Fonts/palab.ttf
+Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 5.0pt
+ -> à^^H/Windows/Fonts/palab.ttf
+Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 8.0pt
+ -> Y^^C/Windows/Fonts/palab.ttf
+Requested font "Palatino Linotype/B/ICU:script=latn;language=DFLT;" at 6.0pt
+ -> c^^C/Windows/Fonts/palab.ttf
+
+Overfull \hbox (4.9043pt too wide) in paragraph at lines 196--210
+\EU1/PalatinoLinotype(0)/m/n/10 pure locations. They do not have extent of any 
+kind. A one-dimensional 
+ []
 
 
 LaTeX Warning: Marginpar on page 3 moved.
@@ -1555,11 +1579,19 @@ LaTeX Warning: Marginpar on page 3 moved.
 LaTeX Warning: Marginpar on page 3 moved.
 
 
-Underfull \vbox (badness 3977) has occurred while \output is active []
+LaTeX Warning: Marginpar on page 3 moved.
+
+
+LaTeX Warning: Marginpar on page 3 moved.
+
+
+LaTeX Warning: Marginpar on page 3 moved.
+
+
+Underfull \vbox (badness 1490) has occurred while \output is active []
 
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> Ù
-/Windows/Fonts/pala.ttf
+ -> ^^8f^^I/Windows/Fonts/pala.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1572,8 +1604,8 @@ Requested font "Palatino Linotype/ICU" at 10.0pt
 
 LaTeX Warning: Marginpar on page 4 moved.
 
-Requested font "Palatino Linotype/ICU" at 10.0pt
- -> n^^L/Windows/Fonts/pala.ttf
+Requested font "Palatino Linotype/ICU" at 8.0pt
+ -> _^^G/Windows/Fonts/pala.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1582,18 +1614,83 @@ Requested font "Palatino Linotype/ICU" at 10.0pt
 . 
 . This font family consists of the following shapes:
 .................................................
-[4]
+
+LaTeX Warning: Marginpar on page 4 moved.
+
+
+LaTeX Warning: Marginpar on page 4 moved.
+
+
+Underfull \vbox (badness 3977) has occurred while \output is active []
+
+Requested font "Palatino Linotype/ICU" at 10.0pt
+ -> <^^Q/Windows/Fonts/pala.ttf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'PalatinoLinotype(1)' created for font 'Palatino Linotype' with
+. options [,LetterSpace=10].
+. 
+. This font family consists of the following shapes:
+.................................................
+ [4]
 
 LaTeX Warning: Marginpar on page 5 moved.
 
+
+LaTeX Warning: Marginpar on page 5 moved.
+
+
+LaTeX Warning: Marginpar on page 5 moved.
+
+
+LaTeX Warning: Marginpar on page 5 moved.
+
+
+LaTeX Warning: Marginpar on page 5 moved.
+
+
+Underfull \vbox (badness 3058) has occurred while \output is active []
+
+Requested font "Palatino Linotype/ICU" at 10.0pt
+ -> ½^^R/Windows/Fonts/pala.ttf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'PalatinoLinotype(1)' created for font 'Palatino Linotype' with
+. options [,LetterSpace=10].
+. 
+. This font family consists of the following shapes:
+.................................................
+ [5]
+
+LaTeX Warning: Marginpar on page 6 moved.
+
+Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;" at 24.0pt
+ -> +^^S/Windows/Fonts/pala.ttf
+Requested font "Palatino Linotype" at 24.0pt
+ -> 0^^S/Windows/Fonts/pala.ttf
+Requested font "Palatino Linotype/ICU" at 24.0pt
+ -> :^^S/Windows/Fonts/pala.ttf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'PalatinoLinotype(2)' created for font 'Palatino Linotype' with
+. options [,LetterSpace=15].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "Palatino Linotype/ICU:script=latn;language=DFLT;letterspace=15;
+" at 24.0pt
+ -> D^^S/Windows/Fonts/pala.ttf
 
 Package bibentry Warning: You have used \nobibliography* 
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 308.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 419.
 Requested font "Palatino Linotype/ICU" at 10.0pt
- -> h^^M/Windows/Fonts/pala.ttf
+ -> N^^S/Windows/Fonts/pala.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1602,20 +1699,20 @@ Requested font "Palatino Linotype/ICU" at 10.0pt
 . 
 . This font family consists of the following shapes:
 .................................................
-[5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 308.
+[6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 419.
  (C:\Users\drosoff\Documents\courses\M352\syllabus\syllabus.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 308.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 308.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 308.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 419.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 419.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 419.
  ) 
 Here is how much of TeX's memory you used:
- 24614 strings out of 429025
- 434391 string characters out of 3167801
+ 24625 strings out of 429025
+ 434727 string characters out of 3167801
  528701 words of memory out of 3000000
- 27549 multiletter control sequences out of 15000+200000
- 9930 words of font info for 77 fonts, out of 3000000 for 9000
+ 27554 multiletter control sequences out of 15000+200000
+ 9970 words of font info for 82 fonts, out of 3000000 for 9000
  912 hyphenation exceptions out of 8191
- 46i,11n,58p,10452b,412s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,11n,58p,10452b,496s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on syllabus.pdf (5 pages).
+Output written on syllabus.pdf (6 pages).

@@ -36,16 +36,21 @@
 \setlength{\beforeepigraphskip}{0\baselineskip}
 \setlength{\afterepigraphskip}{0\baselineskip}
 
+\begin{fullwidth}
 \epigraph{%
     I didn't discover curves; I only uncovered them.%
 }{M\smallcaps{ae} W\smallcaps{est}}
+\end{fullwidth}
 
 \subsection{Quick Reference} \label{ssec:quickreference}
     \begin{minipage}[t]{0.44\linewidth}
         \vspace{0pt}
         Homework is assigned from the textbook and on WeBWorK. 
         You are free to work together on problems, but all work
-        you submit must be your own.
+        you submit must be your own. Weeklies may not be assigned
+        every week, but you will have about a week to work on the
+        problems. Projects will be presented during the final exam
+        period.
     \end{minipage}\marginnote{% Office hours and contact info
         \begin{description}
             \item[Instructor]
@@ -85,7 +90,7 @@
 
 \subsection{Prerequisite}
 
-The prerequisite for this course is MAT-251\sidenote{or equivalent}.
+The prerequisite for this course is MAT-251.\sidenote{Or equivalent.}
 
 \subsection{Preface: Learning outcomes} \label{ssec:prefacelearningoutcomes}
 
@@ -111,7 +116,7 @@ The prerequisite for this course is MAT-251\sidenote{or equivalent}.
     I explicitly include these outcomes in the syllabus so that it is clear
     why I have chosen the various course components (each of which is
     described below.) Each learning outcome is addressed by one or more
-    components of the course: quizzes, WeBWorK exercises, longer weekly problem sets,
+    components of the course: quizzes, WeBWorK exercises, longer weekly problem sets, group research projects,
     presentations to the class, and exams.
     See the \emph{Grading} section below for more information.
 
@@ -119,14 +124,68 @@ The prerequisite for this course is MAT-251\sidenote{or equivalent}.
 
 If you are considering a life as any kind of engineer, physical scientist, or
 applied mathematician, life is differential equations. The laws of the
-universe are all differential equations: problems involving fluid flow,
-current in electric circuits, population dynamics, pricing of financial
-derivatives,\footnote{Financial derivatives are unrelated to the derivatives of
-calculus.} quantum mechanics, heat transfer, relativity, etc., are all
-formulated in this language. They are ubiquitous and of paramount importance.
-I assume this is reason enough for you to be interested.
+universe are, without exception, differential equations: problems involving
+fluid flow, current in electric circuits, population dynamics, pricing of
+financial derivatives,\footnote{Financial derivatives are unrelated to the
+derivatives of calculus.} quantum mechanics, heat transfer, relativity, etc.,
+are all formulated in this language. They are ubiquitous and of paramount
+importance for the understanding of any chemical, physical, or economic 
+phenomena. I hope this is reason enough for you to be interested.
 
-Here is a bit of mathematical philosophy. Numbers and points are the same.
+\newthought{The recent history of scientific progress}, say the last 300–400
+years, is characterized by a succession of \emph{models} of various phenomena.
+These models tend to be increasingly mathematical with time. Classical
+physics, for example, has been thoroughly mathematized since the time of
+Newton (1642–1727), and quantum physics could not have been invented without
+it, while the mathematization of biology is still in its nascent phase.
+
+Mathematical models of phenomena that change in time (or space, or in regard
+to any other measurable quantity) make essential use of derivatives. Without
+derivatives, it is difficult to imagine a really serious formulation of
+any phenomenon that is not the same in all places, at all times. The very idea
+of changeability implies the necessity of \emph{rates of change}, because 
+most of the phenomena of importance in life appear to be \emph{continuous} ones.
+Moreover the ways in which these phenomena change are evidently also 
+continuous.
+
+A mathematical model can be something as simple as an equation. In fact, they
+usually are. For example, balances remaining on outstanding student loans
+can be modeled with exponential functions. Exactly what this means is 
+somewhat nebulous, because no exponential function is equal to the actual
+balance at all times (since real loans are neither paid continuously nor does
+their interest accumulate continuously). Yet somehow the essential behavior
+of the balance function is captured by the simpler exponential model.
+
+Similarly, the level of the tide in the Bay of Fundy is not exactly given
+by any sinusoidal function, but sinusoidal models of the tide and tides
+around the world seem to be close enough to inform our understanding of these
+phenomena.
+
+These effective models arise from differential models of the underlying
+rates. The tidal system in a narrow bay is described by just a few rates.
+These rates, starting from physical first principles, are related in a 
+way that is algebraically quite simple. The relationship of the rates—the
+derivatives—is a differential equation, and the solutions of this equation
+are functions describing possible tidal behavior.
+
+Similarly, while most students have encountered the exponential model of
+a loan or investment as a limiting phenomenon,%
+    \sidenote{
+        Continuous interest is the limit of ordinary interest as the length
+        of the compounding period approaches 0.
+    }
+it is perhaps better understood in terms of arising from a specific differential
+model. Let us suppose that the accumulation of interest is the only way in 
+which money enters or leaves the account. Then, since interest is a constant 
+multiple of principal,%
+    \sidenote{
+        The constant of proportionality is called the \emph{interest rate}.
+    }
+and the rate of increase of the account balance is identical with the accumulation
+of interest, we must have $dP/dt = rP$, where $P$ is the principal and $r$ is
+the interest rate.
+
+\newthought{Here is a bit of mathematical} philosophy. Numbers and points are the same.
 Ordinary numbers are points on a line; points in other spaces are different
 kinds of numbers. If the space the points live in is a Euclidean space like
 $\R^2$ or $\R^3$, these numbers are often called \emph{vectors}. You have
@@ -134,9 +193,16 @@ spent many years solving equations involving both constants and variables
 whose values are ordinary numbers, and maybe a few weeks solving equations
 involving vectors. Usually, we refer to this kind of work as \emph{algebra}.
 
-Points, and therefore numbers, are zero-dimensional.\footnote{Think of the head
-of the vector, not the whole arrow.} They are pure locations. They do not
-have extent of any kind. A one-dimensional number is called a \emph{curve}.
+Points, and therefore numbers, are zero-dimensional.\footnote{For points in 
+the vector spaces $\R^2$ or $\R^3$, think of the heads
+of the vectors, not the whole arrow.} They are pure locations. They do not
+have extent of any kind. A one-dimensional number is called a \emph{curve}.%
+    \sidenote{
+        On the other hand, a vector (the whole arrow) is another kind of 
+        one-dimensional number. Are vectors and 
+        curves the same? Not really—but curves (at least differentiable ones) 
+        have tangent vectors, so they seem to be related.
+    }
 You can also think of a curve as a family of points, as we often do in
 calculus. These points are related—as are the members of any family. Often,
 they are related by an equation defining the curve. Many algebraic problems
@@ -144,19 +210,29 @@ involve finding a special point on a curve: a special member of a family.
 
 Differential equations also involve both constants and variables and need to
 be solved. But here, the constants, variables, and solutions are all 
-one-dimensional: they are curves! Solutions are called the integral curves 
-of the differential
-equation or equations. The solution of differential equations is the
-understanding of the algebra of curves. Usually, the plane will be partitioned
-into a bunch of related curves that fit together in a family—related, just as
-in algebra, by an equation (now, a differential equation) defining the family.
-Many problems in differential equations involve finding a special curve in a
-family. These are called \emph{initial value problems}. As in algebra, most
-equations cannot be solved. Equations that admit exact solutions are very
-special. We will investigate some of the elementary equations and classify
-them according to their form. We will also discuss systems of linear
-differential equations, which are solved via linear-algebraic techniques
-involving matrices.
+potentially one-dimensional: they are curves! The solutions are called the 
+\emph{integral curves} of
+the differential equation or equations. The solution of differential equations
+is the understanding of the algebra of curves.%
+    \sidenote{
+        This is not a merely casual metaphor. The subject of \emph{differential
+        geometry} involves a precise formulation of the algebra of curves (and
+        higher-dimensional surfaces and hypersurfaces).
+    }
+Geometrically, the plane will be
+partitioned into a bunch of related curves that fit together in a
+\emph{family}—related, just as in algebra, by an equation (now, a differential
+equation) defining the family. Many problems in differential equations involve
+finding a special curve in a family.%
+    \sidenote{
+        Compare to the above description of solution of algebraic equations.
+    }
+These are called \emph{initial value
+problems}. As in algebra, most equations cannot be solved. Equations that
+admit exact solutions are very special. We will investigate some of the
+elementary equations and classify them according to their form. We will also
+discuss systems of linear differential equations, which are solved via 
+linear-algebraic techniques involving matrices.
 
 \subsection{Catalog description}
 
@@ -166,7 +242,13 @@ including systems of equations using matrix algebra.”
 \subsection{Text}
 
 The text is \emph{Elementary Differential Equations} by Boyce
-and DiPrima, ninth edition. This book and its cousins have been the standard
+and DiPrima, ninth edition. This book and its cousins%
+    \sidenote{
+        In particular, \emph{Elementary Differential Equations
+        and Boundary Value Problems}, which is an acceptable
+        substitute for our class.
+    }
+have been the standard
 for two generations, so the world is awash in earlier editions (as well as
 one much more expensive later edition). I don't recommend you use an edition
 earlier than the eighth. If you have an earlier edition of the text than the
@@ -193,7 +275,7 @@ Scores%
             Midterm 3     & 0.23 \\
             \bottomrule
         \end{tabular}
-    }%
+    }
 are computed as a weighted average, with the weights indicated in the
 margin. Descriptions of the various tiers follow. 
 Observe that the weights sum to 1 = 100\%. The exact determination of letter
@@ -229,7 +311,13 @@ well—and not as permanently, which is really the point.
 Even it you are not turning it in, it is important to pay attention to the
 style of your writing and your presentation. Good mathematical writing is
 essential for anyone who wishes to think clearly about mathematics—sloppy
-writing \emph{invariably} reflects underlying sloppy thinking. The process of
+writing \emph{invariably} reflects underlying sloppy thinking.%
+    \sidenote{
+        Since mathematics is one of the hardest things to think about,
+        its careful study is the best training for proficiency in any
+        kind of thought.
+    }
+The process of
 making your ideas and reasoning \emph{clear, complete, and unambiguously
 correct} is the greatest amplifier of mathematical power there is. Hence
 your solutions should be composed in brilliant English prose.%
@@ -239,7 +327,7 @@ your solutions should be composed in brilliant English prose.%
         \emph{complete sentences}, sprinkled with equations here and there. Solutions
         in the popular “pile-of-equations” style are to be avoided and will not get
         much credit.
-    }% 
+    }
 You must explain what is happening as the action unfolds. You should also
 avoid falling into a “two-column” format that you may have learned in a 
 high-school geometry class. It is stilted, artificial, and not easier to read than
@@ -248,29 +336,46 @@ presentation that doesn't leave the reader guessing.
 
 \subsection{Quizzes}
 
-Quizzes will be given frequently to help you make sure you are staying on top
+Quizzes%
+    \sidenote{
+        Quizzes constitute the single largest component of the course grade.
+        It is very difficult to get a high grade in the class without getting
+        a high quiz grade. Since quizzes are so frequent, this is eminently
+        possible, but it is extremely advisable to stay current with reading
+        and WeBWorK in order to effect it.
+    }
+will be given frequently to help you make sure you are staying on top
 of the material. Quiz problems will come directly, or nearly so, from the
-assigned daily WeBWorK problems. Quizzes begin promptly at 8:00 and can not be
+assigned daily WeBWorK problems. Quizzes begin promptly at 8:00 and cannot be
 made up.
 
 \subsection{Workshops}
 
-Most of you are familiar with the workshop format from Calculus~III. Workshops
+Most of you are familiar with the workshop format%
+    \sidenote{
+        Workshops are generally marked for full credit if it appears
+        you made an honest effort to complete them. 
+    }
+from Calculus~III. Workshops
 are primarily in-class activities (although some will need to be finished at home)
 in which you will work through some aspects of a problem with other students in
 the class. Along with the homework, the workshops are the heart of the course.
 
 \subsection{Exam dates}
 
-As specified below, you will take two in-class exams as well as the
-traditional comprehensive final exam. Let me know \emph{immediately} if you
-foresee a conflict. See below also for information regarding make-up exams.
+As specified above, you will take three hourlong midterm exams. Let me know
+\emph{immediately} if you foresee a conflict. See below also for information
+regarding make-up exams.
 
-\begin{itemize}
-   \item Exam~1 (tentative): Monday, March~3
+\begin{compactitem}
+   \item Exam~1 (tentative): Wednesday, March~5
    \item Exam~2 (tentative): Wednesday, April~9
-   \item Final Exam: Wednesday, May~15, 1:30–4:30
-\end{itemize}
+   \item Exam~3 (tentative): Wednesday, May~5 (week 12, not finals week)%
+        \sidenote{
+            Contrary to occasionally expressed opinion, the last week of
+            class is very much alive.
+        }
+\end{compactitem}
 %
 \subsection{Make-ups}
 
@@ -304,5 +409,11 @@ Disabilities Act and who need any test or course materials to be furnished in
 an alternative format should notify me immediately (during the first week of
 class).  Reasonable efforts will be made to accommodate the needs of such
 students. 
+
+\dwrspace{1}
+
+\begin{fullwidth}
+    \centering {\Huge \allcaps{Good luck this semester!}}
+\end{fullwidth}
 
 \end{document}
