@@ -5,8 +5,7 @@ particular day. If you missed class, you can also find workshop handouts
 and other materials here. You should also find a classmate who will share
 more specific notes from the days you were unable to attend.
 
-All of this scheduling data is tentative and subject to change, especially
-module numbering. 
+Weekly problem sets are [listed separately][weekly], as are [WeBWorK problems][ww]. 
 
 ---------------------------------------------------------------------------------------------
 Date                Reading                 Topics 
@@ -31,13 +30,8 @@ February 21         Section 2.5             Autonomous equations. Weekly assignm
 ---------------------------------------------------------------------------------------------
 
 [s]: ../syllabus/syllabus.pdf
-[ww]: https://webwork.collegeofidaho.edu/webwork2/MAT370_W14/
-
-[h01]: ../handouts/01/Handout.pdf
-
-[g01]: ../downloads/pappus-arbelos.ggb
-
-[p01]: http://www.youtube.com/playlist?list=PL4i_MfPrZui6CJBLYy4jl0hdeqhe2_Hs6
+[ww]: https://webwork.collegeofidaho.edu/webwork2/MAT352_W14/
+[weekly]: problems.html
 
 [m01]: ../modules/01/Module.html
 [m02]: ../modules/02/Module.html

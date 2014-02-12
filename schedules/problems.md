@@ -3,9 +3,9 @@
 ### Weekly 1: February 10--February 14 
 Due Friday, February 21.
 
+- Section 1.1: exercises 1--6 (use [Sage][m01] to draw the direction fields)
 - Section 2.1: exercises 13, 15, 17, 19.
 - Section 2.2: exercises 10--16 (even; use [Sage][m01] or equivalent for plots)
-
 
 [s]: ../syllabus/syllabus.pdf
 [ww]: https://webwork.collegeofidaho.edu/webwork2/MAT370_W14/
