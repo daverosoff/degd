@@ -57,7 +57,7 @@ February 21         Section 2.5             Autonomous equations. Weekly assignm
 [m16]: ../modules/16/Module.html
 
 [w00]: ../workshops/00/Workshop.pdf
-[w01]: ../workshops/01/Workshop.pdf
+[w01]: ../workshops/01/LinearFirstOrderEquations.pdf
 [w02]: ../workshops/02/Workshop.pdf
 [w03]: ../workshops/03/Workshop.pdf
 [w04]: ../workshops/04/Workshop.pdf
