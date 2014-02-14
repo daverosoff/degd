@@ -6,7 +6,7 @@
 <meta http-equiv = "Content-type" content = "application/xhtml+xml;charset=UTF-8" />
 <meta http-equiv = "encoding" content = "utf-8">
 <title>Getting started with Sage</title>
-<link rel = "stylesheet" type = "text/css" href = "mystyle.css" />
+<link rel = "stylesheet" type = "text/css" href = "../../css/master.css" />
 <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
@@ -22,7 +22,7 @@ This document will attempt to get you up and running with Sage. It is a work in 
 <em class = "red">To get any benefit from reading this, you must follow along with the evaluations</em>. Type each command into your Sage window and evaluate as you read. Pay attention to the output as you go. It would be best if you typed the commands yourself rather than copy/paste.
 </p>
 <h3>Table of contents</h3>
-    <ol>
+    <ul>
         <li><a href = "#AccountCreation">Account creation</a></li>
         <li><a href = "#DownToBusiness">Down to business</a></li>
         <li><a href = "#SolvingAnEquation">Solving an equation</a></li>
@@ -31,15 +31,15 @@ This document will attempt to get you up and running with Sage. It is a work in 
         <li><a href = "#Lists">Introduction to Sage lists</a></li>
         <li><a href = "#EulersMethod">Euler's Method</a></li>
         <!-- <li><a href = "#MoreOnListsAndPlotting">More on lists and plotting</a>(from Wednesday 2/20 group work)</li> -->
-    </ol>
+    </ul>
 <h3><a name = "AccountCreation">Account creation</a></h3>
 <p>
-Visit the <a href = "http://cloud.sagemath.com/">Sage cloud website</a>and create an account for yourself. The cloud interface is great for working on
+Visit the <a href = "http://cloud.sagemath.com/">Sage cloud website</a> and create an account for yourself. The cloud interface is great for working on
 different devices at different times: you can save all your work remotely. 
 </p>
 <p>
 After your account is created, look around the interface a bit. Sage
-*worksheets* are mostly what we will use. If you click the button labeled <em>New</em>, Sage will prompt you for what kind of file to create. Select Worksheet. You will be prompted to name it. You can manage your worksheets like ordinary files from within the Sage interface.
+<em>worksheets</em> are mostly what we will use. If you click the button labeled <em>New</em>, Sage will prompt you for what kind of file to create. Select Worksheet. You will be prompted to name it. You can manage your worksheets like ordinary files from within the Sage interface.
 </p>
 <p>Explore the interface a bit. Look inside the drop down menus and
     buttons. Your projects are assigned permanent links so that you
@@ -285,22 +285,20 @@ This is almost exactly like a piece of what mathematicians call &quot;set-builde
 <p>
 Notice that <em class = "code">sols</em> is a list of lists. That is, each of its elements is a list. That is because the <em class = "code">solve</em> function returns a list of solutions. The next block of Sage code verifies that the solutions really do consist of zeroes of the corresponding polynomials, in a sort-of readable way.
 </p>
-    <pre><code><p class = "sage">
-        polsWithSols = zip(ourPolys, sols) 
-        for group in polsWithSols: 
-            for sol in group[1]: 
-                pp(group[0]) 
-                print('evaluates to') 
-                pp(group[0].subs(sol)) 
-                print('when') 
-                pp(sol) 
-    </p></code></pre>
+    <pre><code>polsWithSols = zip(ourPolys, sols) 
+for group in polsWithSols: 
+    for sol in group[1]: 
+        pp(group[0]) 
+        print('evaluates to') 
+        pp(group[0].subs(sol)) 
+        print('when') 
+        pp(sol)</code></pre>
 <p>
 You don't have to be a programmer to use Sage. But programming is the difference between a glorified graphing calculator with a better screen and a fully featured computer algebra system.
 </p>
-<h3><a name = "EulersMethod">Euler's Method</a></h3>
+<!--<h3><a name = "EulersMethod">Euler's Method</a></h3>
 <p>
 Here's the <a href = "http://zeus.collegeofidaho.edu/academics/MathPhysics/courses/MAT-352/EulersMethod.sws">worksheet we used in class</a>. It may help you with Euler's method in Sage.
-</p>
+</p>-->
 </body>
 </html>
