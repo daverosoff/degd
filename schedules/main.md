@@ -14,18 +14,25 @@ February 10         None                    [Syllabus][s] and other generalities
 
 February 12         None                    Linear first-order equations. <br />
                                             [Workshop 01][w01] on integrating factors is due Friday. <br />
-                                            WeBWorK 01 is due Thursday at 10pm.
+                                            WeBWorK 01 (Introductory concepts) is due Thursday at 10pm.
 
-February 14&hearts; Sections 2.1, 2.2       Separable equations. <br />
-                                            Quiz 01.
+February 14&hearts; Sections 2.1, 2.2       Wrap up linear equations. <br />
+                                            Separable equations ([PDF presentation][d01]). <br />
+                                            Quiz 01 (WeBWorK 01).
 
-February 17         Section 2.3             Introduction to mathematical modeling  <br />
-                                            Quiz 02.
+February 17         Section 2.3             Workshop 02 on separable equations <br />
+                                            Introduction to mathematical modeling  <br />
+                                            WeBWorK 02 (linear equations) is due at 10pm.
 
 February 19         Section 2.3             Continuation of modeling activities <br />
-                                            Survey of group project possibilities.
+                                            Quiz 02 (WeBWorK 02). <br />
+                                            WeBWorK 03 (separable equations) is due at 10pm.
 
-February 21         Section 2.5             Autonomous equations. Weekly assignment 1 is due.                                                                                                                                                 
+February 21         Section 2.5             Quiz 03 (WeBWorK 03). <br />
+                                            Weekly assignment 1 is due. <br />
+                                            Introduction to Autonomous equations. <br />
+                                            Survey of group project possibilities. <br />
+
 
 ---------------------------------------------------------------------------------------------
 
