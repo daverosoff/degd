@@ -10,7 +10,7 @@ Weekly problem sets are [listed separately][weekly], as are [WeBWorK problems][w
 ---------------------------------------------------------------------------------------------
 Date                Reading                 Topics 
 --------------      ---------------------   -------------------------------------------------
-February 10         None                    [Syllabus][s] and other generalities
+February 10         None                    [Syllabus][s] and other generalities; [introduction to Sage][sage]
 
 February 12         None                    Linear first-order equations. <br />
                                             [Workshop 01][w01] on integrating factors is due Friday. <br />
@@ -20,25 +20,26 @@ February 14&hearts; Sections 2.1, 2.2       Wrap up linear equations. <br />
                                             Separable equations ([PDF presentation][d01]). <br />
                                             Quiz 01 (WeBWorK 01).
 
-February 17         Section 2.3             Workshop 02 on separable equations <br />
-                                            Introduction to mathematical modeling  <br />
+February 17         Section 2.2             [Workshop 02][w02] on separable equations <br />
                                             WeBWorK 02 (linear equations) is due at 10pm.
 
-February 19         Section 2.3             Continuation of modeling activities <br />
+February 19         Section 2.3             Introduction to mathematical modeling <br />
                                             Quiz 02 (WeBWorK 02). <br />
                                             WeBWorK 03 (separable equations) is due at 10pm.
 
-February 21         Section 2.5             Quiz 03 (WeBWorK 03). <br />
-                                            Weekly assignment 1 is due. <br />
-                                            Introduction to Autonomous equations. <br />
+February 21         Section 2.3             Quiz 03 (WeBWorK 03). <br />
+                                            [Weekly][weekly] assignment 1 is due. <br />
                                             Survey of group project possibilities. <br />
 
+February 24         Section 2.5             Autonomous equations. <br />
 
+February 26         Section 2.4             Linear vs. nonlinear equations. <br />
 ---------------------------------------------------------------------------------------------
 
 [s]: ../syllabus/syllabus.pdf
 [ww]: https://webwork.collegeofidaho.edu/webwork2/MAT352_W14/
 [weekly]: problems.html
+[sage]: ../modules/01/sage.html
 
 [m01]: ../modules/01/Module.html
 [m02]: ../modules/02/Module.html
