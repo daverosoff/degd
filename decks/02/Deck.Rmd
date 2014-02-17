@@ -1,0 +1,64 @@
+% Introduction to modeling
+% Math 352 Differential Equations
+% February 17, 2014
+
+# What is modeling?
+
+## Modeling is using mathematics to...
+
+- explain or describe real phenomena
+- investigate questions about the world
+- test ideas about the observed reality
+- make predictions about reality and its phenomena
+
+Instead of making observations and experiments in the real world,
+a modeler makes these observations and experiments on mathematical
+representations of the real world.
+
+## Quantities are interrelated
+
+- The whole idea of *phenomena* is that changes don't happen
+in isolation. 
+- Instead they are causally bound to each other. 
+- If you change one part of a system, other parts of it may change too.
+- Do they change in the same way? at the same rate? 
+- If not, how are these rates related?
+
+## Quantities, rates
+
+Since relationships between quantities are what mathematicians usually
+call *functions*, the rates at which quantities change appear as these
+functions' *derivatives*. 
+
+Hence, equations that model relationships among quantities and the
+rates at which they change are naturally *differential equations*.
+
+## A model is a postulated relationship
+
+Informed by empirical knowledge of phenomena and drawing on previous
+models or first principles, a modeler 
+
+- decides on the form of the relationship
+- works out the consequences
+- makes predictions
+- evaluates the correlations of the predictions with observation
+
+## Models are evaluated
+
+# A simple model
+
+## The heat equation
+
+## Logistic growth of population
+
+# A nonlinear model
+
+## Significance of nonlinearity
+
+## The Navier-Stokes equations
+
+# Zen of modeling
+
+## Don't jump to the solutions
+
+## Interpret and predict, even w/o solution
