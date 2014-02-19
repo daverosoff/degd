@@ -46,7 +46,7 @@
     \dwrspace{1}
 
     \question Consider the initial value problem $y' = 5y^2$, $y(0) = y_0$.
-    For what values of $y_0$ does the solution have a vertical asymptote at $y = 6$
+    For what values of $y_0$ does the solution have a vertical asymptote at $t = 6$
     and a $t$-interval of existence $-\infty < t < 6$?
 
     \dwrspace{2}
