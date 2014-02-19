@@ -14,11 +14,13 @@ browser		= SumatraPDF
 rscript		= Rscript.exe
 rcommand	= -e 'library(knitr); knit(\"$(src)\", \"$(knitted)\")'
 
-.PHONY: all compile preview clean
+.PHONY: all compile preview clean texonly
 
 all: compile
 
 compile: $(target)
+
+texonly: $(intermed)
 
 preview: compile
 	$(browser) $(target)
