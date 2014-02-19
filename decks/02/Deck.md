@@ -76,7 +76,7 @@ $$ \frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2} $$
 ## Logistic growth of population
 
 - Tiny babies know that bacteria populations grow exponentially
-- This is because $P = rP$; the same fraction of the population is always
+- This is because $P' = rP$; the same fraction of the population is always
 reproducing
 - But does this growth continue forever?
 
@@ -89,7 +89,7 @@ if $P > K$ there are too many organisms for the available resources
 and the population should decrease.
 
 - One differential equation that well models this situation is the
-logistic differential equation, $P = rP(K-P).
+logistic differential equation, $P' = rP(K-P)$.
 
 ## Why is the logistic equation good?
 
