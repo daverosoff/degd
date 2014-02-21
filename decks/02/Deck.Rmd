@@ -64,7 +64,7 @@ are all important.
 
 Models have to come from somewhere: 
 
-- the *one-dimensional* heat equation is derived from physical first principles
+- the *one-dimensional heat equation* is derived from physical first principles
     - conservation of energy and
     - Fourier's law of heat transfer, $\mathbf{q} = -k\dfrac{\partial u}{\partial x}$
 
@@ -88,7 +88,7 @@ Let us denote by $K$ the upper limit of the population: that is,
 if $P > K$ there are too many organisms for the available resources
 and the population should decrease.
 
-- One differential equation that well models this situation is the
+- One differential equation that models this situation is the
 logistic differential equation, $P' = rP(K-P)$.
 
 ## Why is the logistic equation good?
@@ -102,31 +102,3 @@ In your groups, answer the questions (assuming $P > 0$):
 
 - Can you find any *constant* solutions of the logistic equation?
 
-# A nonlinear model
-
-## Predator--prey equations
-
-If $x$ and $y$ are populations of two different organisms, then one model
-for their interaction is the *Lotka--Volterra equations*, sometimes known
-as the *predator--prey* equations. These are:
-\begin{align*}
-    \frac{dx}{dt} &= x(\alpha - \beta y) \\
-    \frac{dy}{dt} &= -y(\gamma - \delta x)
-\end{align*}
-Here, $\alpha$, $\beta$, $\gamma$, and $\delta$ are parameters describing
-the nature of the interspecies interaction.
-
-This model was the gold standard in biomathematics for a generation, but 
-may have been supplanted in the late 80s by an alternative model.
-
-# Zen of modeling
-
-## Don't jump to the solutions
-
-- Start with differential equations
-- Resist the urge to jump straight to solutions
-
-## Interpret and predict, even w/o solution
-
-- Logistic direction field
-- What will happen if $P(0) > K$? if $P(0) < K$?

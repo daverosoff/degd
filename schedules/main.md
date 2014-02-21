@@ -23,13 +23,14 @@ February 14&hearts; Sections 2.1, 2.2       Wrap up linear equations. <br />
 February 17         Section 2.2             [Workshop 02][w02] on separable equations <br />
                                             WeBWorK 02 (linear equations) is due at 10pm.
 
-February 19         Section 2.3             Introduction to mathematical modeling <br />
+February 19         Section 2.3             Introduction to mathematical modeling ([PDF presentation][d02]) <br />
                                             Quiz 02 (WeBWorK 02). <br />
                                             WeBWorK 03 (separable equations) is due at 10pm.
 
-February 21         Section 2.3             Quiz 03 (WeBWorK 03). <br />
-                                            [Weekly][weekly] assignment 1 is due. <br />
+February 21         Section 2.3             Continued introduction to modeling.
                                             Survey of group project possibilities. <br />
+                                            Quiz 03 (WeBWorK 03). <br />
+                                            [Weekly][weekly] assignment 1 is due. <br />
 
 February 24         Section 2.5             Autonomous equations. <br />
 
