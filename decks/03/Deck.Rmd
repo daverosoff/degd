@@ -1,0 +1,122 @@
+% Introduction to modeling, II
+% Math 352 Differential Equations
+% February 21, 2014
+
+# A nonlinear model
+
+## Predator--prey equations
+
+If $x$ and $y$ are populations of two different organisms, then one model
+for their interaction is the *Lotka--Volterra equations*, sometimes known
+as the *predator--prey* equations. These are:
+\begin{align*}
+    \frac{dx}{dt} &= x(\alpha - \beta y) \\
+    \frac{dy}{dt} &= -y(\gamma - \delta x)
+\end{align*}
+Here, $\alpha$, $\beta$, $\gamma$, and $\delta$ are parameters describing
+the nature of the interspecies interaction.
+
+This model was the gold standard in biomathematics for a generation, but 
+may have been supplanted in the late 80s by an alternative model.
+
+# Zen of modeling
+
+## Don't jump to the solutions
+
+- Start with differential equations
+- Resist the urge to jump straight to solutions
+- Understand the model before you begin working out the
+consequences
+
+## Interpret and predict, even w/o solution
+
+Like we did in class:
+- Logistic direction field
+- What will happen if $P(0) > K$? if $P(0) < K$?
+- Are the results consistent with prior understanding of reality?
+
+# Modeling group projects
+
+## Modeling project assignment
+
+- Modeling projects will be *guided*
+    - Projects come with instructions
+- Submit a written paper (5--8 pages) on the last day of class
+- Group presentations May 14 (finals week)
+    - 15 minutes + 3 minutes for questions
+- Rubrics will be provided
+- Presentation counts: your paper and presentation should be professional
+    - Use Prezi, PowerPoint, \LaTeX\ Beamer, etc.
+    - Papers should include properly formatted mathematics, images where
+    appropriate, and a bibliography
+
+## Timeline:
+
+- Monday, February 24: Groups submit top three choices and are assigned a project
+- By spring break, have the requirements completed
+- Spend a few weeks writing the paper and developing the presentation
+    - Drafts of papers will be collected (tentatively, April 18)
+    - I will make suggestions and corrections to your drafts
+    - Drafts are not graded, but if you skip this step you are missing out on the
+    opportunity to get feedback on your paper
+- Polish your paper and finish the presentation during the last 3 weeks
+
+## Aerodynamics and aeronautics
+
+- Project 1: Modeling Airborne Situations (paratroopers, D.B.\ Cooper)
+- Project 2: Aircraft Flight Strategies (flight operations)
+
+## Statics
+
+- Project 3: Modeling Deflection in a Rigid Beam
+
+## Vibrations and waves
+
+- Project 4: A Bungee Jumping Problem
+- Project 5: Another Bungee Jumping Problem
+- Project 15: Resonance (requirements 1 and 3 only)
+- Project 16: A Vibrating Chain
+
+Project 16 requires some extra investigation (Bessel's equations).
+Project 15 will require some extra investigation (Fourier series) to complete
+requirements 2 and 4.
+
+## Fluid dynamics
+
+- Project 6: The Fifth Labor of Hercules
+
+## Heat transfer
+
+- Project 7: A Partially Insulated Rod
+
+## Forensic mathematics
+
+- Project 8: Murder at the Mayfair
+
+## Dynamics of human (?) relationships
+
+- Project 9: Gnomeo and Juliet
+
+## Technique: Laplace transforms
+
+- Project 10: Hercules meets Laplace
+- Project 11: Laplace's Equation in Spherical Coordinates
+
+These projects will require more investigation and are mostly
+mathematical in nature.
+
+## Epidemiology
+
+- Project 12: Modeling Malaria in Central America
+
+## Population dynamics
+
+- Project 14: Introduction to Predator/Prey Problems
+- Project 18: Immortal Differential Equations
+
+## Vibrations in 2 dimensions
+
+- Project 17: A Vibrating Square Membrane
+
+This project will require more investigation and represents
+a more serious time commitment.
