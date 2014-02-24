@@ -1,5 +1,11 @@
 % Math 352 Weekly Problems: Spring 2014
 
+### Weekly 2: February 24--February 28 
+
+Due Friday, February 28.
+
+- Section 2.3: exercises 13, 18, 19.
+
 ### Weekly 1: February 10--February 14 
 Due Friday, February 21.
 
