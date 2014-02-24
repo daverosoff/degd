@@ -27,18 +27,21 @@ February 19         Section 2.3             Introduction to mathematical modelin
                                             Quiz 02 (WeBWorK 02). <br />
                                             WeBWorK 03 (separable equations) is due at 10pm.
 
-February 21         Section 2.3             Continued introduction to modeling.
-                                            Survey of group project possibilities. <br />
+February 21         Section 2.3             Continued introduction to modeling. <br />
+                                            Survey of group project possibilities ([PDF presentation][d03]). <br />
                                             Quiz 03 (WeBWorK 03). <br />
                                             [Weekly][weekly] assignment 1 is due. <br />
 
-February 24         Section 2.5             Autonomous equations. <br />
+February 24         Section 2.5             No quiz today. Workshop 03 on modeling with linear equations. <br />
+                                            Autonomous equations. <br />
+                                            Group projects assigned (see [Friday's presentation][d03] for list of projects)
 
 February 26         Section 2.4             Linear vs. nonlinear equations. <br />
+                                            WeBWorK 03 (modeling) is due at 10pm.
 ---------------------------------------------------------------------------------------------
 
 [s]: ../syllabus/syllabus.pdf
-[ww]: https://webwork.collegeofidaho.edu/webwork2/MAT352_W14/
+[ww]: https://webwork.collegeofidaho.edu/webwork2/MAT352_S14/
 [weekly]: problems.html
 [sage]: ../modules/01/sage.html
 
