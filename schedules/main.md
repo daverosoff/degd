@@ -45,7 +45,7 @@ March 3             Section 2.8             Euler's method. <br />
                                             Weekly 2 is due by 3pm.
 
 March 5             Review for Exam 1       **Exam 1**. <br />
-                                            Exam 1 covers chapter 1 and sections 2.1--2.5, 2.7, 2.8.
+                                            Exam 1 covers chapter 1 and sections 2.1--2.5, 2.7.
 ---------------------------------------------------------------------------------------------
 
 [s]: ../syllabus/syllabus.pdf
