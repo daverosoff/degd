@@ -27,17 +27,25 @@ February 19         Section 2.3             Introduction to mathematical modelin
                                             Quiz 02 (WeBWorK 02). <br />
                                             WeBWorK 03 (separable equations) is due at 10pm.
 
-February 21         Section 2.3             Continued introduction to modeling. <br />
+February 21         Section 2.3             Continued introduction to modeling.<br />
                                             Survey of group project possibilities ([PDF presentation][d03]). <br />
                                             Quiz 03 (WeBWorK 03). <br />
                                             [Weekly][weekly] assignment 1 is due. <br />
 
-February 24         Section 2.5             No quiz today. Workshop 03 on modeling with linear equations. <br />
-                                            Autonomous equations. <br />
+February 24         Section 2.3             No quiz today. Continue with modeling linear equations.<br />
                                             Group projects assigned (see [Friday's presentation][d03] for list of projects)
 
-February 26         Section 2.4             Linear vs. nonlinear equations. <br />
-                                            WeBWorK 03 (modeling) is due at 10pm.
+February 26         Section 2.3             WeBWorK 04 (modeling) is due at 10pm. <br />                                        
+                                            
+February 28         Section 2.5             Autonomous equations ([PDF presentation][d04]). <br />
+                                            [Workshop 03][w03] on modeling was not collected. <br />
+
+March 3             Section 2.8             Euler's method. <br />
+                                            Quiz 04 (WeBWorK 04). <br />
+                                            Weekly 2 is due by 3pm.
+
+March 5             Review for Exam 1       **Exam 1**. <br />
+                                            Exam 1 covers chapter 1 and sections 2.1--2.5, 2.7, 2.8.
 ---------------------------------------------------------------------------------------------
 
 [s]: ../syllabus/syllabus.pdf

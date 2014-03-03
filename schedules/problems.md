@@ -1,8 +1,16 @@
 % Math 352 Weekly Problems: Spring 2014
 
+### Weekly 3: March 3--March 7
+
+Due Friday, March 7 (no WeBWorK for these topics)
+
+- Section 2.5: exercises 9, 13, 15, 22. For these exercises only,
+please draw *big*, *beautiful* pictures by hand.
+- Section 2.7: exercises 1-14 (make sure you can do by hand if the numbers are OK)
+
 ### Weekly 2: February 24--February 28 
 
-Due Friday, February 28.
+Due <strike>Friday, February 28</strike> Monday, March 3.
 
 - Section 2.3: exercises 13, 18, 19.
 
@@ -12,6 +20,10 @@ Due Friday, February 21.
 - Section 1.1: exercises 1--6 (use [Sage][m01] to draw the direction fields)
 - Section 2.1: exercises 13, 15, 17, 19.
 - Section 2.2: exercises 10--16 (even; use [Sage][m01] or equivalent for plots)
+
+<!-- Graded 1.1.1-6 together out of 18. 2 points for each d-field, 1 for exp. -->
+<!-- Graded 2.1.15 out of 12. Standard 5-pt + 2 for style. -->
+<!-- Graded 2.2.?? out of 12. Standard 5-pt + 2 for style. -->
 
 [s]: ../syllabus/syllabus.pdf
 [ww]: https://webwork.collegeofidaho.edu/webwork2/MAT370_W14/
