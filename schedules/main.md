@@ -40,11 +40,12 @@ February 26         Section 2.3             WeBWorK 04 (modeling) is due at 10pm
 February 28         Section 2.5             Autonomous equations ([PDF presentation][d04]). <br />
                                             [Workshop 03][w03] on modeling was not collected. <br />
 
-March 3             Section 2.8             Euler's method. <br />
+March 3             Section 2.7             Euler's method. [Sage worksheet][euler] you can download and import.<br />
+                                            The Sage worksheet is not meant to be comprehensive, just a jumping-off point. <br />
                                             Quiz 04 (WeBWorK 04). <br />
                                             Weekly 2 is due by 3pm.
 
-March 5             Review for Exam 1       **Exam 1**. <br />
+March 5             Exam 1                  **Exam 1**. <br />
                                             Exam 1 covers chapter 1 and sections 2.1--2.5, 2.7.
 ---------------------------------------------------------------------------------------------
 
@@ -52,6 +53,7 @@ March 5             Review for Exam 1       **Exam 1**. <br />
 [ww]: https://webwork.collegeofidaho.edu/webwork2/MAT352_S14/
 [weekly]: problems.html
 [sage]: ../modules/01/sage.html
+[euler]: ../sage/EulersMethod.sws
 
 [m01]: ../modules/01/Module.html
 [m02]: ../modules/02/Module.html
