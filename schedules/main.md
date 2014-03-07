@@ -47,6 +47,9 @@ March 3             Section 2.7             Euler's method. [Sage worksheet][eul
 
 March 5             Exam 1                  **Exam 1**. <br />
                                             Exam 1 covers chapter 1 and sections 2.1--2.5, 2.7.
+
+March 7             Section 3.1             Introduction to second-order linear equations. <br />
+                                            [Workshop 04][w04] is due Monday, March 10.
 ---------------------------------------------------------------------------------------------
 
 [s]: ../syllabus/syllabus.pdf
@@ -74,9 +77,9 @@ March 5             Exam 1                  **Exam 1**. <br />
 
 [w00]: ../workshops/00/Workshop.pdf
 [w01]: ../workshops/01/LinearFirstOrderEquations.pdf
-[w02]: ../workshops/02/Workshop.pdf
-[w03]: ../workshops/03/Workshop.pdf
-[w04]: ../workshops/04/Workshop.pdf
+[w02]: ../workshops/02/SeparableEquations.pdf
+[w03]: ../workshops/03/ModelingLinearEquations.pdf
+[w04]: ../workshops/04/SecondOrderLinear.pdf
 [w05]: ../workshops/05/Workshop.pdf
 [w06]: ../workshops/06/Workshop.pdf
 [w07]: ../workshops/07/Workshop.pdf
