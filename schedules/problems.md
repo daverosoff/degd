@@ -1,5 +1,11 @@
 % Math 352 Weekly Problems: Spring 2014
 
+### Weekly 4: March 10--March 14
+
+No weekly problems this week to hand in, but make sure
+you are getting enough practice. The textbook has plenty
+of exercises if WeBWorK doesn't have enough.
+
 ### Weekly 3: March 3--March 7
 
 Due Friday, March 7 (no WeBWorK for these topics)

@@ -50,6 +50,18 @@ March 5             Exam 1                  **Exam 1**. <br />
 
 March 7             Section 3.1             Introduction to second-order linear equations. <br />
                                             [Workshop 04][w04] is due Monday, March 10.
+
+March 10            Section 3.1             Exponential solutions to the second-order linear equation
+                                            with constant coefficients. Discussed some of the results
+                                            of Section 3.2.
+
+March 12            Section 3.2             Negative discriminant: what happens when there are no
+                    (read more than once)   exponential solutions? <br />
+                                            WeBWorK 05 is due at 10pm.
+
+March 14 <br />     Section 3.3             Complex exponential solutions to the second-order equation
+Pi Day, sucka                               with constant coefficients. <br />
+                                            Quiz 05 (WeBWorK 05).
 ---------------------------------------------------------------------------------------------
 
 [s]: ../syllabus/syllabus.pdf
