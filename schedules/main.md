@@ -93,7 +93,7 @@ Pi Day, sucka                               with constant coefficients. <br />
 [w02]: ../workshops/02/SeparableEquations.pdf
 [w03]: ../workshops/03/ModelingLinearEquations.pdf
 [w04]: ../workshops/04/SecondOrderLinear.pdf
-[w05]: ../workshops/05/Workshop.pdf
+[w05]: ../workshops/05/SecondOrderLinear.pdf
 [w06]: ../workshops/06/Workshop.pdf
 [w07]: ../workshops/07/Workshop.pdf
 [w08]: ../workshops/08/Workshop.pdf
