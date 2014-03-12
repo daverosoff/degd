@@ -57,6 +57,7 @@ March 10            Section 3.1             Exponential solutions to the second-
 
 March 12            Section 3.2             Negative discriminant: what happens when there are no
                     (read more than once)   exponential solutions? <br />
+                                            [Workshop 05][w05] on negative discriminants is due Friday, March 14.
                                             WeBWorK 05 is due at 10pm.
 
 March 14 <br />     Section 3.3             Complex exponential solutions to the second-order equation
