@@ -62,7 +62,20 @@ March 12            Section 3.2             Negative discriminant: what happens 
 
 March 14 <br />     Section 3.3             Complex exponential solutions to the second-order equation
 Pi Day, sucka                               with constant coefficients. <br />
-                                            Quiz 05 (WeBWorK 05).
+                                            Quiz 05 (WeBWorK 05). [Workshop 06][w06] is due Monday, March 17.
+
+March 17 <br />     Section 3.4             Finish [Workshop 06][w06] and recap sections 3.1--3.4. <br />
+                                            WeBWorK 06 is due at 10pm Wednesday, March 19. <br />
+
+March 19 <br />     Section 3.5             Inhomogeneous equations and the method of 
+                                            undetermined coefficients. <br />
+                                            WeBWorK 06 is due at 10pm. 
+
+March 21 <br />     Section 3.5             [Workshop 07][w07] on undetermined coefficients. <br />
+                                            Quiz 06 (WeBWorK 06).
+
+March 24--28        NA                      SPRIIIIING BREEEEEEAAAAAAK
+
 ---------------------------------------------------------------------------------------------
 
 [s]: ../syllabus/syllabus.pdf
@@ -94,7 +107,7 @@ Pi Day, sucka                               with constant coefficients. <br />
 [w03]: ../workshops/03/ModelingLinearEquations.pdf
 [w04]: ../workshops/04/SecondOrderLinear.pdf
 [w05]: ../workshops/05/NegativeDiscriminant.pdf
-[w06]: ../workshops/06/Workshop.pdf
+[w06]: ../workshops/06/SinhCoshZeroDiscriminant.pdf
 [w07]: ../workshops/07/Workshop.pdf
 [w08]: ../workshops/08/Workshop.pdf
 [w09]: ../workshops/09/Workshop.pdf
