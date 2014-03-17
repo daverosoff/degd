@@ -1,6 +1,9 @@
-% Second-order linear equations
+% Workshop 04
 % Math 352 Differential equations
 % March 7, 2014
+
+
+\section*{Second-order linear equations}
 
 \begin{questions}
 

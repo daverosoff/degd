@@ -47,4 +47,6 @@ preview_tex: $(intermed)
 	$(editor) $(intermed)
 
 clean:
-	rm $(intermed) $(target) $(knitted)
+	if [ -f $(intermed) ]; then rm $(intermed) ; fi
+	if [ -f $(target) ]; then rm $(target) ; fi
+	if [ -f $(knitted) ]; then rm $(knitted); fi

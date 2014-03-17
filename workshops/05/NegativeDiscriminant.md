@@ -15,11 +15,11 @@
 
 \dwrspace{1}
 
-\question What complex exponential functions solve the differential equation? Use the roots you found and ape the exponential trick from before.
+\question What complex exponential functions solve the differential equation? Use the roots you found and ape the exponential trick from before. (You want two different functions, $u_1$ and $u_2$, with no $c_1$ or $c_2$.)
 
 \dwrspace{1}
 
-\question Write these functions using Euler's formula. Call them $u_1$ and $u_2$ in their new, Eulerified form.
+\question Write these functions using Euler's formula.
 
 \dwrspace{1}
 
