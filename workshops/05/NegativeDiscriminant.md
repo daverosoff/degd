@@ -19,7 +19,8 @@
 
 \dwrspace{1}
 
-\question Write these functions using Euler's formula.
+\question Write these functions using Euler's formula. Use the identities 
+$\sin{(-x)} = -\sin{(x)}$ and $\cos{(-x)} = \cos{(x)}$ to simplify.
 
 \dwrspace{1}
 
