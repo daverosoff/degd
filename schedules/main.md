@@ -56,7 +56,7 @@ March 10            Section 3.1             Exponential solutions to the second-
                                             of Section 3.2.
 
 March 12            Section 3.2             Negative discriminant: what happens when there are no
-                    (read more than once)   exponential solutions? <br />
+                    (read more than once)   exponential solutions? [PDF presentation][d05] <br />
                                             [Workshop 05][w05] on negative discriminants is due Friday, March 14.
                                             WeBWorK 05 is due at 10pm.
 
@@ -64,7 +64,8 @@ March 14 <br />     Section 3.3             Complex exponential solutions to the
 Pi Day, sucka                               with constant coefficients. <br />
                                             Quiz 05 (WeBWorK 05). [Workshop 06][w06] is due Monday, March 17.
 
-March 17 <br />     Section 3.4             Finish [Workshop 06][w06] and recap sections 3.1--3.4. <br />
+March 17 <br />     Section 3.4             Finish [Workshop 06][w06] and recap sections 3.1--3.4. 
+                                            [PDF presentation][d06] <br />
                                             WeBWorK 06 is due at 10pm Wednesday, March 19. <br />
 
 March 19 <br />     Section 3.5             Inhomogeneous equations and the method of 
