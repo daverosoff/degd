@@ -1,0 +1,239 @@
+% Reduction of order
+% Math 352 Differential Equations
+% March 19, 2014
+
+# Recap
+
+## Last time: repeated roots
+
+- We completed the investigation of the equation
+\begin{equation*}
+    ay'' + by' + cy = 0.
+\end{equation*}
+in the last remaining case: $D = b^2 - 4ac = 0$. 
+
+- A new technique was necessary
+- The exponential trick only gave us half of the general solution
+    - the 1-dimensional family $cy_1 = ce^{(-b/2a)t}$.
+
+## Last time: guess-and-check
+
+- In [Workshop 06][w06], you found that if $v(t)$ is an unknown 
+function, then $v y_1$ is a solution of the DE---that is,
+\begin{equation*}
+    a(v y_1)'' + b(v y_1)' + c(v y_1) = 0,
+\end{equation*}
+---if and only if $v'' = 0$. 
+- A bit of calculus and a moment's reflection shows that 
+$v = \alpha t + \beta$ in this case.
+- Thus you generated a new class of solutions, the functions
+\begin{equation*}
+    Y_2 = (\alpha t + \beta) e^{(-b/2a)t}.
+\end{equation*}
+- Notice! it's a 2-dimensional family. Maybe it's the general solution?
+
+## Last time: the general solution 
+
+- This new solution $Y_2$ is a suitable "other half" of our 
+general solution:
+    - in the sense that $W(y_1,Y_2)$ is everywhere nonzero.
+    - But it is not optimally efficient, because $y_1$ appears in the 
+    new class! 
+    - Put $\alpha = 0$ and $\beta = 1$ to obtain it.
+- The part of $Y_2$ that is fundamentally "new" is $y_2 = c_2 te^{(-b/2a)t}$. 
+    - You can check that the Wronskian $W(y_1, y_2)$ is still nonzero
+    - Therefore $y_1$ and $y_2$ generate all solutions to the differential 
+    equation through linear combinations.
+    - It is equally true that $\alpha y_2 + \beta y_1$ "is" the general 
+solution. There's no contradiction there.
+
+# Reduction of order for nonconstant coefficients
+
+## The magic secret of Wronskians
+
+> - Is our advance knowledge of $y_1(t) = e^{(-b/2a)t}$ enough to replace
+\begin{equation*}
+    \beta y_1 + \alpha Y_2 \text{ with } c_1 y_1 + c_2 y_2?
+\end{equation*}
+> - Linear algebra sez: YES, but we haven't the time to go into it.
+> - If $W \ne 0$, who cares where the solutions came from? 
+    - We can compute them, 
+    - maybe we just guess them!
+    - or find them scrawled in blood on the walls of an ancient tomb. 
+> - The Wronskian doesn't care, and tells us definitively that we 
+have solved the equation.
+
+## The general method
+
+- Once you find (by any means necessary) a single solution
+to a second-order linear homogeneous ODE the method of "promoting 
+$c$ to a function" can get us the other half.
+- This method is called "reduction of order" 
+    - because we end up solving a \emph{first}-order differential 
+    equation to get the unknown coefficient function.
+- Let's see how it works on an equation with nonconstant coefficients!
+
+## The general method: in general
+- Suppose that, in the dusty tomb of a king long dead, we find the 
+following equations scrawled in blood on the wall in a shaky but 
+regal hand:
+\begin{equation*}
+    2t^2 y'' + 3t y' - y = 0, \quad y_1 = t^{-1}.
+\end{equation*}
+- $y_1$ is a solution (easily checked)
+- $cy_1$ is also a solution for all real $c$ (why?)
+
+- We will use the method of reduction of order:
+    - promote $c$ to a function $v(t)$
+    - get a first-order differential equation for $v(t)$
+    - obtain another solution $y_2 = vy_1$ that satisfies $W(y_1, y_2) \ne 0$.
+
+## Using the method 
+
+We write $y_2 = \textcolor{purple}{vy_1}$ and substitute in. Observe that 
+$(vy_1)' = \textcolor{red}{v'y_1 + vy'_1}$ 
+and that 
+$(vy_1)'' = \textcolor{blue}{v''y_1 + 2v'y'_1 + vy''_1}$. Substitution back into the original
+differential equation $2t^2 y''+ 3ty' - y = 0$
+then gives us
+\begin{align*}
+    0 &= 2t^2 (\textcolor{blue}{v''y_1 + 2v'y'_1 + vy''_1}) + 
+            3t (\textcolor{red}{v'y_1 + vy'_1}) - \textcolor{purple}{vy_1} \\
+      &= (2t^2 y_1) v'' + (4t^2 y'_1 + 3t y_1) v' + (2t^2 y''_1 + 3ty'_1 - y_1) v \\
+      &= (2t^2 y_1) v'' + (4t^2 y'_1 + 3t y_1) v'.
+\end{align*}
+
+The coefficient of $v$ is zero, because $y_1$ is a solution to the ODE!
+
+## The method continues
+
+- Now we can see how the order has been reduced. The equation
+\begin{equation*}
+(2t^2 y_1) v'' + (2t^2 y'_1 + 3t y_1) v' = 0
+\end{equation*}
+is a first-order equation in $v'$
+    - In fact, it's a separable one. 
+- The textbook details the solution of this equation---much easier,
+if we put $y_1 = t^{-1}$ throughout.
+- I suggest you check for yourself, without looking in the text, if possible,
+that in this example we find $v = t^{1/2}$ and therefore $y_2 = t^{-1/2}$.
+
+# Inhomogeneous equations
+
+## Inhomogeneity
+
+- Recall the *superposition principle*:
+    - if $y_1$ and $y_2$ are solutions, then all their linear 
+    combinations are too.
+
+- It fails spectacularly if we try it on an inhomogeneous equation, as
+illustrated in several examples and exercises in the text.
+
+## Inhomogeneity: subtracting solutions
+
+- We can use our previous work to solve equations of the form
+\begin{equation} \label{eq:inhom}
+    ay'' + by' + cy = g(t).
+\end{equation}
+- Suppose that $\textcolor{red}{Y_1}$ and $\textcolor{blue}{Y_2}$ are both 
+solutions of Equation \eqref{eq:inhom}.
+- Behold:
+\begin{align*}
+    0 &= \textcolor{red}{g(t)} - \textcolor{blue}{g(t)} \\
+      &= (\textcolor{red}{aY_1'' + bY_1' + cY_1}) - 
+            (\textcolor{blue}{aY_2'' + bY_2' + cY_2}) \\
+      &= a(Y_1'' - Y_2'') + b(Y_1' - Y_2') + c(Y_1 - Y_2) \\
+      &= a(Y_1 - Y_2)'' + b(Y_1 - Y_2)' + c(Y_1 - Y_2)
+\end{align*}
+
+\dwrspace{1}
+
+## The translation principle
+
+We just showed:
+
+- any two solutions of Equation \eqref{eq:inhom} differ by a solution of
+the *associated homogeneous equation* 
+\begin{equation} \label{eq:asshomo}
+    ay'' + by' + cy = 0.
+\end{equation}
+
+Put another way, the difference is a solution of Equation \eqref{eq:asshomo}.
+
+## The geometry of linear differential operators: homogeneous equations
+
+- Think of the set $S$ of solutions of Equation \eqref{eq:asshomo}
+- A pair of fundamental solutions $y_1$, $y_2$ matches $S$ with the plane:
+    - namely, via the matching $c_1 y_1 + 
+    c_2 y_2 \longleftrightarrow (c_1, c_2)$. 
+- We can see $S$ as a plane in a bigger-dimensional space (the space of all
+differentiable functions, maybe).
+- Observe that the point $(0,0)$ is an element of our plane $S$, because the 
+zero function is a solution of Equation \eqref{eq:asshomo}. 
+- Thus $S$ passes through the origin of whatever space it lives in.
+
+## The geometry of linear differential operators: inhomogeneous equations
+
+- Equation \eqref{eq:inhom} is a second-order equation
+    - intuition and the theory of Wronskians tell us that there should be
+    a pair of fundamental solutions. 
+    - This does happen, but the details are a little different.
+
+- Solutions of Equation \eqref{eq:inhom} correspond to points in a plane 
+- But it's not the same plane
+- It's a different plane in the same space.
+- It doesn't pass through the origin
+    - because the zero function isn't a solution of Equation \eqref{eq:inhom}.
+
+## The geometry of linear differential operators: particular solutions
+
+Recall the translation principle for Equation \eqref{eq:inhom}:
+
+- If $Y_1$ and $Y_2$ are solutions of Equation \eqref{eq:inhom}, then their
+difference $Y_1 - Y_2$ is a solution of the associated homogeneous equation.
+
+- Inverted, it tells us how to construct new solutions of Equation 
+\eqref{eq:inhom} from a previously known one: 
+    - add solutions of Equation \eqref{eq:asshomo}.
+
+## The general solution of the inhomogeneous equation
+
+- Suppose that by some devious method we have constructed a single
+solution $Y$ of Equation \eqref{eq:inhom}.
+    - so that $aY'' + bY' + cY = g(t)$. 
+- Suppose also that $y_1$ and $y_2$ are solutions of Equation \eqref{eq:asshomo}
+    - and that $W(y_1, y_2) \ne 0$.
+- Then solution of $ay'' + by' + cy = g(t)$ is of the form
+\begin{equation*}
+    Y + c_1 y_1 + c_2 y_2
+\end{equation*}
+for some numbers $c_1$ and $c_2$.
+
+## Construction of particular solutions
+
+- This is an existence theorem.
+- It doesn't tell us anything about how to construct $Y$, called a 
+*particular solution* of Equation \eqref{eq:inhom}. 
+- Methods for finding $Y$ vary and depend very much on the
+form of the inhomogeneous term $g(t)$. We will investigate 
+two such methods:
+- *undetermined coefficients* and
+- *variation of parameters*.
+
+# Conclusion
+
+## Conclusion: examples good, table bad
+
+
+> - It's possible to build
+$Y$ by in a reasonably systematic and efficient clever guessing when $g(t)$ is, roughly
+speaking, built from polynomials, exponential functions, and sine and cosine.
+> - That is called the method of undetermined coefficients.
+    - Expert level guess-and-check.
+> - A word to the wise:
+    - Don't try to memorize the table given in the text!
+    - It is a much better idea to learn the mental yoga of the method works,
+    by working through and thinking about lots of examples.
+
+
+[w06]: ../../workshops/06/SinhCoshZeroDiscriminant.pdf
