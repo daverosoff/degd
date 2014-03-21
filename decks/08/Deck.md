@@ -56,7 +56,7 @@ it follows that
 \end{equation*}
 
 is the general solution of the inhomogeneous differential equation
-$ay'' + by' + cy = 0$.
+$y'' - 2y' - 3y = 3e^{2t}$.
 
 # Example 2
 
@@ -77,10 +77,10 @@ as before.
 - Substitution gives 
 \begin{align*}
     Y'' - 2Y' - 3Y &= -4A \sin{2t} - 2(2A \cos{2t}) - 3(A \sin{2t}) \\
-                    &= -7A \sin{2t} + 4A \cos{2t}.
+                    &= -7A \sin{2t} - 4A \cos{2t}.
 \end{align*}
 Here, something is wrong: there is no choice of $A$ that makes 
-the RHS equal to $2 \sin {2t}$, since $0 \ne -2/7$.
+the RHS equal to $2 \sin {2t}$, since $0 \ne 2/7$.
 
 ## A better guess
 
@@ -129,5 +129,3 @@ let $Y$ be the corresponding linear combination.
 - After the break:
     - we will discuss the degenerate cases
     - and the case where $g(t)$ is a product of table entries.
-
-\centering {\LARGE \textsc{Have a great break!}}

@@ -39,8 +39,8 @@ general solution:
     - in the sense that $W(y_1,Y_2)$ is everywhere nonzero.
     - But it is not optimally efficient, because $y_1$ appears in the 
     new class! 
-    - Put $\alpha = 0$ and $\beta = 1$ to obtain it.
-- The part of $Y_2$ that is fundamentally "new" is $y_2 = c_2 te^{(-b/2a)t}$. 
+    - Put $\alpha = 1$ and $\beta = 0$ to obtain it.
+- The part of $Y_2$ that is fundamentally "new" is $y_2 = te^{(-b/2a)t}$. 
     - You can check that the Wronskian $W(y_1, y_2)$ is still nonzero
     - Therefore $y_1$ and $y_2$ generate all solutions to the differential 
     equation through linear combinations.
@@ -109,7 +109,7 @@ The coefficient of $v$ is zero, because $y_1$ is a solution to the ODE!
 
 - Now we can see how the order has been reduced. The equation
 \begin{equation*}
-(2t^2 y_1) v'' + (2t^2 y'_1 + 3t y_1) v' = 0
+(2t^2 y_1) v'' + (4t^2 y'_1 + 3t y_1) v' = 0
 \end{equation*}
 is a first-order equation in $v'$
     - In fact, it's a separable one. 
