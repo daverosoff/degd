@@ -64,7 +64,7 @@ March 14 <br />     Section 3.3             Complex exponential solutions to the
 Pi Day, sucka                               with constant coefficients. <br />
                                             Quiz 05 (WeBWorK 05). [Workshop 06][w06] is due Monday, March 17.
 
-March 17 <br />     Section 3.4             Finish [Workshop 06][w06] and recap sections 3.1--3.4. 
+March 17 <br />     Section 3.4             Finish [Workshop 06][w06] and recap sections 3.1--3.4. <br />
                                             [PDF presentation][d06] <br />
                                             WeBWorK 06 is due at 10pm Wednesday, March 19. <br />
 
@@ -72,10 +72,13 @@ March 19 <br />     Section 3.5             Inhomogeneous equations and the meth
                                             undetermined coefficients. <br />
                                             WeBWorK 06 is due at 10pm. 
 
-March 21 <br />     Section 3.5             [Workshop 07][w07] on undetermined coefficients. <br />
+March 21 <br />     Section 3.5             [Workshop 07][w07] on reduction of order and undetermined coefficients. <br />
+                                            [PDF presentation][d07]. <br/> 
                                             Quiz 06 (WeBWorK 06).
 
 March 24--28        NA                      SPRIIIIING BREEEEEEAAAAAAK
+
+March 31 <br />     Section 3.5             Finish undetermined coefficients.
 
 ---------------------------------------------------------------------------------------------
 
@@ -109,7 +112,7 @@ March 24--28        NA                      SPRIIIIING BREEEEEEAAAAAAK
 [w04]: ../workshops/04/SecondOrderLinear.pdf
 [w05]: ../workshops/05/NegativeDiscriminant.pdf
 [w06]: ../workshops/06/SinhCoshZeroDiscriminant.pdf
-[w07]: ../workshops/07/Workshop.pdf
+[w07]: ../workshops/07/ReductionOrderIntroUC.pdf
 [w08]: ../workshops/08/Workshop.pdf
 [w09]: ../workshops/09/Workshop.pdf
 [w10]: ../workshops/10/Workshop.pdf
