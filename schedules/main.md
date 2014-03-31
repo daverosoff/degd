@@ -73,7 +73,7 @@ March 19 <br />     Section 3.5             Inhomogeneous equations and the meth
                                             WeBWorK 06 is due at 10pm. 
 
 March 21 <br />     Section 3.5             [Workshop 07][w07] on reduction of order and undetermined coefficients. <br />
-                                            [PDF presentation][d07]. <br/> 
+                                            [PDF presentation][d07]; [second presentation][d08]. <br/> 
                                             Quiz 06 (WeBWorK 06).
 
 March 24--28        NA                      SPRIIIIING BREEEEEEAAAAAAK
