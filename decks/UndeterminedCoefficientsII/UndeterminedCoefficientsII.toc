@@ -1,3 +1,0 @@
-\beamer@endinputifotherversion {3.33pt}
-\beamer@sectionintoc {1}{Recap}{2}{0}{1}
-\beamer@sectionintoc {2}{Adaptations, variants, and degeneracy}{4}{0}{2}
