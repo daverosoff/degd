@@ -49,7 +49,8 @@ March 5             Exam 1                  **Exam 1**. <br />
                                             Exam 1 covers chapter 1 and sections 2.1--2.5, 2.7.
 
 March 7             Section 3.1             Introduction to second-order linear equations. <br />
-                                            [Workshop 04][w04] is due Monday, March 10.
+                                            [Workshop 04][w04] is due Monday, March 10. <br />
+                                            Weekly 3 is due at 3pm.
 
 March 10            Section 3.1             Exponential solutions to the second-order linear equation
                                             with constant coefficients. Discussed some of the results
@@ -78,7 +79,24 @@ March 21 <br />     Section 3.5             [Workshop 07][w07] on reduction of o
 
 March 24--28        NA                      SPRIIIIING BREEEEEEAAAAAAK
 
-March 31 <br />     Section 3.5             Finish undetermined coefficients.
+March 31 <br />     Section 3.5             Finish undetermined coefficients: degeneracy and products.
+
+April 2 <br />      Section 3.6             Variation of parameters: Workshop 08.<br />
+                                            Quiz 07 (WeBWorK 07).
+
+April 4 <br />      Section 3.6             Variation of parameters. Finish Workshop 08.
+
+April 7 <br />      Review for Exam 2       Loose ends; review for Exam 2. 
+
+April 9             Review for Exam 2       EXAM 2
+
+April 11            Section 3.7 <br />      Unforced mechanical vibrations, damped vibrations<br />
+                    (read 191--197 <br />   Workshop 09.
+                    skim 197--199)   
+
+April 14            Section 3.8             Forced vibrations, resonance. Workshop 10.
+
+April 16            Sections 4.1, 7.1, 
 
 ---------------------------------------------------------------------------------------------
 

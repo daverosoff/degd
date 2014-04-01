@@ -1,5 +1,9 @@
 % Math 352 Weekly Problems: Spring 2014
 
+### Weekly 5: March 31--April 4
+
+See weekly 4.
+
 ### Weekly 4: March 10--March 14
 
 No weekly problems this week to hand in, but make sure
