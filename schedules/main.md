@@ -79,24 +79,60 @@ March 21 <br />     Section 3.5             [Workshop 07][w07] on reduction of o
 
 March 24--28        NA                      SPRIIIIING BREEEEEEAAAAAAK
 
-March 31 <br />     Section 3.5             Finish undetermined coefficients: degeneracy and products.
+March 31 <br />     Section 3.5             Finish undetermined coefficients: degeneracy and products. <br />
+                                            [PDF presentation][d09]
 
-April 2 <br />      Section 3.6             Variation of parameters: Workshop 08.<br />
+April 2 <br />      Section 3.6             Variation of parameters: [Workshop 08].<br />
+                                            [PDF presentation][d10]<br />
                                             Quiz 07 (WeBWorK 07).
 
-April 4 <br />      Section 3.6             Variation of parameters. Finish Workshop 08.
+April 4 <br />      Section 3.6 <br />      Variation of parameters. Finish Workshop 08.<br />
+                    Skim 3.7                Begin unforced vibrations. <br />
+                                            WeBWorK 08 is due at 10pm.
 
-April 7 <br />      Review for Exam 2       Loose ends; review for Exam 2. 
+April 7 <br />      Section 3.7 <br />      More unforced vibrations; review for Exam 2. <br />
+                    Review for Exam 2       Exam 2 covers sections 3.1--3.7.
 
 April 9             Review for Exam 2       EXAM 2
 
 April 11            Section 3.7 <br />      Unforced mechanical vibrations, damped vibrations<br />
-                    (read 191--197 <br />   Workshop 09.
+                    (read 191--197 <br />   Intro to forced vibrations. Workshop 09.
                     skim 197--199)   
 
-April 14            Section 3.8             Forced vibrations, resonance. Workshop 10.
+April 14            Section 3.8             Forcing and resonance. Workshop 10. This is a bad day to miss.
 
-April 16            Sections 4.1, 7.1, 
+April 16            Sections 4.1, 7.1--2?   Introduction to systems of equations; higher-order equations. <br />
+                                            Workshop 11. <!-- on converting to a system of 1st-order -->
+
+April 18            Sage handout<br />      Vectors and matrices in Sage
+                    Section 7.2
+
+April 21            Section 7.3             Systems of linear (algebraic) equations in Sage
+
+April 23            Section 7.3             Eigeneinführung (introduction to eigenvectors) <br />
+                                            Workshop 12.
+
+April 25            Reread 7.1--7.3<br/>    Some hand calculations with $2 \times 2$ systems
+                    Skim 7.4
+
+April 28            Section 7.4             Systems of first-order equations: analysis via
+                                            eigenvectors. <br />
+                                            Workshop 13.
+
+April 30            Section 7.4 <br />      More practice with matrix formulations, with help from Sage. <br />
+                    Section 7.5             Homogeneous linear systems with constant coefficients
+
+May 2               Section 7.5 <br />      Analysis of eigenvectors, bifurcations, nodes. <br />
+                    Section 7.6             Complex eigenvectors. 
+
+May 5               Section 7.6             Complex eigenvectors; loose ends; review for Exam 3.
+
+May 7               Review for Exam 3       EXAM 3 <br />
+                                            Exam 3 covers section 3.8 and sections 7.1--7.6.
+
+May 9               Skim 7.7, 7.8           Fundamental matrices and the matrix exponential
+
+May 14              PRESENTATIONS           (Finals week) presentations: 1:30--4:30 pm.
 
 ---------------------------------------------------------------------------------------------
 
