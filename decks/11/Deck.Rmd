@@ -1,6 +1,6 @@
 % Free harmonic oscillators
 % Math 352 Differential Equations
-% April 4, 2013
+% April 4, 2014
 
 # Introduction
 
