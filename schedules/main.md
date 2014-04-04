@@ -167,7 +167,7 @@ May 14              PRESENTATIONS           (Finals week) presentations: 1:30--4
 [w05]: ../workshops/05/NegativeDiscriminant.pdf
 [w06]: ../workshops/06/SinhCoshZeroDiscriminant.pdf
 [w07]: ../workshops/07/ReductionOrderIntroUC.pdf
-[w08]: ../workshops/08/Workshop.pdf
+[w08]: ../workshops/08/VariationParameters.pdf
 [w09]: ../workshops/09/Workshop.pdf
 [w10]: ../workshops/10/Workshop.pdf
 [w11]: ../workshops/11/Workshop.pdf
