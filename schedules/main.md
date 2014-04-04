@@ -82,7 +82,7 @@ March 24--28        NA                      SPRIIIIING BREEEEEEAAAAAAK
 March 31 <br />     Section 3.5             Finish undetermined coefficients: degeneracy and products. <br />
                                             [PDF presentation][d09]
 
-April 2 <br />      Section 3.6             Variation of parameters: [Workshop 08].<br />
+April 2 <br />      Section 3.6             Variation of parameters: [Workshop 08][w08].<br />
                                             [PDF presentation][d10]<br />
                                             Quiz 07 (WeBWorK 07).
 
