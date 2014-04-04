@@ -88,9 +88,12 @@ April 2 <br />      Section 3.6             Variation of parameters: [Workshop 0
 
 April 4 <br />      Section 3.6 <br />      Variation of parameters. Finish Workshop 08.<br />
                     Skim 3.7                Begin unforced vibrations. <br />
-                                            WeBWorK 08 is due at 10pm.
+                                            [PDF presentation][d11].
+                                            
 
 April 7 <br />      Section 3.7 <br />      More unforced vibrations; review for Exam 2. <br />
+                                            WeBWorK 08 is due at 10pm.
+
                     Review for Exam 2       Exam 2 covers sections 3.1--3.7.
 
 April 9             Review for Exam 2       EXAM 2
