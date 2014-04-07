@@ -1,0 +1,147 @@
+% Further investigation of harmonic vibration
+% Math 352 Differential Equations
+% 7 April 2014
+
+# Recap
+
+## Last time: free harmonic oscillations
+
+The equation of motion for an unforced spring-mass system:
+\begin{equation*}
+    mu'' + \gamma u' + k u = 0,
+\end{equation*}
+where $m$, $k > 0$ and $\gamma \geq 0$.
+
+Here $u$ is the displacement of the mass from equilibrium.
+
+## Determining the spring constant
+
+In practice, the spring constant is obtained via the relation
+\begin{equation*}
+mg = kL.
+\end{equation*}
+
+Here $L$ is the marginal length added when the mass $m$ is attached.
+
+## No damping
+
+- If $\gamma = 0$, our system is a \emph{simple harmonic oscillator}, 
+vibrating subject to the displacement function
+\begin{equation*}
+    u = c_1 \cos{(\omega_0 t)} + c_2 \sin{(\omega_0 t)}.
+\end{equation*}
+- Here $\omega_0 = \sqrt{k/m}$ is the natural frequency of the oscillator.
+
+- If either of $c_1$ or $c_2$ is nonzero, then either $u(0)$ or $u'(0)$ is 
+nonzero. Thus either the potential energy or kinetic energy of the mass is 
+nonzero.
+- Such a system's motion persists indefinitely. 
+- The energy added by the initial conditions stays in the system forever.
+
+# Amplitude and frequency
+
+## Reduction to standard form
+
+- Every linear combination of sines and cosines with like frequency can be 
+written as a single sinusoidal function.
+- A sinusoidal function is one of the 
+form
+$R \cos{(\omega t - \delta)}$,
+where $R$ is the amplitude, $\omega$ is the common frequency, and $\delta$ 
+is the phase shift.
+- If we know $c_1$ and $c_2$ from the initial conditions, 
+we can find $R$ and $\delta$ with 
+\begin{equation*}
+    c_1 \cos{(\omega_0 t)} + c_2 \sin{(\omega_0 t)} = R \cos{(\omega_0 t - \delta)}.
+\end{equation*}
+
+## Getting the new parameters
+
+Using the cosine subtraction identity, we find this entails that
+\begin{equation*}
+    c_1 \cos{(\omega_0 t)} + c_2 \sin{(\omega_0 t)} = R \cos{\delta} \cos{(\omega_0 t)} + R \sin{\delta} \sin{(\omega_0 t)}.
+\end{equation*}
+Hence $c_1 = R \cos{\delta}$, $c_2 = R \sin{\delta}$, and the usual polar-coordinate equations give us
+\begin{equation*}
+    R = \sqrt{c_1^2 + c_2^2}, \quad \tan{\delta} = c_2/c_1.
+\end{equation*}
+The arctangent function must be used with due care.
+
+## Reminder on arctangent; \texttt{atan2}
+
+- Recall: $\tan^{-1} x \in (-\pi/2, \pi/2)$ for all $x$
+- You may need to adjust the value from a calculator. 
+- Adjustments must be made when the desired value of $\delta$ is in the left 
+half-plane: namely, when $c_1 < 0$.
+
+- Sage and many other programming languages include the useful
+function \texttt{atan2}. 
+- This is a function of two variables that makes this adjustment 
+automatically.
+
+- \texttt{atan2(y, x)} returns the unique angle $\delta$ with
+$\sin(\delta) = y$ and $\cos(\delta) = x$ 
+    - (and of course $\tan(\delta) = y/x$)
+
+# Classification via damping
+
+## Classification of damping; overdamped
+
+- $\gamma > 0$: the system is ``damped''. 
+- The type of damping corresponds to the sign of $D = \gamma^2 - 4km$.
+
+- When $D > 0$, the system is \emph{overdamped}.
+    - The displacement function is a linear combination of two exponentials 
+    $e^{r_1 t}$ and $e^{r_2 t}$, with $r_1$, $r_2 < 0$. 
+    - The vibration decays as $t$ increases---in practice, very quickly.
+
+## Underdamped; critically damped
+
+- When $D < 0$, the displacement function is a linear combination of the 
+functions $e^{\lambda t} \cos{(\mu t)}$ and $e^{\lambda t} \sin{(\mu t)}$.
+- The coefficients $\lambda$ and $\mu$, as always, are determined by the
+characteristic polynomial: its roots are $\lambda \pm i \mu$ in this case.
+- Here $\lambda < 0$, so the oscillation again decays with time.
+- This is called \emph{underdamped}.
+
+- When $D = 0$, the system is \emph{critically damped}. 
+- The displacement function is a linear combination of $e^{r t}$ and 
+$te^{rt}$. Here $r$ is the unique root of the characteristic polynomial. 
+- The graphs of critically 
+damped displacement functions look a lot like those of overdamped ones.
+
+## The damped cases: three regimes
+
+- If $\gamma > 0$, then the initial energy is dissipated 
+    - (and in practice, quickly) 
+    - in resisting the damping force of the surrounding fluid. 
+- Clearly, greater values of $\gamma$ mean ``more'' damping is occurring. 
+- The ``size'' of the damping is measured by a dimensionless coefficient involving all three constants $m$, $\gamma$, and $k$.
+
+## Dimensional analysis: work together
+
+- Find a dimensionless combination of $m$, $\gamma$, and $k$.
+- Hint: $mg = kL$.
+
+## Damping and the discriminant
+
+- Let $Q = \gamma^2 / 4km$. 
+- $Q$ is dimensionless: all the units cancel out of it. 
+- Dimensionless coefficients are important, because they don't depend on our scale of measurement. 
+
+- Trivially, $Q = 0$ when $\gamma = 0$.
+- Our system is underdamped when $0 < Q < 1$.
+- Critical damping obtains when $Q = 1$.
+- Overdamping is the case $Q > 1$.
+
+## Quasiperiod and quasifrequency
+
+The parameter $\mu$ determines the quasifrequency of a damped oscillation (since it is not periodic, it doesn't have an honest ``frequency''). Some algebra shows that
+\begin{equation*}
+    \frac{\mu}{\omega_0} = \frac{\sqrt{4km - \gamma^2}}{2m \sqrt{k/m}} = \left( 1 - Q \right)^{1/2} \approx 1 - \frac{Q}{2}.
+\end{equation*}
+The last approximation is a tangent line approximation, valid 
+when $Q$ is small.
+
+Thus, small damping slightly reduces the frequency of the oscillation.
+These calculations will be of great utility for us in the next section, which concerns *forced vibrations*.
