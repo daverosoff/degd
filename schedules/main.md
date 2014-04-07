@@ -33,7 +33,8 @@ February 21         Section 2.3             Continued introduction to modeling.<
                                             [Weekly][weekly] assignment 1 is due. <br />
 
 February 24         Section 2.3             No quiz today. Continue with modeling linear equations.<br />
-                                            Group projects assigned (see [Friday's presentation][d03] for list of projects)
+                                            Group projects assigned (see [Friday's presentation][d03] for list of projects) <br />
+                                            [Project grading rubric][rub]
 
 February 26         Section 2.3             WeBWorK 04 (modeling) is due at 10pm. <br />                                        
                                             
@@ -144,6 +145,7 @@ May 14              PRESENTATIONS           (Finals week) presentations: 1:30--4
 [weekly]: problems.html
 [sage]: ../modules/01/sage.html
 [euler]: ../sage/EulersMethod.sws
+[rub]: ../project/rubric.pdf
 
 [m01]: ../modules/01/Module.html
 [m02]: ../modules/02/Module.html
