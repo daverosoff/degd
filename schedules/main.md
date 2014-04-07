@@ -86,7 +86,7 @@ April 2 <br />      Section 3.6             Variation of parameters: [Workshop 0
                                             [PDF presentation][d10]<br />
                                             Quiz 07 (WeBWorK 07).
 
-April 4 <br />      Section 3.6 <br />      Variation of parameters. Finish Workshop 08.<br />
+April 4 <br />      Section 3.6 <br />      Variation of parameters. Finish Workshop 08 ([solutions][sol08]).<br />
                     Skim 3.7                Begin unforced vibrations. <br />
                                             [PDF presentation][d11].
                                             
@@ -171,6 +171,7 @@ May 14              PRESENTATIONS           (Finals week) presentations: 1:30--4
 [w06]: ../workshops/06/SinhCoshZeroDiscriminant.pdf
 [w07]: ../workshops/07/ReductionOrderIntroUC.pdf
 [w08]: ../workshops/08/VariationParameters.pdf
+[sol08]: ../workshops/08/VariationParameters-Solutions.pdf
 [w09]: ../workshops/09/Workshop.pdf
 [w10]: ../workshops/10/Workshop.pdf
 [w11]: ../workshops/11/Workshop.pdf
