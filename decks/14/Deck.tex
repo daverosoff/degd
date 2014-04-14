@@ -1,0 +1,445 @@
+\documentclass[11pt,ignorenonframetext,]{beamer}
+\usetheme{Szeged}
+\usecolortheme{wolverine}
+\usefonttheme{structurebold}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+\fi
+\usepackage{listings}
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+% \AtBeginPart{
+%   \let\insertpartnumber\relax
+%   \let\partname\relax
+%   \frame{\partpage}
+% }
+% \AtBeginSection{
+%   \let\insertsectionnumber\relax
+%   \let\sectionname\relax
+%   \frame{\sectionpage}
+% }
+% \AtBeginSubsection{
+%   \let\insertsubsectionnumber\relax
+%   \let\subsectionname\relax
+%   \frame{\subsectionpage}
+% }
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+%%% begin dwr insert
+\usepackage{patchcmd}
+\usepackage{tabulary}   % Support longer table cells
+\usepackage{booktabs}   % Support better tables
+\usepackage[sort&compress]{natbib}
+
+\usepackage{framed}     % Allow background color for images
+\definecolor{shadecolor}{named}{white}
+
+%\usepackage{paralist}
+\usepackage{xparse}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%%% end dwr insert
+\usepackage[beamer]{rosoff}
+\title{Title}
+\author{Math 352 Differential Equations}
+\date{April 4, 2014}
+
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Introduction}
+
+\begin{frame}\frametitle{The machinery of linear algebra}
+
+\begin{itemize}
+\item
+  Fundamental algebraic construction of linear algebra: \emph{linear
+  combinations}.
+\item
+  \emph{Vector spaces} are places where it makes sense to form linear
+  combos.
+\item
+  Coefficients can be real, complex, \ldots{}
+\item
+  The objects being combined are often called vectors, even if they are
+  not vectors like $\langle 2, -3, 4, 12 \rangle$ or
+  $2 \vec{i} - 6 \vec{j}$.
+\item
+  Suppose that $y_1$, $y_2$, $y_3$, \ldots{} $y_n$ are differentiable
+  and that $a_1$, \ldots{} $a_n$ are real numbers (scalars).
+\item
+  Then $a_1 y_1 + a_2 y_2 + \cdots + a_n y_n$ is also differentiable.
+\item
+  So, the set of differentiable functions forms what is called a
+  \emph{real vector space}.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Linear systems}
+
+A system of linear (algebraic) equations is a system like this:
+
+\begin{equation*}
+    \begin{array}{ccccccccc}
+        a_{11} x_{1} &+& a_{12} x_{2} &+& a_{13} x_{3} &+& a_{14} x_{4} &=& b_1 \\
+        a_{21} x_{1} &+& a_{22} x_{2} &+& a_{23} x_{3} &+& a_{24} x_{4} &=& b_2 \\
+        a_{31} x_{1} &+& a_{32} x_{2} &+& a_{33} x_{3} &+& a_{34} x_{4} &=& b_3 \\
+    \end{array}
+\end{equation*}
+
+For example, initial value problems give rise to such systems, as did
+undetermined coefficients:
+
+\begin{equation*}
+    \begin{array}{ccccc}
+        c_1   &+&  c_2 &=& 2 \\
+        -4c_1 &+& 2c_2 &=& -10 \\
+    \end{array}
+\end{equation*}
+
+\end{frame}
+
+\begin{frame}\frametitle{Matrix form of a system}
+
+\begin{equation*}
+    \begin{pmatrix}
+        a_{11} & a_{12} & a_{13} & a_{14} \\
+        a_{21} & a_{22} & a_{23} & a_{24} \\
+        a_{31} & a_{32} & a_{33} & a_{34} \\
+    \end{pmatrix} \begin{pmatrix}
+        x_1 \\ x_2 \\ x_3 \\ x_4
+    \end{pmatrix} = \begin{pmatrix}
+        b_1 \\ b_2 \\ b_3
+    \end{pmatrix}
+\end{equation*}
+
+It's cleaner and allows us to focus on the arithmetic.
+
+\begin{equation*}
+    \begin{pmatrix}
+        1 & 1 \\
+        -4 & 2 \\ 
+    \end{pmatrix} \begin{pmatrix}
+        x_1 \\ x_2
+    \end{pmatrix} = \begin{pmatrix}
+        2 \\ -10
+    \end{pmatrix}
+\end{equation*}
+
+\end{frame}
+
+\begin{frame}\frametitle{Solutions of matrix equations}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  The vector of $x_i$ is the variable of the matrix equation.
+\item
+  A \emph{solution} of the matrix equation is a choice of $x_i$ that
+  makes all the individual linear equations true.
+\end{itemize}
+
+Two matrix equations are \emph{equivalent} if they have exactly the same
+set of solutions.
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Matrices are solved by transforming them into equivalent equations
+  whose solutions are obvious.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{An obvious matrix}
+
+Lots of other matrix equations' solutions are obvious, but this is what
+I really meant:
+
+\begin{equation*}
+    \begin{pmatrix}
+        \textcolor{red}{1}  & 2 & \textcolor{blue}{0} & \textcolor{blue}{0} & 2/3  \\
+        \textcolor{blue}{0} & 0 & \textcolor{red}{1}  & \textcolor{blue}{0} & -1  \\
+        \textcolor{blue}{0} & 0 & \textcolor{blue}{0} & \textcolor{red}{1} & -10  \\
+        \textcolor{blue}{0} & 0 & \textcolor{blue}{0} & \textcolor{blue}{0} &  0  \\
+    \end{pmatrix} \begin{pmatrix}
+        x_1 \\ x_2 \\ x_3 \\ x_4 \\ x_5 
+    \end{pmatrix} = \begin{pmatrix}
+        b_1 \\ b_2 \\ b_3 \\ b_4
+    \end{pmatrix}
+\end{equation*}
+
+\end{frame}
+
+\begin{frame}\frametitle{Reduced echelon form}
+
+We say a matrix $A$ is in reduced echelon form if:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  the first nonzero entry of each row is a $1$
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    such an entry is called a \texttt{pivot'' or}leading $1$''
+  \end{itemize}
+\item
+  each pivot is the only nonzero entry in its column
+\item
+  each of the pivots after the first one appears to the right of the
+  previous pivot
+\item
+  each row without a pivot follows all rows with a pivot
+\end{itemize}
+
+Such a matrix certainly has an obvious solution set, and:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Every matrix is equivalent to exactly one matrix in reduced echelon
+  form.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{How do we find a reduced echelon equivalent?}
+
+\begin{itemize}
+\item
+  The same way we solve the equations to which the matrix equation
+  corresponds: by adding and subtracting the rows from one another.
+\item
+  We'll need to keep track of the RHS too, so add it as the last column
+  of the matrix. We'll manipulate this matrix:
+\end{itemize}
+
+\begin{equation*}
+    \begin{pmatrix}
+        a_{11} & a_{12} & \cdots & a_{1n} & b_1 \\
+        a_{21} & a_{22} & \cdots & a_{2n} & b_2 \\
+        \vdots & \vdots & \ddots & \vdots & \vdots \\
+        a_{m1} & a_{m2} & \cdots & a_{mn} & b_m \\
+    \end{pmatrix}
+\end{equation*}
+
+\end{frame}
+
+\begin{frame}\frametitle{Gaussian elimination}
+
+\begin{itemize}
+\item
+  There are three operations on matrices that preserve solution sets.
+\item
+  If you do any of these operations to a matrix, you obtain an
+  equivalent one.
+\item
+  Swapping rows
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    obviously, this won't affect the solutions: underlying set of
+    equations is the same
+  \end{itemize}
+\item
+  Multiplying a row by a nonzero number
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    this changes the equations, but not the solution set
+  \end{itemize}
+\item
+  Adding a nonzero multiple of a row to another row
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    also doesn't change the solution set.
+  \end{itemize}
+\end{itemize}
+
+There's a fairly transparent algorithm using these operations that
+transforms each matrix into its unique reduced echelon equivalent.
+
+\end{frame}
+
+\begin{frame}\frametitle{In practice: upper-triangular}
+
+If you are row-reducing a matrix by hand, reduced echelon form is
+overkill a lot of the time.
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Reduce to an upper-triangular matrix
+\item
+  All nonzero entries on or above the main diagonal
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    that is, the upper-left-to-lower-right diagonal
+  \item
+    with slope $-1$
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Entering vectors in Sage}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Initialize a vector value with \texttt{vector()}
+\item
+  \texttt{u = vector(QQ, [1, 3/2, -1])}
+\item
+  Use \texttt{QQ} to display fractions instead of decimals
+\item
+  \texttt{u}
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    \texttt{(1, -3/2, 1)}
+  \end{itemize}
+\item
+  \texttt{v = vector(RR, [1, 3/2, -1])}; v
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    \texttt{(1.00000000000000, 1.50000000000000, -1.00000000000000)}
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Entering matrices}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Either enter a matrix as a vector of its rows
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    \texttt{A = matrix(QQ, [[1, 2], [3, 4], [5, 6]])}
+  \end{itemize}
+\item
+  or as a list with specification of number of rows
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    \texttt{A = matrix(QQ, 2, [1,2,3,4,5,6])}
+  \end{itemize}
+\item
+  Obtain reduced echelon form with \texttt{rref}:
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    \texttt{B = A.rref()}
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Row operations}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Want to use Sage to check your work in performing row operations?
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    The matrix methods below may be useful.
+  \item
+    These methods are \emph{destructive}: they change the entries of the
+    matrix on which they're called.
+  \end{itemize}
+\item
+  \texttt{A.rescale_row(i,a)}
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    multiply row $i$ by $a$
+  \end{itemize}
+\item
+  \texttt{A.add_multiple_of_row(i,j,a)}
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    add $a$ times row $j$ to row $i$
+  \end{itemize}
+\item
+  \texttt{A.swap_rows(i,j)}
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    swap rows $i$ and $j$
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Sage lab assignment}
+
+Use Sage to solve the systems of linear equations.
+
+\begin{equation*}
+    \begin{array}{ccccccc}
+        3x &+& 3y &+& 12z &=& 6 \\
+        x  &+& y  &+& 4z  &=& 2 \\
+        2x &+& 5y &+& 20z &=& 10 \\
+        -x &+& 2y &+& 8z  &=& 4  
+    \end{array} \quad \begin{array}{ccccccc}
+        2x  &+& 10y &+& 2z &=& 6 \\
+        x   &+& 5y  &+& 2z &=& 6 \\
+        x   &+& 5y  &+& z  &=& 3 \\
+        -3x &-& 15y &+& 3z &=& -9  
+    \end{array}
+\end{equation*}
+
+\begin{equation*}
+    \begin{array}{ccccccccc}
+        2x &+& y &-& z &+& 2w &=& -6 \\
+        3x &+& 4y & & &+& w &=& 1 \\
+        x &+& 5y &+& 2z &+& 6w &=& -3 \\
+        5x &+& 2y &-& z &-& w &=& 3
+    \end{array}
+\end{equation*}
+
+\end{frame}
+
+\end{document}
