@@ -107,7 +107,7 @@ I really meant:
 We say a matrix $A$ is in reduced echelon form if:
 
 - the first nonzero entry of each row is a $1$
-    - such an entry is called a ``pivot'' or ``leading $1$''
+    - such an entry is called a \emph{pivot} or \emph{leading 1}
 - each pivot is the only nonzero entry in its column
 - each of the pivots after the first one appears to
     the right of the previous pivot
@@ -136,19 +136,19 @@ column of the matrix. We'll manipulate this matrix:
 
 ## Gaussian elimination
 
-- There are three operations on matrices that preserve solution sets.
-- If you do any of these operations to a matrix, you obtain an equivalent one.
-
+- There are three families of operations on matrices that preserve solution 
+sets.
+    - If you do any of these operations to a matrix, the resulting matrix
+    is equivalent.
 - Swapping rows 
-    - obviously, this won't affect the solutions: underlying set of 
-    equations is the same
+    - this doesn't even change the equations, just their order
 - Multiplying a row by a nonzero number
     - this changes the equations, but not the solution set
 - Adding a nonzero multiple of a row to another row
     - also doesn't change the solution set.
 
-There's a fairly transparent algorithm using these operations that
-transforms each matrix into its unique reduced echelon equivalent.
+Using these operations, it's possible to transforms each matrix into its 
+unique reduced echelon equivalent.
 
 ## In practice: upper-triangular
 
@@ -178,6 +178,17 @@ is overkill a lot of the time.
     - \texttt{A = matrix(QQ, 2, [1,2,3,4,5,6])}
 - Obtain reduced echelon form with \texttt{rref}:
     - \texttt{B = A.rref()}
+
+## Example
+
+- \texttt{A = matrix(QQ, 2, [1, 1, 2, -4, 2, -10]); show(A)}
+    - $\begin{pmatrix}   
+        1 & 1 & 2 \\ -4 & 2 & -10
+    \end{pmatrix}$
+- \texttt{B = A.rref(); show(B)}
+    - $\displaystyle \begin{pmatrix}
+        1 & 0 & 7/3 \\ 0 & 1 & -1/3
+    \end{pmatrix}$
 
 ## Row operations
 
