@@ -93,43 +93,46 @@ April 4 <br />      Section 3.6 <br />      Variation of parameters. Finish Work
                                             
 
 April 7 <br />      Section 3.7 <br />      More unforced vibrations; review for Exam 2. <br />
-                                            WeBWorK 08 is due at 10pm.
+                    (read 191--197 <br />   WeBWorK 08 is due at 10pm. <br />
+                    skim 197--199)          [PDF presentation][d12].               
 
                     Review for Exam 2       Exam 2 covers sections 3.1--3.7.
 
 April 9             Review for Exam 2       EXAM 2
 
-April 11            Section 3.7 <br />      Unforced mechanical vibrations, damped vibrations<br />
-                    (read 191--197 <br />   Intro to forced vibrations. Workshop 09.
-                    skim 197--199)   
+April 11            Section 3.8 <br />      Intro to forced vibrations. This is a bad day to miss. <br />
+                                            [PDF presentation][d13].
 
-April 14            Section 3.8             Forcing and resonance. Workshop 10. This is a bad day to miss.
+April 14            Sections 4.1, 7.1--2    Vectors and matrices in Sage <br />
+                                            Introduction to systems of equations; higher-order equations. <br />
+                                            [PDF presentation][d14].
+                                            
+April 16            Sage handout<br />      Introducton to systems of linear (algebraic) equations in Sage <br />
+                    Section 7.2             Workshop 09. <!-- on converting to a system of 1st-order --> 
 
-April 16            Sections 4.1, 7.1--2?   Introduction to systems of equations; higher-order equations. <br />
-                                            Workshop 11. <!-- on converting to a system of 1st-order -->
+April 18            Section 7.3             More systems of linear (algebraic) equations in Sage <br />
+                                            Workshop?
 
-April 18            Sage handout<br />      Vectors and matrices in Sage
-                    Section 7.2
+April 21            Section 7.3             Eigenvektorseinführung (introduction to eigenvectors) <br /> 
+                                            Workshop?
 
-April 21            Section 7.3             Systems of linear (algebraic) equations in Sage
+April 23            Reread 7.1--7.3<br/>    Some hand calculations with small systems <br />
+                    Skim 7.4                More practice with eigenvectors and multiplicities
 
-April 23            Section 7.3             Eigeneinführung (introduction to eigenvectors) <br />
-                                            Workshop 12.
+April 25            Section 7.4             Systems of first-order equations: analysis via eigenvectors. <br />
+                    Section 7.5             The exponential functions as eigenvectors of the derivative.
 
-April 25            Reread 7.1--7.3<br/>    Some hand calculations with $2 \times 2$ systems
-                    Skim 7.4
+April 28            Section 7.5 <br />      More practice with matrix formulations, with help from Sage. <br />
+                                            Homogeneous linear systems with constant coefficients
+                                            Workshop?
 
-April 28            Section 7.4             Systems of first-order equations: analysis via
-                                            eigenvectors. <br />
-                                            Workshop 13.
+April 30            Section 7.5 <br />      Analysis of eigenvectors, bifurcations, nodes. <br />
+                    Section 7.6             Complex eigenvectors.
+                                            Workshop? 
 
-April 30            Section 7.4 <br />      More practice with matrix formulations, with help from Sage. <br />
-                    Section 7.5             Homogeneous linear systems with constant coefficients
+May 2               Section 7.6             Complex eigenvectors; loose ends; review for Exam 3.
 
-May 2               Section 7.5 <br />      Analysis of eigenvectors, bifurcations, nodes. <br />
-                    Section 7.6             Complex eigenvectors. 
-
-May 5               Section 7.6             Complex eigenvectors; loose ends; review for Exam 3.
+May 5               FLEX DAY                FLEX DAY
 
 May 7               Review for Exam 3       EXAM 3 <br />
                                             Exam 3 covers section 3.8 and sections 7.1--7.6.
