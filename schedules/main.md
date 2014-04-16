@@ -149,7 +149,7 @@ May 14              PRESENTATIONS           (Finals week) presentations: 1:30--4
 [weekly]: problems.html
 [sage]: ../modules/01/sage.html
 [euler]: ../sage/EulersMethod.sws
-[sage-solve-sys]: ../sage/Solving-matrix-equations-2014-04-16.sagews
+[sage-solve-sys]: ../sage/Solving-matrix-equations-2014-04-16.sws
 [rub]: ../project/rubric.pdf
 
 [m01]: ../modules/01/Module.html
