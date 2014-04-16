@@ -108,7 +108,8 @@ April 14            Sections 4.1, 7.1--2    Vectors and matrices in Sage <br />
                                             [PDF presentation][d14].
                                             
 April 16            Sage handout<br />      Introduction to systems of linear (algebraic) equations in Sage <br />
-                    Section 7.2             Workshop 09. <!-- on converting to a system of 1st-order --> 
+                    Section 7.2             Workshop 09. <!-- on converting to a system of 1st-order --> <br />
+                                            [Sage worksheet][sage-solve-sys] (import to SageMathCloud)
 
 April 18            Section 7.3             More systems of linear (algebraic) equations in Sage <br />
                                             Workshop?
@@ -148,6 +149,7 @@ May 14              PRESENTATIONS           (Finals week) presentations: 1:30--4
 [weekly]: problems.html
 [sage]: ../modules/01/sage.html
 [euler]: ../sage/EulersMethod.sws
+[sage-solve-sys]: ../sage/Solving-matrix-equations-2014-04-16.sagews
 [rub]: ../project/rubric.pdf
 
 [m01]: ../modules/01/Module.html
