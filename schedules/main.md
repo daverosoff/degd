@@ -107,7 +107,7 @@ April 14            Sections 4.1, 7.1--2    Vectors and matrices in Sage <br />
                                             Introduction to systems of equations; higher-order equations. <br />
                                             [PDF presentation][d14].
                                             
-April 16            Sage handout<br />      Introducton to systems of linear (algebraic) equations in Sage <br />
+April 16            Sage handout<br />      Introduction to systems of linear (algebraic) equations in Sage <br />
                     Section 7.2             Workshop 09. <!-- on converting to a system of 1st-order --> 
 
 April 18            Section 7.3             More systems of linear (algebraic) equations in Sage <br />
