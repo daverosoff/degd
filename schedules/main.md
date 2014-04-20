@@ -111,7 +111,7 @@ April 16            Sage handout<br />      Introduction to systems of linear (a
                     Section 7.2             [Workshop 09][w09]. <!-- on converting to a system of 1st-order --> <br />
                                             [Sage worksheet][sage-solve-sys] (import to SageMathCloud)
 
-April 18            Section 7.3             More systems of linear (algebraic) equations in Sage <br />
+April 18            Section 7.3             Visualizing matrix multiplication <br />
                                             [Workshop 10][w10] is due Monday, April 21.
 
 April 21            Section 7.3             Eigenvektorseinführung (introduction to eigenvectors) <br /> 
@@ -120,7 +120,7 @@ April 21            Section 7.3             Eigenvektorseinführung (introductio
 April 23            Reread 7.1--7.3<br/>    Some hand calculations with small systems <br />
                     Skim 7.4                More practice with eigenvectors and multiplicities
 
-April 25            Section 7.4             Systems of first-order equations: analysis via eigenvectors. <br />
+April 25            Section 7.4 <br />      Systems of first-order equations: analysis via eigenvectors. <br />
                     Section 7.5             The exponential functions as eigenvectors of the derivative.
 
 April 28            Section 7.5 <br />      More practice with matrix formulations, with help from Sage. <br />
@@ -179,8 +179,8 @@ May 14              PRESENTATIONS           (Finals week) presentations: 1:30--4
 [w07]: ../workshops/07/ReductionOrderIntroUC.pdf
 [w08]: ../workshops/08/VariationParameters.pdf
 [sol08]: ../workshops/08/VariationParameters-Solutions.pdf
-[w09]: ../workshops/09/Workshop.pdf
-[w10]: ../workshops/10/Workshop.pdf
+[w09]: ../workshops/09/MatricesVectorsSage.pdf
+[w10]: ../workshops/10/MatricesAsTransformations.pdf
 [w11]: ../workshops/11/Workshop.pdf
 [w12]: ../workshops/12/Workshop.pdf
 [w13]: ../workshops/13/Workshop.pdf
