@@ -114,11 +114,12 @@ April 16            Sage handout<br />      Introduction to systems of linear (a
 April 18            Section 7.3             Visualizing matrix multiplication <br />
                                             [Workshop 10][w10] is due Monday, April 21.
 
-April 21            Section 7.3             Eigenvektorseinführung (introduction to eigenvectors) <br /> 
-                                            Workshop?
+April 21            Section 7.3             Phase portraits and trajectories <br /> 
+                                            [Workshop 11][w11] is due Wednesday, April 23.
 
-April 23            Reread 7.1--7.3<br/>    Some hand calculations with small systems <br />
-                    Skim 7.4                More practice with eigenvectors and multiplicities
+April 23            Reread 7.1--7.3<br/>    Eigenvektorseinführung (introduction to eigenvectors). <br />
+                    Skim 7.4                Some hand calculations with small systems <br />
+                                            WeBWorK 09 is due at 10pm.
 
 April 25            Section 7.4 <br />      Systems of first-order equations: analysis via eigenvectors. <br />
                     Section 7.5             The exponential functions as eigenvectors of the derivative.
@@ -181,7 +182,7 @@ May 14              PRESENTATIONS           (Finals week) presentations: 1:30--4
 [sol08]: ../workshops/08/VariationParameters-Solutions.pdf
 [w09]: ../workshops/09/MatricesVectorsSage.pdf
 [w10]: ../workshops/10/MatricesAsTransformations.pdf
-[w11]: ../workshops/11/Workshop.pdf
+[w11]: ../workshops/11/PhasePortraits.pdf
 [w12]: ../workshops/12/Workshop.pdf
 [w13]: ../workshops/13/Workshop.pdf
 [w14]: ../workshops/14/Workshop.pdf
