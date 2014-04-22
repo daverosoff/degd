@@ -1,0 +1,40 @@
+︠8df3a34e-d66b-4f65-85ed-61a7b3470b51i︠
+%html
+<h3>Phase portraits</h3>
+︡a42baf1b-3f3f-46e8-a5f6-0d5b240ade22︡{"html":"<h3>Phase portraits</h3>"}︡
+︠52d8e795-d3b0-41fa-9eb8-6706cabbc4f6i︠
+%html
+If you have not read the accompanying Module, please <a 
+href = "https://zeus.collegeofidaho.edu/academics/mathphysics/courses/mat-352/modules/02/Module.pdf" target="_blank">go read it</a> 
+before you proceed. The vectors defined below are $\mathbf{u}^{(1)}$ and $\mathbf{u}^{(2)}$ from that description.
+︡b1ebbb1f-4089-4a35-98e9-decec05a1e31︡{"html":"If you have not read the accompanying Module, please <a \nhref = \"https://zeus.collegeofidaho.edu/academics/mathphysics/courses/mat-352/modules/02/Module.pdf\" target=\"_blank\">go read it</a> \nbefore you proceed. The vectors defined below are $\\mathbf{u}^{(1)}$ and $\\mathbf{u}^{(2)}$ from that description."}︡
+︠5c8fe209-c3bc-4639-8eeb-182a4332780b︠
+x, y, t = var('x y t')
+︡c2529657-698a-4e2f-bb40-e84e4797ce6a︡
+︠3bcd0d56-a2eb-420a-b944-fc4372118426︠
+A = matrix(QQ, 2, [0, 1, -5, -4])
+︡a9f6be46-1ba7-4181-91b6-8d08f278eb75︡
+︠f6b616b4-343e-4931-9ba6-09e3bbbb58b6︠
+u1 = vector([exp(-2*t)*cos(t), diff(exp(-2*t)*cos(t), t)])
+u2 = vector([exp(-2*t)*sin(t), diff(exp(-2*t)*sin(t), t)])
+︡b2563eac-4250-452f-b8d0-228bd4c4959a︡
+︠9e7fa82e-189a-4421-88a4-8847c8542e89︠
+pp = parametric_plot(u1+u2, (t, -7*pi/48, pi))
+vf = plot_vector_field(A*vector([x,y]), (x, -1, 2), (y, -1, 1))
+(pp+vf).show(aspect_ratio="automatic")
+︡f5b0844c-9648-4be9-a364-91011e465349︡{"once":false,"file":{"show":true,"uuid":"a21e3d0b-2e3c-48c3-8569-e28a313ebc6e","filename":"/projects/222b3467-d373-4927-bbd6-195d0a1333ce/.sage/temp/compute5dc2/31326/tmp__xovq9.png"}}︡
+︠6d826f70-c239-48de-aeff-a47058e8850f︠
+ppzoom = parametric_plot(u1+u2, (t, pi-11*pi/48, pi+12*pi/6))
+vfzoom = plot_vector_field(A*vector([x, y]), (x, -0.01, 0.01), (y, -0.01, 0.01))
+(ppzoom+vfzoom).show(aspect_ratio="automatic")
+︡74c9df24-393a-43eb-aed7-b7fbfc99bd34︡{"once":false,"file":{"show":true,"uuid":"666bf189-e7f3-4e3b-802a-723261e97388","filename":"/projects/222b3467-d373-4927-bbd6-195d0a1333ce/.sage/temp/compute5dc2/31326/tmp_jEqW7f.png"}}︡
+︠7a45f28f-2864-4c7b-ab2c-fdfd78caf0b5︠
+
+
+
+
+
+
+
+
+
