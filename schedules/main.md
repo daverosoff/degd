@@ -41,7 +41,7 @@ February 26         Section 2.3             WeBWorK 04 (modeling) is due at 10pm
 February 28         Section 2.5             Autonomous equations ([PDF presentation][d04]). <br />
                                             [Workshop 03][w03] on modeling was not collected. <br />
 
-March 3             Section 2.7             Euler's method. [Sage worksheet][euler] you can download and import.<br />
+March 3             Section 2.7             Euler's method. [Sage worksheet][sage-euler] you can download and import.<br />
                                             The Sage worksheet is not meant to be comprehensive, just a jumping-off point. <br />
                                             Quiz 04 (WeBWorK 04). <br />
                                             Weekly 2 is due by 3pm.
@@ -115,11 +115,13 @@ April 18            Section 7.3             Visualizing matrix multiplication <b
                                             [Workshop 10][w10] is due Monday, April 21.
 
 April 21            Section 7.3             Phase portraits and trajectories <br /> 
-                                            [Workshop 11][w11] is due Wednesday, April 23.
+                                            [Workshop 11][w11] is due Wednesday, April 23. <br />
+                                            [Module 02][m02] to supplement our class discussions. <br />
+                                            [Phase portraits in Sage][sage-phase] (import to SageMathCloud)
 
-April 23            Reread 7.1--7.3<br/>    Eigenvektorseinführung (introduction to eigenvectors). <br />
-                    Skim 7.4                Some hand calculations with small systems <br />
-                                            WeBWorK 09 is due at 10pm.
+April 23            [Module 02][m02]        Eigenvektorseinführung (introduction to eigenvectors). <br />
+                    Reread 7.1--7.3<br/>    Some hand calculations with small systems <br />
+                    Skim 7.4                WeBWorK 09 is due at 10pm.
 
 April 25            Section 7.4 <br />      Systems of first-order equations: analysis via eigenvectors. <br />
                     Section 7.5             The exponential functions as eigenvectors of the derivative.
@@ -148,13 +150,16 @@ May 14              PRESENTATIONS           (Finals week) presentations: 1:30--4
 [s]: ../syllabus/syllabus.pdf
 [ww]: https://webwork.collegeofidaho.edu/webwork2/MAT352_S14/
 [weekly]: problems.html
+
 [sage]: ../modules/01/sage.html
-[euler]: ../sage/EulersMethod.sws
+[sage-euler]: ../sage/EulersMethod.sws
 [sage-solve-sys]: ../sage/Solving-matrix-equations-2014-04-16.sws
+[sage-phase]: ../sage/PhasePortraits.sws
+
 [rub]: ../project/rubric.pdf
 
 [m01]: ../modules/01/Module.html
-[m02]: ../modules/02/Module.html
+[m02]: ../modules/02/Module.pdf
 [m03]: ../modules/03/Module.html
 [m04]: ../modules/04/Module.html
 [m05]: ../modules/05/Module.html

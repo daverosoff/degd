@@ -1,0 +1,127 @@
+\documentclass[12pt,twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{rosoff}
+\usepackage{fourier}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{listings,booktabs,xparse,siunitx,parskip,xcolor}
+\frenchspacing
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg, .png}
+\usepackage{hyperref}
+\pagestyle{empty}
+\title{Some disambiguation of various notational conventions}
+\author{Math 352 Differential Equations}
+\date{April 22, 2014}
+
+\RenewDocumentCommand\vec{m}{\ensuremath{\mathbf{#1}}}
+
+\begin{document}
+\thispagestyle{empty}
+\maketitle
+
+
+
+There is a significant danger of confusion that arises when we attempt to port
+our ideas about second-order linear equations to the case of a $2 \times 2$
+system, as in \href{../../workshops/11/PhasePortraits.pdf}{Workshop 11}. The
+danger is that an unwary or reckless reader may conflate the pair of functions
+from Chapter 3 (an independent set of solutions of a second-order equation)
+with the pair of functions from Chapter 7 (a single solution of the
+\emph{system} of differential equations and its derivative).
+
+When we discuss a system of differential equations $\vec{u}' = A\vec{u}$, the
+understanding is that the  symbols $u_1$ and $u_2$ are reserved for the
+entries of the vector $\vec{u}$. They cannot serve this function and also
+retain their meaning from Chapter 3. These significations are incompatible.
+
+The remainder of this note will explain the difference between the two pairs
+and the planes they parameterize. From now on, let us consider the second-
+order equation
+\begin{equation} \label{eq:main}
+    u'' + 4u' + 5u = 0.
+\end{equation}
+When we choose the fundamental system $u_1 = e^{-2t} \cos{t}$,
+$u_2 = e^{-2t} \sin{t}$, we are also making a specific identification
+of the \emph{solution set}
+\begin{equation*}
+    c_1 e^{-2t} \cos{t} + c_2 e^{-2t} \sin{t}
+\end{equation*}
+with the $(c_1, c_2)$-coordinate plane. If we were to choose a different 
+fundamental system---say, 
+\begin{align*}
+    v_1 &= e^{-2t} (\cos{t} + \sin{t}) \\
+    v_2 &= e^{-2t} (\cos{t} - \sin{t}) \quad \text{(observe that these
+        functions have a nonzero Wronskian)},
+\end{align*}
+then the \emph{particular} solution
+$2e^{-2t} \cos{t} - e^{-2t} \sin{t}$ is represented by a different coordinate
+pair. It appears as the point $(2, -1)$ in the $(u_1,u_2)$-coordinate system
+and as the point $(1/2,3/2)$ in the $(v_1,v_2)$-coordinate system.
+
+Neither of these is the same thing as the phase plane, and it is essential
+that you understand the difference well enough to distinguish them.
+
+The phase plane arises when we consider a particular solution $U$ of the 
+differential equation~\eqref{eq:main} and plot the trajectory of the
+vector-valued function $\angl{U,U'}$. For example, we might have
+\begin{equation*}
+    \begin{pmatrix}
+        U \\ U'
+    \end{pmatrix} = \begin{pmatrix}
+        2e^{-2t} \cos{t} - e^{-2t} \sin{t} \\
+        -4 e^{-2t} \cos{t} - 3e^{-2t} \sin{t}
+    \end{pmatrix}.
+\end{equation*}
+The point is, we are evidently not free to choose both entries independently.
+Our choice of the first entry determines the second entry.
+
+This is because the system of differential equations arising from Equation~\eqref{eq:main} is
+\begin{align*}
+    u'_1 &= u_2 \\ 
+    u'_2 &= -5u_1 - 4u_2.
+\end{align*}
+It is not exactly convenient, but the most attractive solution is to write
+\begin{align*}
+    \vec{u}^{(1)} &= \begin{pmatrix}
+        e^{-2t} \cos{t} \\ -e^{-2t} \cos{t} - 2e^{-2t} \sin{t}
+    \end{pmatrix}, \\[2ex]
+    \vec{u}^{(2)}&= \begin{pmatrix}
+        e^{-2t} \sin{t} \\ 2 e^{-2t} \cos{t} - e^{-2t} \sin{t}
+    \end{pmatrix}.
+\end{align*}
+The symbols are pronounced ``you-upper-one'' and ``you-upper-two'', respectively.
+The parentheses in the superscripts are not pronounced and are only there to
+help avoid confusion with exponents.
+
+This allows us to stick with the irremediable convention that $u_1$ and $u_2$
+denote the entries of a vector $\vec{u}$ while only slightly changing our
+previous notation for the elements of a fundamental system of solutions.
+
+That is, with this conventions, the old meaning of $c_1 u_1 + c_2 u_2$ is
+\emph{the first entry} of the \emph{vector}
+\begin{equation*}
+    c_1 \vec{u}^{(1)} + c_2 \vec{u}^{(2)}.
+\end{equation*}
+
+If this last expression is our particular solution $\vec{u}$, then (putting it all 
+together) we have
+\begin{align*}
+    \begin{pmatrix}
+        u_1 \\ u_2
+    \end{pmatrix} = \vec{u} &= c_1 \vec{u}^{(1)} + c_2 \vec{u}^{(2)} \\[2ex]
+    &= \begin{pmatrix}
+        c_1 e^{-2t} \cos{t} + c_2 e^{-2t} \sin{t} \\
+        c_1 (-e^{-2t} \cos{t} - 2e^{-2t} \sin{t}) 
+            + c_2 (2 e^{-2t} \cos{t} - e^{-2t} \sin{t}) 
+    \end{pmatrix} \\[2ex]
+    &= \begin{pmatrix}
+        c_1 e^{-2t} \cos{t} + c_2 e^{-2t} \sin{t} \\
+        (-c_1 + 2c_2) e^{-2t} \cos{t} + (-2c_1 -c_2) e^{-2t} \sin{t}
+    \end{pmatrix}.
+\end{align*}
+Evidently, in the new context we obtain
+\begin{align*}
+    u_1 &= c_1 e^{-2t} \cos{t} + c_2 e^{-2t} \sin{t}, \\
+    u_2 &= (-c_1 + 2c_2) e^{-2t} \cos{t} + (-2c_1 -c_2) e^{-2t} \sin{t}.
+\end{align*}
+\end{document}
