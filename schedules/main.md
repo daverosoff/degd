@@ -7,6 +7,12 @@ more specific notes from the days you were unable to attend.
 
 Weekly problem sets are [listed separately][weekly], as are [WeBWorK problems][ww]. 
 
+To import a Sage worksheet into SageMathCloud, first download the worksheet file
+to your local machine from a link below. Then, open a new Sage Worksheet. Drag
+the downloaded file right onto the Worksheet pane and it should come right up.
+Then you can modify your local copy in the cloud and it will be synced and saved
+automatically.
+
 ---------------------------------------------------------------------------------------------
 Date                Reading                 Topics 
 --------------      ---------------------   -------------------------------------------------
@@ -117,18 +123,20 @@ April 18            Section 7.3             Visualizing matrix multiplication <b
 April 21            Section 7.3             Phase portraits and trajectories <br /> 
                                             [Workshop 11][w11] is due Wednesday, April 23. <br />
                                             [Module 02][m02] to supplement our class discussions. <br />
-                                            [Phase portraits in Sage][sage-phase] (import to SageMathCloud)
+                                            [Phase portraits in Sage][sage-phase] 
 
 April 23            [Module 02][m02]        Eigenvektorseinführung (introduction to eigenvectors). <br />
                     Reread 7.1--7.3<br/>    Some hand calculations with small systems <br />
                     Skim 7.4                WeBWorK 09 is due at 10pm.
 
 April 25            Section 7.4 <br />      Systems of first-order equations: analysis via eigenvectors. <br />
-                    Section 7.5             The exponential functions as eigenvectors of the derivative.
+                    Section 7.5             Practice finding eigeninfo in Sage and converting to the solutions
+                                            of a matrix-vector differential equation.
+                                            [Workshop 12][w12] is due Monday, April 28.
 
-April 28            Section 7.5 <br />      More practice with matrix formulations, with help from Sage. <br />
+April 28            Section 7.5 <br />      Plotting solutions of $2 \times 2$ systems, with help from Sage. <br />
                                             Homogeneous linear systems with constant coefficients
-                                            Workshop?
+                                            [Workshop 13][w13] is not due for collection.
 
 April 30            Section 7.5 <br />      Analysis of eigenvectors, bifurcations, nodes. <br />
                     Section 7.6             Complex eigenvectors.
@@ -188,8 +196,8 @@ May 14              PRESENTATIONS           (Finals week) presentations: 1:30--4
 [w09]: ../workshops/09/MatricesVectorsSage.pdf
 [w10]: ../workshops/10/MatricesAsTransformations.pdf
 [w11]: ../workshops/11/PhasePortraits.pdf
-[w12]: ../workshops/12/Workshop.pdf
-[w13]: ../workshops/13/Workshop.pdf
+[w12]: ../workshops/12/EigenvectorAnalysis.pdf
+[w13]: ../workshops/13/EigenvectorAnalysisII.pdf
 [w14]: ../workshops/14/Workshop.pdf
 [w15]: ../workshops/15/Workshop.pdf
 [w16]: ../workshops/16/Workshop.pdf
