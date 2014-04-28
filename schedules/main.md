@@ -136,7 +136,8 @@ April 25            Section 7.4 <br />      Systems of first-order equations: an
 
 April 28            Section 7.5 <br />      Plotting solutions of $2 \times 2$ systems, with help from Sage. <br />
                                             Homogeneous linear systems with constant coefficients
-                                            [Workshop 13][w13] is not due for collection.
+                                            [Workshop 13][w13] is not due for collection. <br />
+                                            [More phase portraits in Sage][sage-phase-2]
 
 April 30            Section 7.5 <br />      Analysis of eigenvectors, bifurcations, nodes. <br />
                     Section 7.6             Complex eigenvectors.
@@ -163,6 +164,7 @@ May 14              PRESENTATIONS           (Finals week) presentations: 1:30--4
 [sage-euler]: ../sage/EulersMethod.sws
 [sage-solve-sys]: ../sage/Solving-matrix-equations-2014-04-16.sws
 [sage-phase]: ../sage/PhasePortraits.sws
+[sage-phase-2]: ../sage/More-phase-portraits.sws
 
 [rub]: ../project/rubric.pdf
 
