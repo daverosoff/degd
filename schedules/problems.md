@@ -1,6 +1,6 @@
 % Math 352 Weekly Problems: Spring 2014
 
-### Weekly 10: April 30--May 2
+### Weekly 10: April 30--May 7
 
 - Section 7.5: exercise 30.
 - Section 7.6: exercises 2, 30, 31.

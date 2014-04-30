@@ -141,14 +141,17 @@ April 28            Section 7.5 <br />      Plotting solutions of $2 \times 2$ s
 
 April 30            Section 7.5 <br />      Analysis of eigenvectors, bifurcations, nodes. <br />
                     Section 7.6             Complex eigenvectors.
-                                            Workshop? 
+                                             
 
-May 2               Section 7.6             Complex eigenvectors; loose ends; review for Exam 3.
+May 2               Section 7.6             More on complex eigenvectors; more practice with Sage. <br />
+                                            Workshop 14 will probably not be collected.
+                                            Quiz 8 on solving $2 \times 2$ systems by hand.
 
-May 5               FLEX DAY                FLEX DAY
+May 5               Review for Exam 3       Review for Exam 3.
 
 May 7               Review for Exam 3       EXAM 3 <br />
-                                            Exam 3 covers section 3.8 and sections 7.1--7.6.
+                                            Exam 3 covers section 3.8 and sections 7.1--7.6. <br />
+                                            Weekly assignment 10 is due by 3pm.
 
 May 9               Skim 7.7, 7.8           Fundamental matrices and the matrix exponential
 
@@ -200,7 +203,7 @@ May 14              PRESENTATIONS           (Finals week) presentations: 1:30--4
 [w11]: ../workshops/11/PhasePortraits.pdf
 [w12]: ../workshops/12/EigenvectorAnalysis.pdf
 [w13]: ../workshops/13/EigenvectorAnalysisII.pdf
-[w14]: ../workshops/14/Workshop.pdf
+[w14]: ../workshops/14/ComplexEigenvectors.pdf
 [w15]: ../workshops/15/Workshop.pdf
 [w16]: ../workshops/16/Workshop.pdf
 
