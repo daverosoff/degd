@@ -1,0 +1,37 @@
+︠0dbcac4b-73c0-491b-b911-6457c2bce342i︠
+%html
+<h3>Phase Portraits, II</h3>
+<p>Below we illustrate the making of phase portraits of 
+the solutions of $2 \times 2$ systems of differential equations.</p>
+︡b0d7049f-9149-4731-b3a9-ed987a8ca604︡{"html":"<h3>Phase Portraits, II</h3>\n<p>Below we illustrate the making of phase portraits of \nthe solutions of $2 \\times 2$ systems of differential equations.</p>"}︡
+︠cc4ee1aa-9c67-46fb-bade-1349b4d65ed6︠
+x1, x2, t = var('x1 x2 t')
+︡7166a795-6588-48a3-ac65-cef0568c4da2︡
+︠e48d30a1-39f1-4dc2-b1df-d71a5a7fe3e4︠
+A = matrix(QQ, 2, [3, -2, 2, -2]); show(A)
+︡3b74c000-ec64-4834-ae42-e802c56ccd6a︡{"tex":{"tex":"\\left(\\begin{array}{rr}\n3 & -2 \\\\\n2 & -2\n\\end{array}\\right)","display":true}}︡
+︠25b50d58-5038-4b27-a072-7f1e7279295b︠
+A.eigenspaces_right()
+︡728ae502-8bde-4271-a955-abfcfa4a52b9︡{"stdout":"[\n(2, Vector space of degree 2 and dimension 1 over Rational Field\nUser basis matrix:\n[  1 1/2]),\n(-1, Vector space of degree 2 and dimension 1 over Rational Field\nUser basis matrix:\n[1 2])\n]\n"}︡
+︠0011aba9-9225-46e0-b5f6-8712a249938d︠
+y1 = vector(QQ,[1,1/2])*exp(2*t)
+y2 = vector(QQ,[1,2])*exp(-t)
+︡d44ec593-2d00-4da4-9876-584433bad642︡
+︠b865d1f6-a1dd-4046-aec5-9e09f21dd37e︠
+pp1 = parametric_plot(y1+y2, (t, -2, 1))
+pp2 = parametric_plot(y1-y2, (t, -1.5, 1))
+eig1 = parametric_plot([t, t/2], (t, -10, 10),color="green")
+eig2 = parametric_plot([t, 2*t], (t, -5, 5),color="green")
+vf = plot_vector_field(A*vector([x1,x2]), (x1,-8,8), (x2,-8,15))
+show(vf+pp1+pp2+eig1+eig2)
+︡96e176c8-246f-4d73-8aff-6a0e6116730c︡{"once":false,"file":{"show":true,"uuid":"4c66693b-1082-42a8-a189-4622f32aeba0","filename":"/projects/cb03d418-bacc-4b6d-a349-f4197598fde8/.sage/temp/compute5dc1/5372/tmp_2Q3oFq.png"}}︡
+︠4a2c21a2-3561-4c17-9fd3-70c64147810c︠
+
+
+
+
+
+
+
+
+
