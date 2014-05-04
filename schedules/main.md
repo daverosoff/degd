@@ -144,7 +144,7 @@ April 30            Section 7.5 <br />      Analysis of eigenvectors, bifurcatio
                                              
 
 May 2               Section 7.6             More on complex eigenvectors; more practice with Sage. <br />
-                                            Workshop 14 will not be collected.<br />
+                                            [Workshop 14][w14] will not be collected.<br />
                                             Quiz 8 on solving $2 \times 2$ systems by hand. <br />
                                             Some more [Sage example code][sage-complex] for complex eigenvalues.
 
