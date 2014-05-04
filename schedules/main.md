@@ -135,7 +135,7 @@ April 25            Section 7.4 <br />      Systems of first-order equations: an
                                             [Workshop 12][w12] is due Monday, April 28.
 
 April 28            Section 7.5 <br />      Plotting solutions of $2 \times 2$ systems, with help from Sage. <br />
-                                            Homogeneous linear systems with constant coefficients
+                                            Homogeneous linear systems with constant coefficients<br />
                                             [Workshop 13][w13] is not due for collection. <br />
                                             [More phase portraits in Sage][sage-phase-2]
 
@@ -144,8 +144,9 @@ April 30            Section 7.5 <br />      Analysis of eigenvectors, bifurcatio
                                              
 
 May 2               Section 7.6             More on complex eigenvectors; more practice with Sage. <br />
-                                            Workshop 14 will probably not be collected.
-                                            Quiz 8 on solving $2 \times 2$ systems by hand.
+                                            Workshop 14 will not be collected.<br />
+                                            Quiz 8 on solving $2 \times 2$ systems by hand. <br />
+                                            Some more [Sage example code][sage-complex] for complex eigenvalues.
 
 May 5               Review for Exam 3       Review for Exam 3.
 
@@ -168,6 +169,7 @@ May 14              PRESENTATIONS           (Finals week) presentations: 1:30--4
 [sage-solve-sys]: ../sage/Solving-matrix-equations-2014-04-16.sws
 [sage-phase]: ../sage/PhasePortraits.sws
 [sage-phase-2]: ../sage/More-phase-portraits.sws
+[sage-complex]: ../sage/Complex-eigenvalues.sws
 
 [rub]: ../project/rubric.pdf
 

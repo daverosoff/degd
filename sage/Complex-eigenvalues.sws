@@ -1,0 +1,85 @@
+︠760e9750-3fc2-4a89-b0ac-637194f44aa2i︠
+%html
+<h3>Complex eigenvalues</h3>
+<p>This is problem c from Workshop 14.</p>
+<p>Let's do the setup first.</p>
+︡5e4f27f9-0473-44b4-9fd8-c3f9e68e322c︡{"html":"<h3>Complex eigenvalues</h3>\n<p>This is problem c from Workshop 14.</p>\n<p>Let's do the setup first.</p>"}︡
+︠444a3132-2a28-4f97-aed6-ceaa0d626c82︠
+x1, x2, t = var('x1 x2 t')
+︡f4ae54d9-7098-4480-8f24-69955f3d19b8︡
+︠7b2edacd-2834-4ba8-ada3-80a1ef98ad45︠
+A = matrix(QQ, 2, [2, -5/2, 9/5, -1])
+show(A)
+︡fc336932-cbe8-4ce4-b080-c12934024771︡{"tex":{"tex":"\\left(\\begin{array}{rr}\n2 & -\\frac{5}{2} \\\\\n\\frac{9}{5} & -1\n\\end{array}\\right)","display":true}}︡
+︠4100ac14-1616-4734-bb3a-21714be3eb61i︠
+%html
+<p>Next, we'll need the eigenvalues and eigenvectors of the matrix $A$.</p>
+︡693a586f-a76e-44bb-8175-b7a34077fd61︡{"html":"<p>Next, we'll need the eigenvalues and eigenvectors of the matrix $A$.</p>"}︡
+︠39b53ed4-d33e-414d-9135-2e8c867e3bb3︠
+A.eigenspaces_right()
+︡4e8ace37-5d84-43dd-861c-9449fbb5c1c8︡{"stdout":"[\n(0.50000000000000000? - 1.5000000000000000?*I, Vector space of degree 2 and dimension 1 over Algebraic Field\nUser basis matrix:\n[                                          1 0.6000000000000000? + 0.6000000000000000?*I]),\n(0.50000000000000000? + 1.5000000000000000?*I, Vector space of degree 2 and dimension 1 over Algebraic Field\nUser basis matrix:\n[                                          1 0.6000000000000000? - 0.6000000000000000?*I])\n]\n"}︡
+︠f534711c-502a-41b4-8a7a-a1c15a864152i︠
+%html
+<p>Evidently, we just need one eigenvalue-eigenvector pair, since these are complex. It's easy
+    to use the <tt>==</tt> operator to make sure that the vector we have obtained is really an
+    eigenvector of $A$:</p>
+︡fcf574c4-0ba3-4fab-8b75-cbc694b752e8︡{"html":"<p>Evidently, we just need one eigenvalue-eigenvector pair, since these are complex. It's easy\n    to use the <tt>==</tt> operator to make sure that the vector we have obtained is really an\n    eigenvector of $A$:</p>"}︡
+︠a06b1e2f-9c87-42ca-9522-7b758ddda1d0︠
+(1/2 + 3*I/2)*vector([1, 3/5-3*I/5])==A*vector([1, 3/5-3*I/5])
+︡3f8f9503-be96-4d85-870c-d298c8ab1303︡{"stdout":"True\n"}︡
+︠43cf21fa-f964-4f5a-8e8b-ad2461b499eai︠
+%html
+<p>It's not convenient to extract the real-valued solutions that come from
+    $$e^{(1/2 + 3i/2)t} \begin{pmatrix} 1 \\ \frac{3}{5} - \frac{3i}{5} \end{pmatrix}$$ in Sage. Doing the
+    calculation by hand, we find them to be:</p>
+︡80c2dfc2-4393-467c-8c10-a1a3dbc9e63e︡{"html":"<p>It's not convenient to extract the real-valued solutions that come from\n    $$e^{(1/2 + 3i/2)t} \\begin{pmatrix} 1 \\\\ \\frac{3}{5} - \\frac{3i}{5} \\end{pmatrix}$$ in Sage. Doing the\n    calculation by hand, we find them to be:</p>"}︡
+︠930c99ea-68a1-4280-bc73-d02e59dac4fd︠
+u = vector([exp(t/2)*cos(3/2*t), (3/5)*exp(t/2)*(cos(3/2*t)+sin(3/2*t))])
+v = vector([exp(t/2)*sin(3/2*t), -(3/5)*exp(t/2)*(cos(3/2*t)-sin(3/2*t))])
+
+︡6998514d-5625-4f72-9d34-ec0d40096bd6︡
+︠4819c98a-84ca-4cde-a2bf-eed37a353934i︠
+%html
+<p>Of course, it never hurts to be sure. Let's check:</p>
+︡eccf68ae-e305-42c0-b01f-3faf56a65654︡{"html":"<p>Of course, it never hurts to be sure. Let's check:</p>"}︡
+︠87928abd-5ddd-4522-a737-3fc5e602dec6︠
+exp((1/2 + 3*I/2)*t)*vector([1, 3/5-3*I/5]) == u+I*v
+
+︡41bed4c2-e27d-49cb-9d81-b04c17095409︡{"stdout":"True\n"}︡
+︠928f5fb5-d567-455e-9e73-6e8bf1d97befi︠
+%html
+<p>The <tt>parametric_plot()</tt> command requires a <em>list</em> of arguments,
+rather than a <em>vector</em>. However, multiplying lists by scalars will not have
+    the effect we want. Sage provides functions to convert lists and vectors back
+and forth.</p>
+
+<p>These functions are called <tt>list()</tt> and <tt>vector()</tt>.</p>
+︡8e6c8b63-7816-4ea0-aa8d-229c39df158d︡{"html":"<p>The <tt>parametric_plot()</tt> command requires a <em>list</em> of arguments,\nrather than a <em>vector</em>. However, multiplying lists by scalars will not have\n    the effect we want. Sage provides functions to convert lists and vectors back\nand forth.</p>\n\n<p>These functions are called <tt>list()</tt> and <tt>vector()</tt>.</p>"}︡
+︠b9d389d9-e44b-45ec-b711-8e32a73c99e1︠
+vf = plot_vector_field(A*vector([x1,x2]), (x1, -5, 4), (x2, -5, 3))
+pp = [parametric_plot(u, (t, -2.5*pi,9/8*pi), color="green"),
+      parametric_plot(v, (t, -2.5*pi,9/8*pi), color="red"),
+      parametric_plot(list(0.75*vector(u)+2.5*vector(v)), (t, -2.5*pi, 0.30*pi), color="purple")]
+
+
+︡3857dc66-de50-4e12-9bb1-b1fdc69dd4d4︡
+︠f4546ac9-92c2-4e08-9b06-c2b3df96a9a1i︠
+%html
+<p>Here we have used the <tt>list()</tt> and <tt>vector()</tt> functions to form a linear combination of $u$ and $v$.</p>
+<p>Notice that in the previous cell, we have made <tt>pp</tt> a list of plot objects. Below, we use the <tt>sum</tt> function
+    to return a single plot object to the <tt>show()</tt> function.</p>
+︡5ed1b7d6-f475-4f55-a3a2-62d6116198da︡{"html":"<p>Here we have used the <tt>list()</tt> and <tt>vector()</tt> functions to form a linear combination of $u$ and $v$.</p>\n<p>Notice that in the previous cell, we have made <tt>pp</tt> a list of plot objects. Below, we use the <tt>sum</tt> function\n    to return a single plot object to the <tt>show()</tt> function.</p>"}︡
+︠ab3c6234-4103-41e3-8159-7fb793e7b038︠
+show(vf+sum(pp))
+︡de24e79c-3fa1-40ea-a219-1e0169f24da3︡{"once":false,"file":{"show":true,"uuid":"489aebbd-8d6e-4cba-ac22-8eda9c8a503b","filename":"/projects/cb03d418-bacc-4b6d-a349-f4197598fde8/.sage/temp/compute15dc0/23588/tmp_hbiuDX.png"}}︡
+︠ac6cf524-c3b0-443c-be6f-395118aa35a5︠
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,157 @@
+\documentclass[12pt,twoside]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{rosoff}
+\usepackage{xparse}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg, .png}
+\usepackage{fourier}
+%\usepackage{amsthm}
+\usepackage{listings,booktabs,tabularx}
+%\usepackage[inline]{enumitem}
+%\usepackage{siunitx}
+\frenchspacing
+\usepackage{parskip}
+\usepackage{pgfplots}
+\usepackage{rosoff}
+\usepackage{hyperref}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Spring 2014}}
+ {}
+ {\textbf{Math 352}}
+ %{\emph{Page \thepage~of \numpages}}
+\runningheadrule
+
+\pagestyle{head}
+\extrawidth{1in}
+\extraheadheight[-0.5in]{0in}
+\extrafootheight{-0.5in}
+\begin{document}
+\noindent
+\textbf{{\large Math 352 \hfill Workshop 14}}
+% \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
+
+\vspace{2ex}
+
+\noindent
+\makebox[\textwidth]{May 2, 2014 \hfill Not collected \hfill Name: \underline{\hspace{2in}} }
+
+\noindent
+
+\newcommand{\longlines}{\setlength{\answerlinelength}{0.7\linewidth}}
+\newcommand{\medlines}{\setlength{\answerlinelength}{0.45\linewidth}}
+\newcommand{\shortlines}{\setlength{\answerlinelength}{0.2\linewidth}}
+
+\RenewDocumentCommand\vec{m}{\ensuremath{\mathbf{#1}}}
+
+\subsection*{Complex eigenvalues, limit cycles, spiral points}
+
+Sage commands that will be useful include
+
+\texttt{plot\_vector\_field()}, \texttt{parametric\_plot()}, and
+\texttt{A.eigenspaces\_right()} 
+
+(where \texttt{A} is a square matrix).
+Remember, you can use the \texttt{help()} command to get information on
+any of these commands, e.g. \texttt{help(parametric\_plot)}.
+
+\begin{questions}
+
+    \question For each of the systems of equations below, complete
+    the following steps.
+    \begin{compactenum}[i.]
+        \item Use the method of eigenvectors to find the general 
+        (real-valued) solution of the system.
+        \item Use Sage to make a phase plot that shows three trajectories.
+        \item Make note of any limit cycles or equilibrium solutions.
+    \end{compactenum}
+
+    \begin{parts}
+        \begin{minipage}[t]{0.47\linewidth}
+        \vspace{0pt}
+            \part \begin{flalign*}
+                x'_1 &= x_2  &\\
+                x'_2 &= x_1 &
+            \end{flalign*} 
+
+            \vspace{2in}
+
+            \part \begin{flalign*}
+                x'_1 &= 3x_1 - 2x_2  &\\
+                x'_2 &= 4x_1 - x_2 &
+            \end{flalign*} 
+
+            \vspace{2in}
+
+        \end{minipage}
+        \begin{minipage}[t]{0.47\linewidth}
+        \vspace{0pt}
+            \part \begin{flalign*}
+              x'_1 &= 2x_1  -(5/2) x_2  &\\
+              x'_2 &= (9/5) x_1  -x_2 &
+            \end{flalign*} 
+
+            \vspace{2in}
+
+            \part \begin{flalign*}
+              x'_1 &= 2x_1 - 5x_2  &\\
+              x'_2 &= x_1 - 2x_2 &
+            \end{flalign*}   
+
+            \vspace{2in} 
+        \end{minipage}      
+        
+    \end{parts}
+    
+    \newpage
+
+    \question These systems contain a parameter $\alpha$. For each system,
+    \begin{compactenum}[i.]
+        \item Determine the eigenvalues in terms of $\alpha$.
+        \item Find the critical value(s) of $\alpha$ where the qualitative 
+        nature of the phase portrait of the system changes.
+        \item Make phase portraits for a value of $\alpha$ slightly below, and for another value slightly above, each critical value.
+    \end{compactenum}
+
+    \begin{parts}
+        \begin{minipage}[t]{0.47\linewidth}
+        \vspace{0pt}
+            \part \begin{equation*}
+                \vec{x}' = \begin{pmatrix}
+                    \alpha & 1 \\ -1 & \alpha
+                \end{pmatrix} \vec{x}
+            \end{equation*} 
+
+            \vspace{2in}
+
+            \part \begin{equation*}
+                \vec{x}' = \begin{pmatrix}
+                    2 & -5 \\ \alpha & -2
+                \end{pmatrix} \vec{x}
+            \end{equation*} 
+
+            \vspace{2in}
+        \end{minipage}
+        \begin{minipage}[t]{0.47\linewidth}
+        \vspace{0pt}
+            \part \begin{equation*}
+                \vec{x}' = \begin{pmatrix}
+                    -1 & \alpha \\ -1 & -1
+                \end{pmatrix} \vec{x}
+            \end{equation*} 
+
+            \vspace{2in}
+
+            \part \begin{equation*}
+                \vec{x}' = \begin{pmatrix}
+                    \alpha & 10 \\ -1 & -4
+                \end{pmatrix} \vec{x}
+            \end{equation*} 
+
+            \vspace{2in}   
+        \end{minipage}      
+        
+    \end{parts}
+
+\end{questions} 
+
+\end{document}
