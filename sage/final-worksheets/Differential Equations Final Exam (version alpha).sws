@@ -1,0 +1,50 @@
+︠6775f064-e682-476c-9cfc-ffa77d46f986i︠
+%html
+<style>
+    p { width: 70%; }
+</style>
+<h2>Final Exam, Sage component (version $\alpha$)</h2>
+<h4>Instructions</h4>
+<p>Use your knowledge of Sage to complete the tasks, working directly in this Sage worksheet. You can refer to any saved
+Sage code you have access to. Budget your time wisely.</p>
+<p>Try to keep your layout clean. Your solution should be linear and readable. Remember,
+    to add explanation, you can make a text cell by making the first line read <tt>%html</tt>.</p>
+<p>When you are finished, download this worksheet and rename the file <tt>lastname-firstname-final.sagews</tt>. Email the renamed filed to <tt>drosoff@collegeofidaho.edu</tt>.</p>
+<p><font color="red">Do not modify your file after the exam ends until you receive confirmation that I have an unocrrupted copy. We need to keep your version timestamped before the end of the hour.</font></p>
+︡a4ac5ea4-0eb1-4712-81b3-d8810ac80dde︡{"html":"<style>\n    p { width: 70%; }\n</style>\n<h2>Final Exam, Sage component (version $\\alpha$)</h2>\n<h4>Instructions</h4>\n<p>Use your knowledge of Sage to complete the tasks, working directly in this Sage worksheet. You can refer to any saved\nSage code you have access to. Budget your time wisely.</p>\n<p>Try to keep your layout clean. Your solution should be linear and readable. Remember,\n    to add explanation, you can make a text cell by making the first line read <tt>%html</tt>.</p>\n<p>When you are finished, download this worksheet and rename the file <tt>lastname-firstname-final.sagews</tt>. Email the renamed filed to <tt>drosoff@collegeofidaho.edu</tt>.</p>\n<p><font color=\"red\">Do not modify your file after the exam ends until you receive confirmation that I have an unocrrupted copy. We need to keep your version timestamped before the end of the hour.</font></p>"}︡
+︠4e2cd41b-e6e5-4b24-8c90-44cb79ee4abci︠
+%html
+<h4>Question 1</h4>
+<p>Use Sage to produce a phase portrait (including vector field and at least 2 trajectories) for the following differential equation:</p>
+\begin{equation*}
+    \vec{x}' = \begin{pmatrix}
+        3 & -3 \\
+        -4 & -4
+    \end{pmatrix} \vec{x}.
+\end{equation*}
+︡fcbff55b-6151-45c4-b842-750d2b1903a1︡{"html":"<h4>Question 1</h4>\n<p>Use Sage to produce a phase portrait (including vector field and at least 2 trajectories) for the following differential equation:</p>\n\\begin{equation*}\n    \\vec{x}' = \\begin{pmatrix}\n        3 & -3 \\\\\n        -4 & -4\n    \\end{pmatrix} \\vec{x}.\n\\end{equation*}"}︡
+︠4962ed30-0b94-4782-8f90-a74f3ce0d4a4︠
+
+︠1589fff9-e044-469d-a32d-df6b46acb737i︠
+%html
+<h4>Question 2</h4>
+<p>Use Sage to produce a phase portrait for the real-valued solutions that come from the
+eigenvalues $r_1 = 3i$, $r_2 = -3i$, with corresponding eigenvectors</p>
+\begin{equation*}
+    \vec{\xi}_1 = \begin{pmatrix}
+        1 \\ -2i
+    \end{pmatrix}, \quad \vec{\xi}_2 = \begin{pmatrix}
+        1 \\ 2i
+    \end{pmatrix}
+\end{equation*}
+︡b4d128eb-8609-4b9f-8735-7d8726cb9935︡{"html":"<h4>Question 2</h4>\n<p>Use Sage to produce a phase portrait for the real-valued solutions that come from the\neigenvalues $r_1 = 3i$, $r_2 = -3i$, with corresponding eigenvectors</p>\n\\begin{equation*}\n    \\vec{\\xi}_1 = \\begin{pmatrix}\n        1 \\\\ -2i\n    \\end{pmatrix}, \\quad \\vec{\\xi}_2 = \\begin{pmatrix}\n        1 \\\\ 2i\n    \\end{pmatrix}\n\\end{equation*}"}︡
+︠87c392e8-8c64-4fd7-ab5c-0391732d0d87︠
+
+
+
+
+
+
+
+
+
