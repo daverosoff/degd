@@ -1,5 +1,0 @@
-\beamer@endinputifotherversion {3.26pt}
-\select@language {english}
-\beamer@sectionintoc {1}{Warm-up}{2}{0}{1}
-\beamer@sectionintoc {2}{Recap}{5}{0}{2}
-\beamer@sectionintoc {3}{Negative discriminants}{8}{0}{3}
